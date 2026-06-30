@@ -1,0 +1,146 @@
+[
+    {
+      "id": "qing-veranita",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Veranita",
+      "aliases": ["Veranita"],
+      "weight": "Lace Weight",
+      "weight_category": "lace",
+      "fibres": [],
+      "fibre_categories": [],
+      "shop_categories": {
+        "by_weight": ["lace"],
+        "by_fibre": [],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/lace-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": null,
+      "default_yardage": "",
+      "notes": ""
+    },
+    {
+      "id": "qing-baby-teddy",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Baby Teddy",
+      "aliases": ["Baby Teddy"],
+      "weight": "Lace Weight",
+      "weight_category": "lace",
+      "fibres": [],
+      "fibre_categories": [],
+      "shop_categories": {
+        "by_weight": ["lace"],
+        "by_fibre": [],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/lace-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": null,
+      "default_yardage": "",
+      "notes": ""
+    },
+    {
+      "id": "qing-suri-lace",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Suri Lace",
+      "aliases": ["Suri Lace"],
+      "weight": "Lace Weight",
+      "weight_category": "lace",
+      "fibres": ["Alpaca", "Silk"],
+      "fibre_categories": ["alpaca", "silk"],
+      "shop_categories": {
+        "by_weight": ["lace"],
+        "by_fibre": ["alpaca", "silk"],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/lace-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": null,
+      "default_yardage": "",
+      "notes": "Confirm exact fibre content from product page or label."
+    },
+    {
+      "id": "qing-dashing-fingering",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Dashing Fingering",
+      "aliases": ["Dashing Fingering"],
+      "weight": "Fingering Weight",
+      "weight_category": "fingering",
+      "fibres": [],
+      "fibre_categories": [],
+      "shop_categories": {
+        "by_weight": ["fingering"],
+        "by_fibre": [],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/fingering-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": null,
+      "default_yardage": "",
+      "notes": ""
+    },
+    {
+      "id": "qing-yak-single",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Yak Single",
+      "aliases": ["Yak Single"],
+      "weight": "Fingering Weight",
+      "weight_category": "fingering",
+      "fibres": ["Yak", "Merino", "Silk"],
+      "fibre_categories": ["yak", "merino", "silk"],
+      "shop_categories": {
+        "by_weight": ["fingering"],
+        "by_fibre": ["yak", "merino", "silk"],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/fingering-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": 100,
+      "default_yardage": "",
+      "notes": "Confirm exact yardage from label or product page."
+    },
+    {
+      "id": "qing-melted-baby-suri",
+      "shop": "Qing Fibre",
+      "brand": "Qing Fibre",
+      "base_name": "Melted Baby Suri",
+      "aliases": ["Melted Baby Suri", "Baby Suri"],
+      "weight": "Sport Weight",
+      "weight_category": "sport",
+      "fibres": ["Suri Alpaca", "Silk"],
+      "fibre_categories": ["alpaca", "silk"],
+      "shop_categories": {
+        "by_weight": ["sport"],
+        "by_fibre": ["alpaca", "silk"],
+        "by_color": [],
+        "by_style": []
+      },
+      "collection_urls": {
+        "weight": "https://www.qingfibre.com/collections/all-sport-weight",
+        "product": ""
+      },
+      "default_skein_weight_g": 50,
+      "default_yardage": "",
+      "notes": "Confirm exact yardage from label or product page."
+    }
+  ]
