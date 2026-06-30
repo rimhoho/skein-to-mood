@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Skein to Mood — Yarn Closet & Knit Planning Journal</title>
+  <meta
+    name="description"
+    content="A visual yarn closet and knit planning journal for tracking stash, building moodboards, and finding patterns."
+  />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Skein to Mood home">
+      <span class="logo-mark">◌</span>
+      <span>Skein to Mood</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#closet">Closet</a>
+      <a href="#moodboards">Moodboards</a>
+      <a href="#patterns">Patterns</a>
+      <a href="#journal">Journal</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="nav-pill" href="#closet">My Closet</a>
+  </header>
+
+  <main id="top">
+    <section class="hero color-smoke">
+      <div class="hero-copy">
+        <p class="eyebrow">Yarn-first planning journal</p>
+        <h1>
+          Your Yarn<br />
+          Closet Is<br />
+          A Mood.
+        </h1>
+        <p class="hero-text">
+          Track your stash, build color stories, and plan your next knit from the skein up.
+        </p>
+
+        <div class="button-row">
+          <a class="button button-dark" href="#closet">Browse Closet</a>
+          <a class="button button-rose" href="#moodboards">Build Moodboard</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p class="card-label">Featured colorway</p>
+        <h2>Smoke Over Rothko</h2>
+        <p>
+          Smoky blue-gray halo over warm taupe, soft oatmeal, antique rose, and deep plum.
+        </p>
+
+        <div class="hero-yarn-visual">
+          <div class="skein skein-a"></div>
+          <div class="skein skein-b"></div>
+          <div class="swatch"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="closet" class="section color-rothko">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">Virtual stash</p>
+          <h2>Stash, but<br />make it visual.</h2>
+        </div>
+        <p>
+          실의 브랜드, 컬러웨이, 재질, 수량, 무드, 어울리는 패턴을 한눈에 보는 나만의 니트 클로젯.
+        </p>
+      </div>
+
+      <div id="yarnGrid" class="yarn-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="moodboards" class="section color-rose">
+      <div class="section-intro wide">
+        <p class="eyebrow">Color stories</p>
+        <h2>Color first.<br />Pattern later.</h2>
+        <p>
+          오늘의 실이 가진 색과 질감을 먼저 보고, 그 다음에 어울리는 형태를 찾아가기.
+        </p>
+      </div>
+
+      <div class="mood-strip">
+        <article class="mood-chip">
+          <span class="chip chip-smoky"></span>
+          <strong>smoky neutral</strong>
+        </article>
+
+        <article class="mood-chip">
+          <span class="chip chip-oat"></span>
+          <strong>oatmeal beige</strong>
+        </article>
+
+        <article class="mood-chip">
+          <span class="chip chip-lilac"></span>
+          <strong>soft lilac gray</strong>
+        </article>
+
+        <article class="mood-chip">
+          <span class="chip chip-rose"></span>
+          <strong>antique rose</strong>
+        </article>
+
+        <article class="mood-chip">
+          <span class="chip chip-plum"></span>
+          <strong>deep plum</strong>
+        </article>
+      </div>
+    </section>
+
+    <section id="patterns" class="section color-plum">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">Pattern match</p>
+          <h2>What should<br />this skein<br />become?</h2>
+        </div>
+        <p>
+          실의 굵기, 드레이프, 헤일로, 색 대비를 기준으로 어울리는 패턴을 후보로 모아두기.
+        </p>
+      </div>
+
+      <div class="pattern-grid">
+        <article class="pattern-card">
+          <div class="pattern-image pattern-cardigan"></div>
+          <h3>Everyday Cardigan</h3>
+          <p>Yak Single + Baby Suri 조합으로 부드러운 레이어링 가디건.</p>
+          <span>Top-down</span>
+          <span>Fingering</span>
+        </article>
+
+        <article class="pattern-card">
+          <div class="pattern-image pattern-shawl"></div>
+          <h3>Painterly Shawl</h3>
+          <p>컬러가 흐르는 실을 가장 잘 보여주는 넓은 면적의 숄.</p>
+          <span>One skein</span>
+          <span>Soft drape</span>
+        </article>
+
+        <article class="pattern-card">
+          <div class="pattern-image pattern-hat"></div>
+          <h3>Cloudline Hat</h3>
+          <p>스모키한 수리 헤일로를 살린 가볍고 포근한 모자.</p>
+          <span>Quick knit</span>
+          <span>Suri friendly</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="journal" class="section color-oatmeal">
+      <div class="journal-card">
+        <p class="eyebrow">Journal note</p>
+        <h2>From skein<br />to mood.</h2>
+
+        <p>
+          뉴욕에서 우연히 시작한 뜨개가 목도리, 넥워머, 가방, 버킷햇, 니트모자로 이어졌고,
+          어느새 손염색실을 모으는 무서운 길에 들어섰다.
+        </p>
+
+        <p>
+          Skein to Mood는 쌓여가는 실을 가상 클로젯처럼 기록하고,
+          각 실이 가진 색과 재질을 무드보드로 풀어내며,
+          그 실에 어울리는 패턴을 찾아가는 니트 플래닝 저널.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about" class="site-footer">
+    <div>
+      <strong>Skein to Mood</strong>
+      <p>A visual yarn closet & knit planning journal.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#closet">Closet</a>
+      <a href="#moodboards">Moodboards</a>
+      <a href="#patterns">Patterns</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
