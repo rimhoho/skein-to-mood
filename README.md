@@ -20,10 +20,11 @@ https://rimhoho.github.io/skein-to-mood/
 ## Site Goals
 
 - Show yarn stash visually.
-- Record brand, yarn name, colorway, fiber, weight, quantity, and mood.
+- Record brand, base, colorway, fiber content, weight, quantity, yardage, and mood.
 - Build color moodboards from yarns.
 - Match yarns with knitting/crochet pattern ideas.
 - Keep a `chatgpt-instructions.md` file that can be copied into ChatGPT custom instructions or project context.
+- Keep yarn data structured enough to update, filter, and expand over time.
 
 ## Design Direction
 
@@ -37,6 +38,7 @@ Style keywords:
 - Rounded yarn cards
 - Moodboard color chips
 - Cozy but modern visual identity
+- Personal archive feeling, like a virtual yarn closet
 
 Main palette:
 
@@ -59,7 +61,7 @@ skein-to-mood/
 ├─ index.html
 ├─ styles.css
 ├─ script.js
-├─ yarns.json
+├─ my-yarn-stash.json
 ├─ _config.yml
 ├─ chatgpt-instructions.md
 ├─ README.md
@@ -72,27 +74,147 @@ skein-to-mood/
       └─ quartz-fume.jpg
 ```
 
+## Yarn Stash Data
+
+Yarn inventory is stored in `my-yarn-stash.json`.
+
+Each yarn entry records both practical knitting information and mood-board information:
+
+- brand
+- base
+- colorway
+- quantity
+- yarn weight
+- fiber content
+- skein weight
+- yardage
+- batch code, barcode, or SKU when available
+- color family
+- mood keywords
+- texture keywords
+- pattern ideas
+- notes
+- source information when the yarn is from a set, lucky dip bag, or archived colourway page
+
 ## How to Add a Yarn
 
-Add a new item to `yarns.json`.
+Add a new item to `my-yarn-stash.json`.
+
+Basic example:
 
 ```json
 {
-  "id": "brand-yarn-colorway",
-  "brand": "Brand Name",
-  "name": "Yarn Name Colorway",
-  "colorway": "Colorway",
-  "fiber": "Fiber content",
-  "weight": "Fingering",
-  "quantity": "1 skein",
-  "color": "#B8C5D3",
-  "image": "./assets/images/example.jpg",
-  "mood": ["smoky", "soft", "painterly"],
-  "bestFor": ["cardigan", "shawl"],
-  "pairingIdeas": ["Another yarn"],
-  "note": "Planning note."
+  "id": "qing-fibre-melted-baby-suri-smoke",
+  "brand": "Qing Fibre",
+  "base": "Melted Baby Suri",
+  "colorway": "Smoke",
+  "quantity": 1,
+  "weight": "lace / fluffy lace",
+  "fiber_content": {
+    "baby_suri_alpaca": 65,
+    "merino": 20,
+    "silk": 15
+  },
+  "skein_weight_g": 50,
+  "yardage_m": 175,
+  "batch_code": "2649",
+  "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
+  "color_family": [
+    "pale blue grey",
+    "mist grey",
+    "soft green",
+    "muted gold",
+    "smoky blue"
+  ],
+  "mood": [
+    "misty",
+    "quiet",
+    "foggy",
+    "soft smoke",
+    "winter garden"
+  ],
+  "texture": [
+    "fluffy",
+    "halo",
+    "airy",
+    "brushed"
+  ],
+  "notes": "Pale smoky blue-grey Melted Baby Suri with muted green and golden-brown patches.",
+  "pattern_ideas": [
+    "held-together cardigan",
+    "misty neck warmer",
+    "soft hat",
+    "collar accent",
+    "gentle stripe project"
+  ]
 }
 ```
+
+## Data Conventions
+
+- `id` uses lowercase kebab-case.
+  - Example: `qing-fibre-baby-teddy-noctilucent-cloud`
+- `brand`, `base`, and `colorway` use display-ready names.
+  - Example: `Qing Fibre`, `Baby Teddy`, `Noctilucent Cloud`
+- `colorway` names use Title Case.
+  - Example: `Crop Circle`, `Rose Tinted`, `Moon Goddess`
+- If the same colorway exists on different bases, each base is stored as a separate yarn item.
+  - Example: `Baby Teddy / Echo` and `Yak / Echo`
+- Unknown values are stored as `null`.
+- `quantity` is stored as a number.
+  - Example: `1`
+- Fiber content is stored as an object with percentage values.
+- Yardage is stored in meters when available.
+- `pattern_ideas` are planning prompts, not confirmed pattern matches.
+- `notes` can include personal observations about color, texture, or project ideas.
+
+## Special Yarn Sources
+
+Some skeins are from lucky dip bags, fade sets, or archived colourways.
+
+When a detailed product page is no longer available, the `source` field records where the colorway was identified.
+
+Example:
+
+```json
+{
+  "source": {
+    "type": "archived_colourway_page",
+    "name": "Punjabi",
+    "note": "Detailed product page is no longer available; colorway is identified from Qing Fibre's colourway archive."
+  }
+}
+```
+
+When a skein belongs to a fade set and the individual skein name is not listed, it is recorded with the set name and a descriptive temporary colorway name.
+
+Example:
+
+```json
+{
+  "colorway": "Moonage Fade Set - Unnamed Pink Lavender Skein",
+  "set_name": "Moonage Fade Set - Melted Baby Suri",
+  "source": {
+    "type": "official_product_page",
+    "name": "Moonage Fade Set - Melted Baby Suri",
+    "note": "Official page describes the set as 5 skeins of Melted Baby Suri fading from gentle pinks to dewy violets; individual skein names are not listed."
+  }
+}
+```
+
+## Current Stash Notes
+
+The stash currently includes a growing Qing Fibre collection across several bases:
+
+- Melted Baby Suri
+- Baby Teddy
+- Teddy
+- Dashing Fingering
+- Dashing Sassy
+- Merino Singles
+- Yak
+
+This includes regular skeins, Lucky Dip Bag skeins, archived colourways, and one Moonage Fade Set skein.
 
 ## GitHub Pages Setup
 
@@ -131,3 +253,4 @@ Future ideas:
 - Moodboard generator
 - Project journal entries
 - Copyable ChatGPT context export
+- Archive notes for discontinued or lucky dip colorways
