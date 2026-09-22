@@ -1,146 +1,382 @@
 [
-    {
-      "id": "qing-veranita",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Veranita",
-      "aliases": ["Veranita"],
-      "weight": "Lace Weight",
-      "weight_category": "lace",
-      "fibres": [],
-      "fibre_categories": [],
-      "shop_categories": {
-        "by_weight": ["lace"],
-        "by_fibre": [],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/lace-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": null,
-      "default_yardage": "",
-      "notes": ""
+  {
+    "id": "qing-veranita",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Veranita",
+    "aliases": ["Veranita"],
+    "weight": "Lace Weight",
+    "weight_category": "lace",
+    "fibres": [],
+    "fibre_categories": [],
+    "shop_categories": {
+      "by_weight": ["lace"],
+      "by_fibre": [],
+      "by_color": [],
+      "by_style": []
     },
-    {
-      "id": "qing-baby-teddy",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Baby Teddy",
-      "aliases": ["Baby Teddy"],
-      "weight": "Lace Weight",
-      "weight_category": "lace",
-      "fibres": [],
-      "fibre_categories": [],
-      "shop_categories": {
-        "by_weight": ["lace"],
-        "by_fibre": [],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/lace-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": null,
-      "default_yardage": "",
-      "notes": ""
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/lace-weight",
+      "product": ""
     },
-    {
-      "id": "qing-suri-lace",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Suri Lace",
-      "aliases": ["Suri Lace"],
-      "weight": "Lace Weight",
-      "weight_category": "lace",
-      "fibres": ["Alpaca", "Silk"],
-      "fibre_categories": ["alpaca", "silk"],
-      "shop_categories": {
-        "by_weight": ["lace"],
-        "by_fibre": ["alpaca", "silk"],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/lace-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": null,
-      "default_yardage": "",
-      "notes": "Confirm exact fibre content from product page or label."
+    "default_skein_weight_g": null,
+    "default_yardage": "",
+    "notes": ""
+  },
+  {
+    "id": "qing-baby-teddy",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Baby Teddy",
+    "aliases": ["Baby Teddy"],
+    "weight": "Lace Weight",
+    "weight_category": "lace",
+    "fibres": [],
+    "fibre_categories": [],
+    "shop_categories": {
+      "by_weight": ["lace"],
+      "by_fibre": [],
+      "by_color": [],
+      "by_style": []
     },
-    {
-      "id": "qing-dashing-fingering",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Dashing Fingering",
-      "aliases": ["Dashing Fingering"],
-      "weight": "Fingering Weight",
-      "weight_category": "fingering",
-      "fibres": [],
-      "fibre_categories": [],
-      "shop_categories": {
-        "by_weight": ["fingering"],
-        "by_fibre": [],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/fingering-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": null,
-      "default_yardage": "",
-      "notes": ""
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/lace-weight",
+      "product": ""
     },
-    {
-      "id": "qing-yak-single",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Yak Single",
-      "aliases": ["Yak Single"],
-      "weight": "Fingering Weight",
-      "weight_category": "fingering",
-      "fibres": ["Yak", "Merino", "Silk"],
-      "fibre_categories": ["yak", "merino", "silk"],
-      "shop_categories": {
-        "by_weight": ["fingering"],
-        "by_fibre": ["yak", "merino", "silk"],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/fingering-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": 100,
-      "default_yardage": "",
-      "notes": "Confirm exact yardage from label or product page."
+    "default_skein_weight_g": null,
+    "default_yardage": "",
+    "notes": ""
+  },
+  {
+    "id": "qing-suri-lace",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Suri Lace",
+    "aliases": ["Suri Lace"],
+    "weight": "Lace Weight",
+    "weight_category": "lace",
+    "fibres": ["Alpaca", "Silk"],
+    "fibre_categories": ["alpaca", "silk"],
+    "shop_categories": {
+      "by_weight": ["lace"],
+      "by_fibre": ["alpaca", "silk"],
+      "by_color": [],
+      "by_style": []
     },
-    {
-      "id": "qing-melted-baby-suri",
-      "shop": "Qing Fibre",
-      "brand": "Qing Fibre",
-      "base_name": "Melted Baby Suri",
-      "aliases": ["Melted Baby Suri", "Baby Suri"],
-      "weight": "Sport Weight",
-      "weight_category": "sport",
-      "fibres": ["Suri Alpaca", "Silk"],
-      "fibre_categories": ["alpaca", "silk"],
-      "shop_categories": {
-        "by_weight": ["sport"],
-        "by_fibre": ["alpaca", "silk"],
-        "by_color": [],
-        "by_style": []
-      },
-      "collection_urls": {
-        "weight": "https://www.qingfibre.com/collections/all-sport-weight",
-        "product": ""
-      },
-      "default_skein_weight_g": 50,
-      "default_yardage": "",
-      "notes": "Confirm exact yardage from label or product page."
-    }
-  ]
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/lace-weight",
+      "product": ""
+    },
+    "default_skein_weight_g": null,
+    "default_yardage": "",
+    "notes": "Confirm exact fibre content from product page or label."
+  },
+  {
+    "id": "qing-dashing-fingering",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Dashing Fingering",
+    "aliases": ["Dashing Fingering"],
+    "weight": "Fingering Weight",
+    "weight_category": "fingering",
+    "fibres": [],
+    "fibre_categories": [],
+    "shop_categories": {
+      "by_weight": ["fingering"],
+      "by_fibre": [],
+      "by_color": [],
+      "by_style": []
+    },
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/fingering-weight",
+      "product": ""
+    },
+    "default_skein_weight_g": null,
+    "default_yardage": "",
+    "notes": ""
+  },
+  {
+    "id": "qing-yak-single",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Yak Single",
+    "aliases": ["Yak Single"],
+    "weight": "Fingering Weight",
+    "weight_category": "fingering",
+    "fibres": ["Yak", "Merino", "Silk"],
+    "fibre_categories": ["yak", "merino", "silk"],
+    "shop_categories": {
+      "by_weight": ["fingering"],
+      "by_fibre": ["yak", "merino", "silk"],
+      "by_color": [],
+      "by_style": []
+    },
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/fingering-weight",
+      "product": ""
+    },
+    "default_skein_weight_g": 100,
+    "default_yardage": "",
+    "notes": "Confirm exact yardage from label or product page."
+  },
+  {
+    "id": "qing-melted-baby-suri",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Melted Baby Suri",
+    "aliases": ["Melted Baby Suri", "Baby Suri"],
+    "weight": "Sport Weight",
+    "weight_category": "sport",
+    "fibres": ["Suri Alpaca", "Silk"],
+    "fibre_categories": ["alpaca", "silk"],
+    "shop_categories": {
+      "by_weight": ["sport"],
+      "by_fibre": ["alpaca", "silk"],
+      "by_color": [],
+      "by_style": []
+    },
+    "collection_urls": {
+      "weight": "https://www.qingfibre.com/collections/all-sport-weight",
+      "product": ""
+    },
+    "default_skein_weight_g": 50,
+    "default_yardage": "",
+    "notes": "Confirm exact yardage from label or product page."
+  },
+  {
+    "id": "purl-soho-estuary",
+    "brand": "Purl Soho",
+    "base": "Estuary",
+    "fiber_content": {
+      "fine_merino_wool": 65,
+      "mulberry_silk": 20,
+      "linen": 15
+    },
+    "weight": "fingering",
+    "construction": "single ply, hand-dyed",
+    "skein_weight_g": 100,
+    "yardage_yd": 384,
+    "yardage_m": 351,
+    "gauge": "6.5-7.5 sts per inch",
+    "needle_size": "US 3-5 / 3.25-3.75 mm",
+    "hook_size": "D-F / 3.25-3.75 mm",
+    "care": "Hand wash and lay flat to dry.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/estuary.html?ps-pid=44946",
+    "notes": "Hand-dyed fingering-weight yarn; colors may vary skein to skein and between dye lots."
+  },
+  {
+    "id": "purl-soho-cotton-pure",
+    "brand": "Purl Soho",
+    "base": "Cotton Pure",
+    "fiber_content": {
+      "organically_grown_cotton": 100
+    },
+    "weight": "sport",
+    "construction": "unmercerized, multi-strand cotton",
+    "skein_weight_g": 100,
+    "yardage_yd": 279,
+    "yardage_m": 255,
+    "gauge": "5.5-6 sts per inch",
+    "needle_size": "US 3-5 / 3.25-3.75 mm",
+    "hook_size": "D-F / 3.25-4 mm",
+    "care": "Machine wash cold, tumble dry low.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/cotton-pure.html?ps-pid=26711",
+    "notes": "Soft, matte, absorbent cotton with good stitch definition."
+  },
+  {
+    "id": "purl-soho-serif",
+    "brand": "Purl Soho",
+    "base": "Serif",
+    "fiber_content": {
+      "peruvian_pima_cotton": 100
+    },
+    "weight": "light worsted / DK to worsted / aran",
+    "construction": "roving-like single ply wrapped with a thin cotton thread",
+    "skein_weight_g": 100,
+    "yardage_yd": 164,
+    "yardage_m": 150,
+    "gauge": "4.75-5.25 sts per inch",
+    "needle_size": "US 4-6 / 3.5-4 mm",
+    "hook_size": "E-F / 3.5-4 mm",
+    "care": "Machine wash cold, tumble dry low.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/serif.html",
+    "notes": "Soft Pima cotton with subtle luster and slightly knobbly texture."
+  },
+  {
+    "id": "purl-soho-echo-cashmere",
+    "brand": "Purl Soho",
+    "base": "Echo Cashmere",
+    "fiber_content": {
+      "recycled_cashmere": 95,
+      "other_fibers": 5
+    },
+    "weight": "fingering to sport",
+    "construction": "woolen-spun, three fine plies",
+    "skein_weight_g": 50,
+    "yardage_yd": 236,
+    "yardage_m": 215.8,
+    "gauge": "6.25-6.75 sts per inch",
+    "needle_size": "US 2-4 / 3-3.5 mm",
+    "hook_size": "C-E / 2.75-3.5 mm",
+    "care": "Hand wash cold, lay flat to dry.",
+    "milled_in": "Italy",
+    "source_url": "https://www.purlsoho.com/echo-cashmere.html?ps-pid=39942",
+    "notes": "Delicate recycled cashmere yarn with airy woolen-spun bloom; avoid tugging too hard or knitting too tightly."
+  },
+  {
+    "id": "purl-soho-linen-quill-minis",
+    "brand": "Purl Soho",
+    "base": "Linen Quill Minis",
+    "fiber_content": {
+      "fine_highland_wool": 50,
+      "alpaca": 35,
+      "linen": 15
+    },
+    "weight": "fingering",
+    "construction": "mini ball version of Linen Quill",
+    "skein_weight_g": 25,
+    "yardage_yd": 109,
+    "yardage_m": 100,
+    "gauge": "6.5-7.5 sts per inch",
+    "needle_size": "US 2-5 / 3-3.75 mm",
+    "hook_size": "C-E / 2.75-3.5 mm",
+    "care": "Hand wash and lay flat to dry.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/linen-quill-minis.html?ps-pid=43132",
+    "notes": "25g mini-ball version of Linen Quill. Mini balls and 100g Linen Quill skeins do not share dye lots."
+  },
+  {
+    "id": "qing-dashing-dk",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Dashing DK",
+    "aliases": ["Dashing DK"],
+    "weight": "DK Weight",
+    "weight_category": "dk",
+    "fibres": [
+      {
+        "fibre": "Ultra Fine South African Merino",
+        "percentage": 100
+      }
+    ],
+    "skein_weight_g": 100,
+    "length_m": 225,
+    "length_yd": 246,
+    "recommended_needle_mm": {
+      "min": 3.75,
+      "max": 4.5
+    },
+    "source_url": "https://www.qingfibre.com/products/dashing-dk-equinox",
+    "collection_url": "https://www.qingfibre.com/collections/all-dk-weight"
+  },
+  {
+    "id": "qing-dashing-dk",
+    "shop": "Qing Fibre",
+    "brand": "Qing Fibre",
+    "base_name": "Dashing DK",
+    "aliases": ["Dashing DK"],
+    "weight": "DK Weight",
+    "weight_category": "dk",
+    "fibres": [
+      {
+        "fibre": "Ultra Fine South African Merino",
+        "percentage": 100
+      }
+    ],
+    "skein_weight_g": 100,
+    "length_m": 225,
+    "length_yd": 246,
+    "recommended_needle_mm": {
+      "min": 3.75,
+      "max": 4.5
+    },
+    "source_url": "https://www.qingfibre.com/products/dashing-dk-equinox",
+    "collection_url": "https://www.qingfibre.com/collections/all-dk-weight"
+  },
+  {
+    "id": "purl-soho-linen-quill",
+    "brand": "Purl Soho",
+    "base": "Linen Quill",
+    "fiber_content": {
+      "fine_highland_wool": 50,
+      "alpaca": 35,
+      "linen": 15
+    },
+    "weight": "fingering",
+    "construction": "wool-alpaca-linen blend",
+    "skein_weight_g": 100,
+    "yardage_yd": 439,
+    "yardage_m": 410,
+    "gauge": "6.5-7.5 sts per inch",
+    "needle_size": "US 2-5 / 3-3.75 mm",
+    "hook_size": "C-E / 2.75-3.5 mm",
+    "care": "Hand wash and lay flat to dry.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/linen-quill.html?ps-pid=24969",
+    "notes": "Main 100g Linen Quill base, useful as a color reference for Linen Quill Minis."
+  },
+  {
+    "id": "purl-soho-knitting-yarn-dk",
+    "brand": "Purl Soho",
+    "base": "Knitting Yarn DK",
+    "fiber_content": {
+      "merino_wool": 100
+    },
+    "weight": "light worsted / DK",
+    "construction": "four-ply merino wool",
+    "skein_weight_g": 100,
+    "yardage_yd": 219,
+    "yardage_m": 200,
+    "gauge": "5-5.5 sts per inch",
+    "needle_size": "US 6-8 / 4-5 mm",
+    "hook_size": "G-H / 4-5 mm",
+    "care": "Hand wash cold, lay flat to dry.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/knitting-yarn-dk.html?ps-pid=44482",
+    "notes": "Soft, sturdy, springy DK-weight merino yarn. User stash includes 25g free mini balls, estimated from the 100g base specs."
+  },
+  {
+    "id": "purl-soho-cashmere-merino-bloom",
+    "brand": "Purl Soho",
+    "base": "Cashmere Merino Bloom",
+    "fiber_content": {
+      "extra_fine_merino_wool": 75,
+      "cashmere": 25
+    },
+    "weight": "light worsted / DK",
+    "construction": "two-ply merino-cashmere blend",
+    "skein_weight_g": 100,
+    "yardage_yd": 218,
+    "yardage_m": 199,
+    "gauge": "5-5.5 sts per inch",
+    "needle_size": "US 5-7 / 3.75-4.5 mm",
+    "hook_size": "E-G / 3.75-4.5 mm",
+    "care": "Hand wash cold, lay flat to dry.",
+    "milled_in": "Peru",
+    "source_url": "https://www.purlsoho.com/cashmere-merino-bloom.html?ps-pid=26102",
+    "notes": "Soft DK-weight merino-cashmere yarn with gentle halo and bloom."
+  },
+  {
+    "id": "purl-soho-blackbird-linen",
+    "brand": "Purl Soho",
+    "base": "Blackbird Linen",
+    "fiber_content": {
+      "french_linen": 100
+    },
+    "weight": "DK / light worsted",
+    "construction": "six loosely spun plies",
+    "skein_weight_g": 100,
+    "yardage_yd": 175,
+    "yardage_m": 160,
+    "gauge": "5.5-5.75 sts per inch",
+    "needle_size": "US 3-5 / 3.25-3.75 mm",
+    "hook_size": "D-F / 3.25-3.75 mm",
+    "care": "Machine wash delicate cold, lay flat to dry.",
+    "milled_in": "Japan",
+    "source_url": "https://www.purlsoho.com/blackbird-linen.html?ps-pid=31283",
+    "notes": "Cool-touch 100% linen yarn that softens with wash and wear."
+  }
+]
