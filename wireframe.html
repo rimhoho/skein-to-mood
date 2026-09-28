@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./wireframe.css?v=20260928-7" />
+  <link rel="stylesheet" href="./wireframe.css?v=20260928-8" />
 </head>
 <body>
   <header class="site-header">
@@ -44,14 +44,14 @@
       <div class="hero-side">
         <button id="heroLuckyButton" class="hero-lucky" type="button">
           <span>FEELING LUCKY?</span>
-          <small data-ko="실 + 패턴 + 도구를 바로 섞기" data-en="Mix yarn + pattern + tool">실 + 패턴 + 도구를 바로 섞기</small>
+          <small data-ko="실 + 패턴 + 취향 요소를 바로 섞기" data-en="Mix yarn + pattern + taste">실 + 패턴 + 취향 요소를 바로 섞기</small>
           <b aria-hidden="true">↻</b>
         </button>
         <div class="hero-index" aria-label="컬렉션 요약">
           <div><span data-ko="실" data-en="Yarn">실</span><strong>33</strong></div>
           <div><span data-ko="패턴" data-en="Patterns">패턴</span><strong>13</strong></div>
           <div><span data-ko="아이템" data-en="Items">아이템</span><strong>11</strong></div>
-          <div><span data-ko="취향" data-en="Taste">취향</span><strong>00</strong></div>
+          <div><span data-ko="취향" data-en="Taste">취향</span><strong>40</strong></div>
           <div><span data-ko="저장" data-en="Saved">저장</span><strong id="heroSavedCount">03</strong></div>
         </div>
       </div>
@@ -141,15 +141,15 @@
           <span class="mix-sign" aria-hidden="true">+</span>
 
           <article class="mix-slot" data-slot="element">
-            <button class="slot-detail-trigger" type="button" aria-label="KnitPro Ginger Grande 5-inch Set 도구 상세 보기">
-              <span class="slot-media element-media"><img id="elementImage" src="./assets/images/tools/knitting-needle-set-ginger-3.5inch.png" alt="KnitPro Ginger Grande 5-inch Set" /><span id="elementVisualLabel" hidden></span></span>
+            <button class="slot-detail-trigger" type="button" aria-label="Pattern reference 01 취향 요소 상세 보기">
+              <span class="slot-media element-media"><img id="elementImage" src="https://i.pinimg.com/474x/36/09/80/36098060bf30080736310c9e353b021f.jpg" alt="Pattern reference 01" /><span id="elementVisualLabel" hidden></span></span>
               <span class="slot-copy">
-                <span class="slot-label"><span>03</span><b data-ko="도구" data-en="Tool">도구</b></span>
-                <span class="slot-title" id="elementName">KnitPro Ginger Grande 5-inch Set</span>
-                <span class="slot-meta" id="elementMeta">Knitting needles · In use</span>
+                <span class="slot-label"><span>03</span><b data-ko="취향 요소" data-en="Taste">취향 요소</b></span>
+                <span class="slot-title" id="elementName">Pattern reference 01</span>
+                <span class="slot-meta" id="elementMeta">Pinterest · Pattern inspiration</span>
               </span>
             </button>
-            <button class="lock-button" type="button" aria-pressed="false" aria-label="도구 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
+            <button class="lock-button" type="button" aria-pressed="false" aria-label="취향 요소 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
           </article>
         </div>
 
@@ -220,8 +220,12 @@
           <div class="cabinet-filters"><span>CATEGORY</span><span>TYPE</span><span>DATE</span><span>STATUS</span></div>
         </a>
         <a class="cabinet-block" href="./taste.html#top">
-          <div class="cabinet-meta"><span>04 · TASTE</span><strong>00</strong></div>
-          <div class="cabinet-preview cabinet-preview-empty"><span data-ko="비어 있음 · PINTEREST 연결 준비" data-en="EMPTY · PINTEREST READY">비어 있음 · PINTEREST 연결 준비</span></div>
+          <div class="cabinet-meta"><span>04 · TASTE</span><strong>40</strong></div>
+          <div class="cabinet-preview">
+            <img src="https://i.pinimg.com/474x/36/09/80/36098060bf30080736310c9e353b021f.jpg" alt="취향 레퍼런스 01" />
+            <img src="https://i.pinimg.com/474x/dd/72/8a/dd728a458d8c710ac74fd474f63bbfd1.jpg" alt="취향 레퍼런스 02" />
+            <img src="https://i.pinimg.com/474x/44/9a/41/449a41f450cfa32f5d704f51c7b437fd.jpg" alt="취향 레퍼런스 03" />
+          </div>
           <h3 data-ko="취향 보관함" data-en="Taste Cabinet">취향 보관함</h3>
           <div class="cabinet-filters"><span>MOOD</span><span>COLOR</span><span>TEXTURE</span><span>TYPE</span></div>
         </a>
@@ -285,6 +289,6 @@
   </dialog>
 
   <footer class="site-footer"><strong>Skein to Mood</strong><span>WIREFRAME 01 · THE MIX ROOM</span></footer>
-  <script src="./wireframe.js" type="module"></script>
+  <script src="./wireframe.js?v=20260928-2" type="module"></script>
 </body>
 </html>

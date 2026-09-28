@@ -51,7 +51,7 @@ h1, h2, h3, p { margin-top: 0; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; min-height: 218px; padding: 30px clamp(24px, 6vw, 92px) 28px; border-bottom: 1px solid var(--ui-line); background: var(--offwhite); color: #242321; }
 .hero-copy { max-width: 680px; }
 .eyebrow { margin-bottom: 10px; font-family: var(--font-body); font-size: .76rem; font-weight: 700; letter-spacing: 0; }
-.hero h1 { margin-bottom: 7px; font-family: var(--font-title); font-size: clamp(2.6rem, 4.2vw, 4rem); font-weight: 500; line-height: .95; letter-spacing: 0; }
+.hero h1 { margin-bottom: 7px; font-family: var(--font-title); font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 500; line-height: .95; letter-spacing: 0; }
 .hero-note { max-width: 530px; margin-bottom: 0; font-family: var(--font-body); font-size: 1rem; }
 .hero-side { display: grid; gap: 10px; justify-items: stretch; }
 .hero-lucky { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 2px 18px; min-height: 64px; padding: 11px 15px; border: 1px solid var(--ui-line); border-radius: 2px; background: var(--offwhite-deep); color: var(--ink); text-align: left; }
@@ -304,7 +304,7 @@ html[data-theme="dark"] .mood-scale input::-moz-range-thumb { background: #f7f6f
   .site-nav { gap: 19px; font-size: .7rem; }
   .saved-counter { display: none; }
   .hero { grid-template-columns: 1fr; gap: 18px; min-height: 0; padding: 21px 20px 18px; }
-  .hero h1 { font-size: clamp(2.35rem, 11vw, 3.3rem); }
+  .hero h1 { font-size: clamp(2.05rem, 9vw, 2.8rem); }
   .hero-side { gap: 8px; justify-items: stretch; }
   .hero-lucky { width: 100%; }
   .hero-index { grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; }

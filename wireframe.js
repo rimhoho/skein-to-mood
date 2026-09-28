@@ -13,11 +13,11 @@ const mixes = {
     { name: "Basket Bag", meta: "Bag · Intermediate", image: "./assets/images/pattern/basket-bag.png?v=20260928-3" }
   ],
   element: [
-    { name: "Tulip ETIMO Red Crochet Hook Set", meta: "Crochet hooks · In use", image: "./assets/images/tools/croch-needle-set-red-tulip.png", visualLabel: "", details: { CATEGORY: "Tool", TYPE: "Crochet hooks", STATUS: "In use", CABINET: "My Items" } },
-    { name: "ChiaoGoo TWIST Blue Shorties", meta: "Knitting needles · In use", image: "./assets/images/tools/knitting-needle-set-chiaogu-blue-shorty-2inch.and.3inch.png", visualLabel: "", details: { CATEGORY: "Tool", TYPE: "Knitting needles", STATUS: "In use", CABINET: "My Items" } },
-    { name: "KnitPro Ginger Grande 5-inch Set", meta: "Knitting needles · In use", image: "./assets/images/tools/knitting-needle-set-ginger-3.5inch.png", visualLabel: "", details: { CATEGORY: "Tool", TYPE: "Knitting needles", STATUS: "In use", CABINET: "My Items" } },
-    { name: "Clover Takumi Combo Set", meta: "Knitting needles · In use", image: "./assets/images/tools/knitting-needle-set-takumi-5inch.png", visualLabel: "", details: { CATEGORY: "Tool", TYPE: "Knitting needles", STATUS: "In use", CABINET: "My Items" } },
-    { name: "Lotus Sahara 5-inch Set", meta: "Knitting needles · Loved", image: "", visualLabel: "LOTUS SAHARA", details: { CATEGORY: "Tool", TYPE: "Knitting needles", STATUS: "Loved", CABINET: "My Items" } }
+    { name: "Pattern reference 01", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/36/09/80/36098060bf30080736310c9e353b021f.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
+    { name: "Pattern reference 02", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/dd/72/8a/dd728a458d8c710ac74fd474f63bbfd1.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
+    { name: "Pattern reference 03", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/44/9a/41/449a41f450cfa32f5d704f51c7b437fd.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
+    { name: "Pattern reference 04", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/b8/68/2f/b8682f184982dfa419ad7f039dcb8932.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
+    { name: "Pattern reference 05", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/64/f0/cf/64f0cf52aec18d93fc497014c3d2c856.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } }
   ]
 };
 
@@ -48,15 +48,24 @@ const translations = {
 
 const STORAGE_KEY = "skein-to-mood:saved-mixes";
 const DEFAULT_SAVED_MIXES = [
-  { id: "mix-001", title: "Powder & Air", tags: "tender · hazy · rose", primary: "./assets/images/yarn/qing-fibre-melted-baby-suri-antique-rose.png", secondary: "./assets/images/pattern/harlequin-shawlette.png", savedDate: "2026-09-28", note: "부드러운 재료와 느린 리듬이 만나는 조합. 다음 프로젝트를 위한 출발점.", connections: { yarn: "Antique Rose", pattern: "Harlequin Shawlette", element: "KnitPro Ginger Grande 5-inch Set" } },
-  { id: "mix-002", title: "Night Geometry", tags: "quiet · graphic · deep", primary: "./assets/images/yarn/qing-fibre-yak-somnia.png", secondary: "./assets/images/pattern/joanna-hat.png", savedDate: "2026-09-28", note: "깊은 색과 또렷한 구조가 만나는 차분한 조합.", connections: { yarn: "Somnia", pattern: "Joanna Hat", element: "ChiaoGoo TWIST Blue Shorties" } },
-  { id: "mix-003", title: "Warm Interval", tags: "sunny · tactile · slow", primary: "./assets/images/yarn/purl-soho-estuary-yellow-saffron.png", secondary: "./assets/images/pattern/basket-bag.png?v=20260928-3", savedDate: "2026-09-28", note: "따뜻한 색과 손에 잡히는 구조를 천천히 이어가는 조합.", connections: { yarn: "Yellow Saffron", pattern: "Basket Bag", element: "Clover Takumi Combo Set" } }
+  { id: "mix-001", title: "Powder & Air", tags: "tender · hazy · rose", primary: "./assets/images/yarn/qing-fibre-melted-baby-suri-antique-rose.png", secondary: "./assets/images/pattern/harlequin-shawlette.png", savedDate: "2026-09-28", note: "부드러운 재료와 느린 리듬이 만나는 조합. 다음 프로젝트를 위한 출발점.", connections: { yarn: "Antique Rose", pattern: "Harlequin Shawlette", element: "Pattern reference 01" } },
+  { id: "mix-002", title: "Night Geometry", tags: "quiet · graphic · deep", primary: "./assets/images/yarn/qing-fibre-yak-somnia.png", secondary: "./assets/images/pattern/joanna-hat.png", savedDate: "2026-09-28", note: "깊은 색과 또렷한 구조가 만나는 차분한 조합.", connections: { yarn: "Somnia", pattern: "Joanna Hat", element: "Pattern reference 02" } },
+  { id: "mix-003", title: "Warm Interval", tags: "sunny · tactile · slow", primary: "./assets/images/yarn/purl-soho-estuary-yellow-saffron.png", secondary: "./assets/images/pattern/basket-bag.png?v=20260928-3", savedDate: "2026-09-28", note: "따뜻한 색과 손에 잡히는 구조를 천천히 이어가는 조합.", connections: { yarn: "Yellow Saffron", pattern: "Basket Bag", element: "Pattern reference 03" } }
 ];
 
 function loadSavedMixes() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    return Array.isArray(stored) ? stored : DEFAULT_SAVED_MIXES;
+    const saved = Array.isArray(stored) ? stored : DEFAULT_SAVED_MIXES;
+    return saved.map((mix, index) => ({
+      ...mix,
+      connections: {
+        ...mix.connections,
+        element: mixes.element.some((item) => item.name === mix.connections?.element)
+          ? mix.connections.element
+          : mixes.element[index % mixes.element.length].name
+      }
+    }));
   } catch {
     return DEFAULT_SAVED_MIXES;
   }
@@ -197,9 +206,9 @@ async function openMixItemDetail(type) {
     note = "실의 성격을 실제 형태와 구조로 연결하는 조합의 뼈대예요.";
   } else {
     const item = mixes.element.find((entry) => entry.name === name);
-    label = "TOOL";
-    rows = item?.details || { CATEGORY: "Tool", TYPE: meta.split(" · ")[0], CABINET: "My Items" };
-    note = "손에 익은 도구로 실과 패턴을 실제 작업으로 이어주는 조합의 실행 요소예요.";
+    label = "TASTE";
+    rows = item?.details || { CATEGORY: "Taste", TYPE: meta.split(" · ")[1], CABINET: "Taste" };
+    note = "취향 보관함에서 고른 이미지가 실과 패턴의 색, 질감, 분위기를 연결해요.";
   }
 
   const detailImage = document.querySelector("#mixItemImage");
@@ -348,8 +357,8 @@ let deleteArmed = false;
 function mixDetailMeta(item) {
   const savedDate = item.savedDate || "2026-09-28";
   return state.language === "ko"
-    ? { "구성": "실 · 패턴 · 도구", "저장일": savedDate, "기분": item.tags }
-    : { CONTENTS: "Yarn · Pattern · Tool", SAVED: savedDate, MOOD: item.tags };
+    ? { "구성": "실 · 패턴 · 취향 요소", "저장일": savedDate, "기분": item.tags }
+    : { CONTENTS: "Yarn · Pattern · Taste", SAVED: savedDate, MOOD: item.tags };
 }
 
 function patternSize(pattern = {}) {
@@ -358,8 +367,8 @@ function patternSize(pattern = {}) {
 
 function renderMixConnections(connections) {
   const copy = state.language === "ko"
-    ? { heading: "연결된 조각", yarn: "실", pattern: "패턴", element: "도구" }
-    : { heading: "Connected pieces", yarn: "Yarn", pattern: "Pattern", element: "Tool" };
+    ? { heading: "연결된 조각", yarn: "실", pattern: "패턴", element: "취향 요소" }
+    : { heading: "Connected pieces", yarn: "Yarn", pattern: "Pattern", element: "Taste" };
   document.querySelector("#detailConnections").innerHTML = `
     <div class="detail-subheading"><span>${copy.heading}</span><b>3</b></div>
     <button type="button"><span>${copy.yarn}</span><strong id="detailYarnName">${escapeHtml(connections.yarn)}</strong></button>
