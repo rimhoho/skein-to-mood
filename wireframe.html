@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ede6d6" />
+  <title>The Mix Room | Skein to Mood</title>
+  <meta name="description" content="실, 패턴, 좋아하는 요소를 오늘의 기분에 맞춰 조합하는 Skein to Mood 와이어프레임." />
+  <script src="./site-state.js?v=20260928-3"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./wireframe.css?v=20260928-7" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Skein to Mood 홈">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Skein to Mood</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="./index.html#stash" data-ko="실 보관함" data-en="Yarn">실 보관함</a>
+      <a href="./patterns.html#top" data-ko="패턴 보관함" data-en="Pattern">패턴 보관함</a>
+      <a href="./items.html#top" data-ko="나의 아이템" data-en="My Items">나의 아이템</a>
+      <a href="./taste.html#top" data-ko="취향 보관함" data-en="Taste">취향 보관함</a>
+    </nav>
+    <div class="header-actions">
+      <span class="saved-counter"><strong id="savedCount">03</strong> <span data-ko="믹스" data-en="mixes">믹스</span></span>
+      <div class="language-toggle" role="group" aria-label="언어 선택">
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+        <button class="active" type="button" data-language="ko" aria-pressed="true">한</button>
+      </div>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="다크 모드로 전환" aria-pressed="false">☀</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="pageTitle">
+      <div class="hero-copy">
+        <p class="eyebrow" data-ko="취향을 조합하는 작업실" data-en="A studio for mixing what you love">취향을 조합하는 작업실</p>
+        <h1 id="pageTitle">The Mix Room</h1>
+        <p class="hero-note" data-ko="좋아하는 것들을 모으고, 오늘의 기분대로 섞는다." data-en="Collect what you love. Mix what you feel.">좋아하는 것들을 모으고, 오늘의 기분대로 섞는다.</p>
+      </div>
+      <div class="hero-side">
+        <button id="heroLuckyButton" class="hero-lucky" type="button">
+          <span>FEELING LUCKY?</span>
+          <small data-ko="실 + 패턴 + 도구를 바로 섞기" data-en="Mix yarn + pattern + tool">실 + 패턴 + 도구를 바로 섞기</small>
+          <b aria-hidden="true">↻</b>
+        </button>
+        <div class="hero-index" aria-label="컬렉션 요약">
+          <div><span data-ko="실" data-en="Yarn">실</span><strong>33</strong></div>
+          <div><span data-ko="패턴" data-en="Patterns">패턴</span><strong>13</strong></div>
+          <div><span data-ko="아이템" data-en="Items">아이템</span><strong>11</strong></div>
+          <div><span data-ko="취향" data-en="Taste">취향</span><strong>00</strong></div>
+          <div><span data-ko="저장" data-en="Saved">저장</span><strong id="heroSavedCount">03</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mix" class="mix-room" aria-labelledby="mixTitle">
+      <aside id="mood-log" class="mood-checkin" aria-labelledby="moodTitle">
+        <div class="panel-heading">
+          <p class="eyebrow" data-ko="오늘의 체크인" data-en="Today's check-in">오늘의 체크인</p>
+          <span class="date-stamp">SEP 28</span>
+        </div>
+        <h2 id="moodTitle" data-ko="지금 어떤 결인가요?" data-en="What is your texture today?">지금 어떤 결인가요?</h2>
+
+        <div class="mood-scale">
+          <div class="scale-heading"><span data-ko="에너지" data-en="Energy">에너지</span><output id="energyOutput">고요한</output></div>
+          <input id="energyRange" type="range" min="0" max="4" value="1" aria-label="에너지" />
+          <div class="scale-ends"><span data-ko="잔잔함" data-en="Still">잔잔함</span><span data-ko="활기참" data-en="Alive">활기참</span></div>
+        </div>
+
+        <div class="mood-scale">
+          <div class="scale-heading"><span data-ko="촉감" data-en="Texture">촉감</span><output id="textureOutput">부드러운</output></div>
+          <input id="textureRange" type="range" min="0" max="4" value="1" aria-label="촉감" />
+          <div class="scale-ends"><span data-ko="포근함" data-en="Soft">포근함</span><span data-ko="선명함" data-en="Crisp">선명함</span></div>
+        </div>
+
+        <div class="mood-scale">
+          <div class="scale-heading"><span data-ko="색감" data-en="Color">색감</span><output id="colorOutput">차분한</output></div>
+          <input id="colorRange" type="range" min="0" max="4" value="2" aria-label="색감" />
+          <div class="scale-ends"><span data-ko="뮤트" data-en="Muted">뮤트</span><span data-ko="비비드" data-en="Vivid">비비드</span></div>
+        </div>
+
+        <fieldset class="mood-tags">
+          <legend data-ko="오늘의 단어" data-en="Words for today">오늘의 단어</legend>
+          <button class="selected" type="button" aria-pressed="true" data-ko="호기심" data-en="Curious">호기심</button>
+          <button type="button" aria-pressed="false" data-ko="다정함" data-en="Tender">다정함</button>
+          <button type="button" aria-pressed="false" data-ko="대담함" data-en="Bold">대담함</button>
+          <button type="button" aria-pressed="false" data-ko="느긋함" data-en="Leisurely">느긋함</button>
+        </fieldset>
+
+        <div class="mood-history">
+          <span data-ko="최근 7일" data-en="Last 7 days">최근 7일</span>
+          <div class="history-dots" aria-label="최근 7일 무드">
+            <i style="--tone:#8a6c53"></i><i style="--tone:#6f7952"></i><i style="--tone:#a88161"></i><i style="--tone:#77664d"></i><i style="--tone:#9a6559"></i><i style="--tone:#68714b"></i><i class="today" style="--tone:#c0a15c"></i>
+          </div>
+        </div>
+      </aside>
+
+      <div class="mix-stage">
+        <div class="stage-heading">
+          <div>
+            <p class="eyebrow" data-ko="오늘의 조합" data-en="Today's mix">오늘의 조합</p>
+            <h2 id="mixTitle" data-ko="세 가지를 섞어볼까요?" data-en="Let's mix three things">세 가지를 섞어볼까요?</h2>
+          </div>
+          <button id="luckyButton" class="lucky-button" type="button">
+            <span data-ko="FEELING LUCKY?" data-en="FEELING LUCKY?">FEELING LUCKY?</span>
+            <i aria-hidden="true">↻</i>
+          </button>
+        </div>
+
+        <div class="mix-slots" aria-live="polite">
+          <article class="mix-slot" data-slot="yarn">
+            <button class="slot-detail-trigger" type="button" aria-label="Conifer Green 실 상세 보기">
+              <span class="slot-media"><img id="yarnImage" src="./assets/images/yarn/purl-soho-echo-cashmere-conifer-green.png" alt="Conifer Green 실" /></span>
+              <span class="slot-copy">
+                <span class="slot-label"><span>01</span><b data-ko="실" data-en="Yarn">실</b></span>
+                <span class="slot-title" id="yarnName">Conifer Green</span>
+                <span class="slot-meta" id="yarnMeta">Echo Cashmere · Fingering</span>
+              </span>
+            </button>
+            <button class="lock-button" type="button" aria-pressed="false" aria-label="실 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
+          </article>
+
+          <span class="mix-sign" aria-hidden="true">+</span>
+
+          <article class="mix-slot" data-slot="pattern">
+            <button class="slot-detail-trigger" type="button" aria-label="Joanna Hat 패턴 상세 보기">
+              <span class="slot-media"><img id="patternImage" src="./assets/images/pattern/joanna-hat.png" alt="Joanna Hat 패턴 대표 이미지" /></span>
+              <span class="slot-copy">
+                <span class="slot-label"><span>02</span><b data-ko="패턴" data-en="Pattern">패턴</b></span>
+                <span class="slot-title" id="patternName">Joanna Hat</span>
+                <span class="slot-meta" id="patternMeta">Hat · Intermediate</span>
+              </span>
+            </button>
+            <button class="lock-button" type="button" aria-pressed="false" aria-label="패턴 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
+          </article>
+
+          <span class="mix-sign" aria-hidden="true">+</span>
+
+          <article class="mix-slot" data-slot="element">
+            <button class="slot-detail-trigger" type="button" aria-label="KnitPro Ginger Grande 5-inch Set 도구 상세 보기">
+              <span class="slot-media element-media"><img id="elementImage" src="./assets/images/tools/knitting-needle-set-ginger-3.5inch.png" alt="KnitPro Ginger Grande 5-inch Set" /><span id="elementVisualLabel" hidden></span></span>
+              <span class="slot-copy">
+                <span class="slot-label"><span>03</span><b data-ko="도구" data-en="Tool">도구</b></span>
+                <span class="slot-title" id="elementName">KnitPro Ginger Grande 5-inch Set</span>
+                <span class="slot-meta" id="elementMeta">Knitting needles · In use</span>
+              </span>
+            </button>
+            <button class="lock-button" type="button" aria-pressed="false" aria-label="도구 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
+          </article>
+        </div>
+
+        <div class="mix-conclusion">
+          <div>
+            <span data-ko="이 조합의 이유" data-en="Why this mix">이 조합의 이유</span>
+            <p id="mixReason">고요한 에너지에 짙은 초록과 부드러운 리브 조직이 자연스럽게 이어져요.</p>
+          </div>
+          <button id="saveMixButton" class="save-button" type="button" data-ko="조합 저장" data-en="Save mix">조합 저장</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="saved" class="saved-mixes" aria-labelledby="savedTitle">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-ko="다시 보고 싶은 조합" data-en="Combinations worth keeping">다시 보고 싶은 조합</p>
+          <h2 id="savedTitle" data-ko="저장한 믹스" data-en="Saved mixes">저장한 믹스</h2>
+        </div>
+        <a href="#library" data-ko="모두 보기" data-en="View all">모두 보기</a>
+      </div>
+      <div class="feed-toolbar" aria-label="저장한 믹스 보기 옵션">
+        <div class="feed-tabs" role="tablist" aria-label="콘텐츠 종류">
+          <button class="active" type="button" role="tab" aria-selected="true" data-ko="전체" data-en="All">전체</button>
+          <button type="button" role="tab" aria-selected="false" data-ko="실" data-en="Yarn">실</button>
+          <button type="button" role="tab" aria-selected="false" data-ko="패턴" data-en="Pattern">패턴</button>
+          <button type="button" role="tab" aria-selected="false" data-ko="취향" data-en="Taste">취향</button>
+        </div>
+        <span class="feed-count">3개의 조합</span>
+      </div>
+      <div class="saved-grid"></div>
+    </section>
+
+    <section id="library" class="library-index" aria-labelledby="libraryTitle">
+      <div class="library-copy">
+        <p class="eyebrow" data-ko="네 개의 캐비닛" data-en="Four cabinets">네 개의 캐비닛</p>
+        <h2 id="libraryTitle" data-ko="조각은 따로, 믹스는 함께" data-en="Separate pieces, mixed together">조각은 따로, 믹스는 함께</h2>
+      </div>
+      <div class="cabinet-grid">
+        <a class="cabinet-block" href="./index.html#stash">
+          <div class="cabinet-meta"><span>01 · YARN</span><strong>33</strong></div>
+          <div class="cabinet-preview">
+            <img src="./assets/images/yarn/purl-soho-echo-cashmere-conifer-green.png" alt="Conifer Green" />
+            <img src="./assets/images/yarn/qing-fibre-melted-baby-suri-antique-rose.png" alt="Antique Rose" />
+            <img src="./assets/images/yarn/purl-soho-estuary-yellow-saffron.png" alt="Yellow Saffron" />
+          </div>
+          <h3 data-ko="실 보관함" data-en="Yarn Cabinet">실 보관함</h3>
+          <div class="cabinet-filters"><span>COLOR</span><span>WEIGHT</span><span>FIBER</span><span>BRAND</span></div>
+        </a>
+        <a class="cabinet-block" href="./patterns.html#top">
+          <div class="cabinet-meta"><span>02 · PATTERN</span><strong>13</strong></div>
+          <div class="cabinet-preview">
+            <img src="./assets/images/pattern/joanna-hat.png" alt="Joanna Hat 패턴 대표 이미지" />
+            <img src="./assets/images/pattern/cardigan-no-4.png?v=20260928-2" alt="Cardigan No. 4 패턴 대표 이미지" />
+            <img src="./assets/images/pattern/basket-bag.png?v=20260928-3" alt="Basket Bag 패턴 대표 이미지" />
+          </div>
+          <h3 data-ko="패턴 보관함" data-en="Pattern Cabinet">패턴 보관함</h3>
+          <div class="cabinet-filters"><span>TYPE</span><span>GAUGE</span><span>SKILL</span><span>SHAPE</span></div>
+        </a>
+        <a class="cabinet-block" href="./items.html#top">
+          <div class="cabinet-meta"><span>03 · MY ITEMS</span><strong>11</strong></div>
+          <div class="cabinet-preview">
+            <img src="./assets/images/madeByMe/hat_2026.03.15.png" alt="직접 만든 니트 모자" />
+            <img src="./assets/images/madeByMe/scarf_2026.03.05.png" alt="직접 만든 니트 스카프" />
+            <img src="./assets/images/madeByMe/bag_2026.04.05.png?v=20260928-2" alt="직접 만든 니트 가방" />
+          </div>
+          <h3 data-ko="나의 아이템 보관함" data-en="My Items Cabinet">나의 아이템 보관함</h3>
+          <div class="cabinet-filters"><span>CATEGORY</span><span>TYPE</span><span>DATE</span><span>STATUS</span></div>
+        </a>
+        <a class="cabinet-block" href="./taste.html#top">
+          <div class="cabinet-meta"><span>04 · TASTE</span><strong>00</strong></div>
+          <div class="cabinet-preview cabinet-preview-empty"><span data-ko="비어 있음 · PINTEREST 연결 준비" data-en="EMPTY · PINTEREST READY">비어 있음 · PINTEREST 연결 준비</span></div>
+          <h3 data-ko="취향 보관함" data-en="Taste Cabinet">취향 보관함</h3>
+          <div class="cabinet-filters"><span>MOOD</span><span>COLOR</span><span>TEXTURE</span><span>TYPE</span></div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="mixItemDialog" class="detail-dialog mix-item-dialog" aria-labelledby="mixItemTitle">
+    <div class="detail-shell">
+      <div class="detail-visual mix-item-visual"><img id="mixItemImage" src="" alt="" /></div>
+      <aside class="detail-panel">
+        <div class="detail-actions"><button id="mixItemClose" type="button" aria-label="닫기">×</button></div>
+        <p id="mixItemLabel" class="detail-label">YARN</p>
+        <h2 id="mixItemTitle"></h2>
+        <p id="mixItemTags" class="detail-tags"></p>
+        <dl id="mixItemMeta" class="detail-meta"></dl>
+        <div class="detail-note">
+          <span data-ko="믹스에서의 역할" data-en="Role in this mix">믹스에서의 역할</span>
+          <p id="mixItemNote"></p>
+        </div>
+      </aside>
+    </div>
+  </dialog>
+
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle">
+    <div class="detail-shell">
+      <div class="detail-visual">
+        <img id="detailPrimaryImage" src="./assets/images/yarn/qing-fibre-melted-baby-suri-antique-rose.png" alt="Powder &amp; Air primary" />
+        <button id="detailPatternThumbnail" class="detail-secondary" type="button" aria-label="Harlequin Shawlette 패턴 상세 보기" title="패턴 상세 보기">
+          <img id="detailSecondaryImage" src="./assets/images/pattern/harlequin-shawlette.png" alt="Harlequin Shawlette 패턴 대표 이미지" />
+        </button>
+      </div>
+      <aside class="detail-panel">
+        <div class="detail-actions">
+          <button id="detailDelete" class="detail-delete" type="button" aria-label="저장한 믹스 삭제" title="저장한 믹스 삭제">삭제</button>
+          <button id="detailBack" type="button" aria-label="믹스 상세로 돌아가기" title="믹스 상세로 돌아가기" hidden>↩</button>
+          <button id="detailPrevious" type="button" aria-label="이전 조합">←</button>
+          <button id="detailNext" type="button" aria-label="다음 조합">→</button>
+          <button id="detailClose" type="button" aria-label="닫기">×</button>
+        </div>
+        <p id="detailLabel" class="detail-label">MIX 001</p>
+        <h2 id="detailTitle">Powder &amp; Air</h2>
+        <p id="detailTags" class="detail-tags">tender · hazy · rose</p>
+        <dl id="detailMeta" class="detail-meta">
+          <div><dt data-ko="구성" data-en="Contents">구성</dt><dd data-ko="실 · 패턴 · 취향" data-en="Yarn · Pattern · Taste">실 · 패턴 · 취향</dd></div>
+          <div><dt data-ko="저장일" data-en="Saved">저장일</dt><dd>SEP 28, 2026</dd></div>
+          <div><dt data-ko="기분" data-en="Mood">기분</dt><dd data-ko="고요함 · 호기심" data-en="Still · Curious">고요함 · 호기심</dd></div>
+        </dl>
+        <div id="detailConnections" class="detail-connections">
+          <div class="detail-subheading"><span data-ko="연결된 조각" data-en="Connected pieces">연결된 조각</span><b>3</b></div>
+          <button type="button"><span data-ko="실" data-en="Yarn">실</span><strong id="detailYarnName">Antique Rose</strong></button>
+          <button id="detailPatternConnection" type="button"><span data-ko="패턴" data-en="Pattern">패턴</span><strong id="detailPatternName">Long Pause</strong></button>
+          <button type="button"><span data-ko="취향" data-en="Taste">취향</span><strong id="detailTasteName">Powdered light</strong></button>
+        </div>
+        <div id="detailNote" class="detail-note">
+          <span id="detailNoteLabel" data-ko="메모" data-en="Note">메모</span>
+          <p id="detailNoteText" data-ko="부드러운 재료와 느린 리듬이 만나는 조합. 다음 프로젝트를 위한 출발점." data-en="Soft material meets a slow rhythm. A starting point for the next project.">부드러운 재료와 느린 리듬이 만나는 조합. 다음 프로젝트를 위한 출발점.</p>
+        </div>
+      </aside>
+    </div>
+  </dialog>
+
+  <footer class="site-footer"><strong>Skein to Mood</strong><span>WIREFRAME 01 · THE MIX ROOM</span></footer>
+  <script src="./wireframe.js" type="module"></script>
+</body>
+</html>

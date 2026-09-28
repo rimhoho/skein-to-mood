@@ -3,172 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Skein to Mood — Yarn Closet & Knit Planning Journal</title>
-  <meta
-    name="description"
-    content="A visual yarn closet and knit planning journal for tracking stash, building moodboards, and finding patterns."
-  />
-
-  <link rel="stylesheet" href="./styles.css" />
+  <meta name="theme-color" content="#f6f3ec" />
+  <title>My Stash | Skein to Mood</title>
+  <meta name="description" content="색상, 굵기, 브랜드와 소재로 찾아보는 개인 실 컬렉션." />
+  <script src="./site-state.js?v=20260928-3"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css?v=20260928-7" />
 </head>
-
 <body>
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Skein to Mood home">
-      <span class="logo-mark">◌</span>
+    <a class="brand" href="./wireframe.html#top" aria-label="Skein to Mood 홈" data-i18n-aria-label="brandHome">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
       <span>Skein to Mood</span>
     </a>
-
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#closet">Closet</a>
-      <a href="#moodboards">Moodboards</a>
-      <a href="#patterns">Patterns</a>
-      <a href="#journal">Journal</a>
-      <a href="#about">About</a>
+    <nav class="site-nav" aria-label="주요 메뉴" data-i18n-aria-label="mainMenu">
+      <a class="active" href="./index.html#stash" data-i18n="navYarn">Yarn</a>
+      <a href="./patterns.html#top" data-i18n="navPattern">Pattern</a>
+      <a href="./items.html#top" data-i18n="navItems">My Items</a>
+      <a href="./taste.html#top" data-i18n="navTaste">Taste</a>
     </nav>
-
-    <a class="nav-pill" href="#closet">My Closet</a>
+    <div class="header-actions">
+      <a class="header-count" href="#stash"><strong id="headerCount">0</strong> <span data-i18n="skeins">skeins</span></a>
+      <div class="language-toggle" role="group" aria-label="언어 선택" data-i18n-aria-label="languageSelector">
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+        <button type="button" data-language="ko" aria-pressed="true">한</button>
+      </div>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="다크 모드로 전환" aria-pressed="false">☀</button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero color-smoke">
-      <div class="hero-copy">
-        <p class="eyebrow">Yarn-first planning journal</p>
-        <h1>
-          Your Yarn<br />
-          Closet Is<br />
-          A Mood.
-        </h1>
-        <p class="hero-text">
-          Track your stash, build color stories, and plan your next knit from the skein up.
-        </p>
-
-        <div class="button-row">
-          <a class="button button-dark" href="#closet">Browse Closet</a>
-          <a class="button button-rose" href="#moodboards">Build Moodboard</a>
-        </div>
+    <section class="dashboard-hero" aria-labelledby="pageTitle">
+      <div class="hero-heading">
+        <p class="eyebrow" data-i18n="heroEyebrow">Personal yarn archive</p>
+        <h1 id="pageTitle" data-i18n="heroTitle">My Stash</h1>
+        <p class="hero-note" data-i18n="heroNote">모아둔 실을 색과 촉감으로 다시 만나는 작은 클로젯.</p>
       </div>
-
-      <div class="hero-card">
-        <p class="card-label">Featured colorway</p>
-        <h2>Smoke Over Rothko</h2>
-        <p>
-          Smoky blue-gray halo over warm taupe, soft oatmeal, antique rose, and deep plum.
-        </p>
-
-        <div class="hero-yarn-visual">
-          <div class="skein skein-a"></div>
-          <div class="skein skein-b"></div>
-          <div class="swatch"></div>
-        </div>
-      </div>
+      <dl class="stats" aria-label="Stash summary" data-i18n-aria-label="stashSummary">
+        <div><dt data-i18n="statYarns">Yarns</dt><dd id="itemStat">--</dd></div>
+        <div><dt data-i18n="statSkeins">Skeins</dt><dd id="skeinStat">--</dd></div>
+        <div><dt data-i18n="statBrands">Brands</dt><dd id="brandStat">--</dd></div>
+        <div><dt data-i18n="statBases">Bases</dt><dd id="baseStat">--</dd></div>
+      </dl>
     </section>
 
-    <section id="closet" class="section color-rothko">
-      <div class="section-intro">
+    <section id="stash" class="stash-section" aria-labelledby="stashTitle">
+      <div class="section-heading">
         <div>
-          <p class="eyebrow">Virtual stash</p>
-          <h2>Stash, but<br />make it visual.</h2>
+          <p class="eyebrow" data-i18n="collectionEyebrow">The collection</p>
+          <h2 id="stashTitle" data-i18n="collectionTitle">Stash library</h2>
         </div>
-        <p>
-          실의 브랜드, 컬러웨이, 재질, 수량, 무드, 어울리는 패턴을 한눈에 보는 나만의 니트 클로젯.
-        </p>
+        <button id="mobileFilterButton" class="mobile-filter-button" type="button" aria-controls="filters" aria-expanded="false">
+          <span data-i18n="filters">Filters</span> <span id="mobileFilterCount" hidden>0</span>
+        </button>
       </div>
 
-      <div id="yarnGrid" class="yarn-grid" aria-live="polite"></div>
-    </section>
+      <div class="stash-layout">
+        <aside id="filters" class="filters" aria-label="실 필터" data-i18n-aria-label="yarnFilters">
+          <div class="filter-heading">
+            <h3 data-i18n="filters">Filters</h3>
+            <button id="resetFilters" class="text-button" type="button" data-i18n="reset">Reset</button>
+          </div>
 
-    <section id="moodboards" class="section color-rose">
-      <div class="section-intro wide">
-        <p class="eyebrow">Color stories</p>
-        <h2>Color first.<br />Pattern later.</h2>
-        <p>
-          오늘의 실이 가진 색과 질감을 먼저 보고, 그 다음에 어울리는 형태를 찾아가기.
-        </p>
-      </div>
+          <label class="search-field" for="searchInput">
+            <span data-i18n="search">Search</span>
+            <input id="searchInput" type="search" placeholder="Colorway, base, mood..." data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
+          </label>
 
-      <div class="mood-strip">
-        <article class="mood-chip">
-          <span class="chip chip-smoky"></span>
-          <strong>smoky neutral</strong>
-        </article>
+          <fieldset class="filter-group">
+            <legend data-i18n="brand">Brand</legend>
+            <div id="brandFilters" class="choice-list"></div>
+          </fieldset>
 
-        <article class="mood-chip">
-          <span class="chip chip-oat"></span>
-          <strong>oatmeal beige</strong>
-        </article>
+          <fieldset class="filter-group">
+            <legend data-i18n="weight">Weight</legend>
+            <div id="weightFilters" class="choice-list"></div>
+          </fieldset>
 
-        <article class="mood-chip">
-          <span class="chip chip-lilac"></span>
-          <strong>soft lilac gray</strong>
-        </article>
+          <label class="select-field" for="baseFilter">
+            <span data-i18n="yarnBase">Yarn base</span>
+            <select id="baseFilter"><option value="all">All bases</option></select>
+          </label>
 
-        <article class="mood-chip">
-          <span class="chip chip-rose"></span>
-          <strong>antique rose</strong>
-        </article>
+          <label class="select-field" for="fiberFilter">
+            <span data-i18n="fiber">Fiber</span>
+            <select id="fiberFilter"><option value="all">All fibers</option></select>
+          </label>
 
-        <article class="mood-chip">
-          <span class="chip chip-plum"></span>
-          <strong>deep plum</strong>
-        </article>
-      </div>
-    </section>
+          <fieldset id="colors" class="filter-group color-filter-group">
+            <legend data-i18n="color">Color</legend>
+            <div id="colorFilters" class="color-choices"></div>
+          </fieldset>
+        </aside>
 
-    <section id="patterns" class="section color-plum">
-      <div class="section-intro">
-        <div>
-          <p class="eyebrow">Pattern match</p>
-          <h2>What should<br />this skein<br />become?</h2>
+        <div class="collection">
+          <div class="collection-toolbar">
+            <p><strong id="resultCount">0</strong> <span data-i18n="yarns">yarns</span></p>
+            <div class="toolbar-controls">
+              <label class="sort-control" for="sortSelect">
+                <span class="sr-only" data-i18n="sort">정렬</span>
+                <select id="sortSelect">
+                  <option value="brand" data-i18n="sortBrand">Brand A-Z</option>
+                  <option value="colorway" data-i18n="sortColorway">Colorway A-Z</option>
+                  <option value="quantity" data-i18n="sortQuantity">Most skeins</option>
+                  <option value="weight" data-i18n="sortWeight">Weight</option>
+                </select>
+              </label>
+              <div class="view-toggle" role="group" aria-label="보기 방식" data-i18n-aria-label="viewMode">
+                <button class="active" type="button" data-view="grid" aria-pressed="true" data-i18n="grid">Grid</button>
+                <button type="button" data-view="list" aria-pressed="false" data-i18n="list">List</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="activeFilters" class="active-filters" aria-live="polite"></div>
+          <div id="yarnGrid" class="yarn-grid" aria-live="polite"></div>
+          <div id="emptyState" class="empty-state" hidden>
+            <p class="empty-symbol" aria-hidden="true">○</p>
+            <h3 data-i18n="emptyTitle">No yarns found</h3>
+            <p data-i18n="emptyNote">필터를 조금 넓혀보세요.</p>
+            <button id="emptyReset" class="primary-button" type="button" data-i18n="clearFilters">Clear filters</button>
+          </div>
         </div>
-        <p>
-          실의 굵기, 드레이프, 헤일로, 색 대비를 기준으로 어울리는 패턴을 후보로 모아두기.
-        </p>
-      </div>
-
-      <div class="pattern-grid">
-        <article class="pattern-card">
-          <div class="pattern-image pattern-cardigan"></div>
-          <h3>Everyday Cardigan</h3>
-          <p>Yak Single + Baby Suri 조합으로 부드러운 레이어링 가디건.</p>
-          <span>Top-down</span>
-          <span>Fingering</span>
-        </article>
-
-        <article class="pattern-card">
-          <div class="pattern-image pattern-shawl"></div>
-          <h3>Painterly Shawl</h3>
-          <p>컬러가 흐르는 실을 가장 잘 보여주는 넓은 면적의 숄.</p>
-          <span>One skein</span>
-          <span>Soft drape</span>
-        </article>
-
-        <article class="pattern-card">
-          <div class="pattern-image pattern-hat"></div>
-          <h3>Cloudline Hat</h3>
-          <p>스모키한 수리 헤일로를 살린 가볍고 포근한 모자.</p>
-          <span>Quick knit</span>
-          <span>Suri friendly</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="journal" class="section color-oatmeal">
-      <div class="journal-card">
-        <p class="eyebrow">Journal note</p>
-        <h2>From skein<br />to mood.</h2>
-
-        <p>
-          뉴욕에서 우연히 시작한 뜨개가 목도리, 넥워머, 가방, 버킷햇, 니트모자로 이어졌고,
-          어느새 손염색실을 모으는 무서운 길에 들어섰다.
-        </p>
-
-        <p>
-          Skein to Mood는 쌓여가는 실을 가상 클로젯처럼 기록하고,
-          각 실이 가진 색과 재질을 무드보드로 풀어내며,
-          그 실에 어울리는 패턴을 찾아가는 니트 플래닝 저널.
-        </p>
       </div>
     </section>
   </main>
@@ -176,16 +134,17 @@
   <footer id="about" class="site-footer">
     <div>
       <strong>Skein to Mood</strong>
-      <p>A visual yarn closet & knit planning journal.</p>
+      <p data-i18n="footerNote">A personal yarn closet, catalogued by color and feeling.</p>
     </div>
-
-    <div class="footer-links">
-      <a href="#closet">Closet</a>
-      <a href="#moodboards">Moodboards</a>
-      <a href="#patterns">Patterns</a>
-    </div>
+    <a href="#top" data-i18n="backToTop">Back to top ↑</a>
   </footer>
 
-  <script src="./script.js"></script>
+  <dialog id="yarnDialog" class="yarn-dialog" aria-labelledby="dialogTitle">
+    <button id="closeDialog" class="dialog-close" type="button" aria-label="상세 정보 닫기" data-i18n-aria-label="closeDetails">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <div id="filterBackdrop" class="filter-backdrop" hidden></div>
+  <script src="./script.js" type="module"></script>
 </body>
 </html>

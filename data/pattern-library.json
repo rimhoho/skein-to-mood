@@ -1,0 +1,814 @@
+[
+  {
+    "id": "purl-soho-basket-bag",
+    "title": "Basket Bag",
+    "brand": "Purl Soho",
+    "designer": "Hiromi Glover",
+    "craft": "knitting",
+    "category": "bag",
+    "pattern_access": {
+      "type": "free_online",
+      "url": "https://www.purlsoho.com/create/2025/08/08/basket-bag/",
+      "published": "2025-08-08"
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/basket-bag.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\BasketBag.png",
+      "source_url": "https://www.purlsoho.com/create/2025/08/08/basket-bag/",
+      "alt": "Basket Bag by Purl Soho",
+      "usage_note": "User-provided pattern stash image. Original pattern and source page remain credited separately."
+    },
+    "recommended_yarn": {
+      "brand": "Purl Soho",
+      "base": "Blackbird Linen",
+      "base_id": "purl-soho-blackbird-linen",
+      "fiber": "100% French linen",
+      "weight": "DK / light worsted",
+      "construction_note": "Worked mostly with yarn held double for a dense bag fabric.",
+      "skein": {
+        "weight_g": 100,
+        "yardage_yd": 175,
+        "yardage_m": 160
+      },
+      "colors_used": [
+        "Ink Blue",
+        "Galapagos Teal"
+      ],
+      "quantity": [
+        {
+          "size": "Small",
+          "skeins": 2,
+          "yardage_yd": 330
+        },
+        {
+          "size": "Large",
+          "skeins": 4,
+          "yardage_yd": 570
+        }
+      ]
+    },
+    "gauge": {
+      "stitches": 20,
+      "rounds": 26,
+      "over": "4 in / 10 cm",
+      "stitch_pattern": "stockinette stitch",
+      "yarn_held": "double",
+      "needle": "US 6 / 4 mm"
+    },
+    "tools": [
+      "US 6 / 4 mm 16-inch circular needles",
+      "US 6 / 4 mm 24- or 32-inch circular needles",
+      "US 5 / 3.75 mm double pointed needles for I-cord",
+      "removable stitch markers",
+      "crochet hook and scrap yarn for provisional cast on",
+      "tapestry needle"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "finished_circumference_in": 24,
+        "finished_height_in": 6,
+        "base_in": "10.25 x 4.5",
+        "handle_total_length_in": 10,
+        "handle_drop_in": 5
+      },
+      {
+        "name": "Large",
+        "finished_circumference_in": 32.75,
+        "finished_height_in": 8,
+        "base_in": "14.25 x 6.5",
+        "handle_total_length_in": 13,
+        "handle_drop_in": 6.5
+      }
+    ],
+    "techniques": [
+      "knit in the round",
+      "yarn held double",
+      "slip-stitch columns",
+      "attached I-cord",
+      "detached I-cord handles",
+      "provisional cast on",
+      "Kitchener stitch",
+      "whipstitch seam",
+      "wet blocking"
+    ],
+    "difficulty": "easy/intermediate",
+    "mood_tags": [
+      "structured",
+      "minimal",
+      "linen",
+      "utilitarian",
+      "market bag"
+    ],
+    "stash_match": {
+      "fiber_categories": [
+        "linen",
+        "plant fiber"
+      ],
+      "weight_categories": [
+        "dk",
+        "light worsted"
+      ],
+      "best_for": [
+        "sturdy bag fabric",
+        "warm-weather accessory",
+        "dark saturated colorways"
+      ]
+    },
+    "notes": "Catalog entry only. Keep the full making instructions on the original pattern page."
+  },
+  {
+    "id": "my-favourite-things-knitwear-beanie-no-6",
+    "title": "Beanie No. 6",
+    "brand": "My Favourite Things Knitwear",
+    "designer": null,
+    "craft": "knitting",
+    "category": "hat",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\BEANIENO6.ENG.pdf",
+      "rights_note": "Private use only; do not copy, redistribute, or sell the pattern."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/beanie-no-6.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\BEANIENO6.png",
+      "alt": "Beanie No. 6 by My Favourite Things Knitwear"
+    },
+    "recommended_yarn": {
+      "lower_section": {
+        "brand": "Gepard",
+        "base": "Teddy Dear",
+        "skein": { "weight_g": 50, "length_m": 75 },
+        "quantity_g_by_size": [50, 100, 100, 100],
+        "construction_note": "Held single"
+      },
+      "upper_section_options": [
+        { "brand": "Gepard", "base": "Woolia", "skein": { "weight_g": 50, "length_m": 133 } },
+        { "brand": "Gepard", "base": "Pura Lana", "skein": { "weight_g": 50, "length_m": 115 } },
+        { "brand": "Gepard", "base": "Eco Cashmere Vintage", "skein": { "weight_g": 50, "length_m": 150 } }
+      ],
+      "upper_quantity_g_by_size": [50, 50, 50, 50],
+      "upper_construction_note": "Hold two strands of the selected yarn together",
+      "sample_colors": ["Teddy Dear 104 Light Beige", "Eco Cashmere Vintage 110 Nougat"]
+    },
+    "gauge": {
+      "stitches": 15,
+      "rows": 24,
+      "over": "10 x 10 cm / 4 x 4 in",
+      "stitch_pattern": "stockinette stitch",
+      "needle": "4.5 mm / US 7"
+    },
+    "tools": [
+      "4.5 mm / US 7 circular needles, 40 or 80 cm",
+      "tapestry needle",
+      "stitch markers"
+    ],
+    "sizes": [
+      { "name": "XXS/XS", "head_circumference_cm": "49-51" },
+      { "name": "XS/S", "head_circumference_cm": "53-55" },
+      { "name": "S/M", "head_circumference_cm": "55-57" },
+      { "name": "M/L", "head_circumference_cm": "58-60" }
+    ],
+    "techniques": ["knit in the round", "bottom-up construction", "double-folded brim", "crown decreases", "applied I-cord"],
+    "mood_tags": ["chunky", "shearling", "sculptural", "winter", "unisex"],
+    "stash_match": {
+      "weight_categories": ["bulky texture plus light yarn held double"],
+      "best_for": ["contrasting textures", "warm structured hats", "neutral color pairings"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "starcrossed-knits-brigitte-headband",
+    "title": "Brigitte Headband",
+    "brand": "Starcrossed Knits",
+    "designer": "Tamara",
+    "craft": "knitting",
+    "category": "headband",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Brigitte+Headband.pdf",
+      "rights_note": "Personal, non-commercial use only."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/brigitte-headband.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\BrigitteHeadband.png",
+      "alt": "Brigitte Headband by Starcrossed Knits"
+    },
+    "recommended_yarn": {
+      "brand": "Knit Picks",
+      "base": "Swish Worsted",
+      "weight": "worsted",
+      "quantity": { "yardage_yd": 35, "yardage_m": 32 },
+      "substitution_note": "Any comparable worsted-weight yarn"
+    },
+    "gauge": {
+      "stitches": 20,
+      "rows": 26,
+      "over": "4 in / 10 cm"
+    },
+    "tools": ["5 mm / US 8 knitting needles, straight or circular", "tapestry needle"],
+    "sizes": [
+      { "name": "One size / customizable", "width_in": 2.5, "width_cm": 6.5, "length_in": 20, "length_cm": 51 }
+    ],
+    "techniques": ["long-tail cast on", "double knitting", "double-knitting bind off", "mattress stitch", "seaming"],
+    "difficulty": "easy",
+    "mood_tags": ["retro", "quick knit", "scrap friendly", "double thick", "giftable"],
+    "stash_match": {
+      "weight_categories": ["worsted"],
+      "best_for": ["small leftovers", "soft next-to-skin yarn", "quick gifts"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "my-favourite-things-knitwear-cardigan-no-4",
+    "title": "Cardigan No. 4",
+    "brand": "My Favourite Things Knitwear",
+    "designer": null,
+    "craft": "knitting",
+    "category": "cardigan",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\CARDIGANNO4.ENG.1.pdf",
+      "rights_note": "Refer to the PDF for the pattern's usage terms."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/cardigan-no-4.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\CARDIGANNO4.png",
+      "alt": "Cardigan No. 4 by My Favourite Things Knitwear"
+    },
+    "recommended_yarn": {
+      "brand": "Knitting for Olive",
+      "base": "Soft Silk Mohair",
+      "skein": { "weight_g": 25, "length_m": 225 },
+      "construction_note": "Hold three strands together",
+      "quantity_total_g_by_size": [300, 300, 300, 375, 375],
+      "one_color_quantity_g_by_size": [275, 275, 300, 325, 350],
+      "sample_colors": ["Soft Rose", "Dusty Artichoke", "Soft Blue"]
+    },
+    "gauge": {
+      "stitches": 13,
+      "rows": 26,
+      "over": "10 x 10 cm / 4 x 4 in",
+      "stitch_pattern": "half fisherman's rib",
+      "needle": "6 mm / US 10",
+      "counting_note": "26 worked rows are counted as 13 visible fisherman's-rib rows."
+    },
+    "tools": [
+      "6 mm / US 10 circular needles, 80 cm",
+      "4.5 mm / US 7 circular needles, 80 cm",
+      "optional 4.5 mm / US 7 double-pointed needles",
+      "four 24 mm / 1 in buttons"
+    ],
+    "sizes": [
+      { "name": "XS", "length_cm": 50, "circumference_cm": 110 },
+      { "name": "S", "length_cm": 52, "circumference_cm": 114 },
+      { "name": "M", "length_cm": 54, "circumference_cm": 119 },
+      { "name": "L", "length_cm": 55, "circumference_cm": 122 },
+      { "name": "XL", "length_cm": 58, "circumference_cm": 128 }
+    ],
+    "fit": "Cropped oversized fit with approximately 15-20 cm / 6-8 in positive ease.",
+    "techniques": ["top-down construction", "raglan increases", "half fisherman's rib", "provisional cast on", "buttonholes", "sleeves in the round"],
+    "mood_tags": ["1980s", "voluminous", "cropped", "airy", "deep neckline"],
+    "stash_match": {
+      "weight_categories": ["lace held triple"],
+      "best_for": ["mohair color blending", "lightweight volume", "tonal three-color combinations"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "qing-studio-harlequin-shawlette",
+    "title": "Harlequin Shawlette",
+    "brand": "Qing Studio",
+    "designer": "Qing Studio",
+    "craft": "knitting",
+    "category": "shawl",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Harlequin Shawlette Pattern v2.0 - March 2026.pdf",
+      "version": "2.0",
+      "published": "2026-03",
+      "rights_note": "Personal use only; do not reproduce, distribute, or sell the pattern."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/harlequin-shawlette.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\HarlequinShawlette.png",
+      "alt": "Harlequin Shawlette by Qing Studio"
+    },
+    "recommended_yarn": {
+      "main_color": {
+        "base": "Dashing Sassy",
+        "fiber": "100% ultrafine South African merino",
+        "weight": "fingering",
+        "skein": { "weight_g": 100, "length_m": 400, "yardage_yd": 437 },
+        "required_m": 70
+      },
+      "contrast_color": {
+        "base": "Super Floof DK",
+        "fiber": "100% brushed merino wool",
+        "weight": "DK / worsted",
+        "skein": { "weight_g": 50, "length_m": 110, "yardage_yd": 120 },
+        "required_m": 70
+      }
+    },
+    "gauge": { "status": "not specified in the PDF" },
+    "tools": ["5 mm / US 8 circular needle with 40-100 cm cable"],
+    "sizes": [
+      { "name": "Flat-edge tapered", "wingspan_cm": 93, "depth_cm": 23 },
+      { "name": "Symmetrical triangle", "wingspan_cm": 102, "depth_cm": 24 }
+    ],
+    "techniques": ["worked flat", "mosaic colorwork", "slipped stitches", "garter texture", "increases and decreases", "two shape options"],
+    "mood_tags": ["graphic", "harlequin", "high contrast", "textured", "statement accessory"],
+    "stash_match": {
+      "weight_categories": ["fingering", "dk", "worsted"],
+      "best_for": ["small high-contrast quantities", "brushed yarn plus smooth yarn", "bold color pairings"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "vert-and-rose-joanna-hat",
+    "title": "Joanna Hat",
+    "brand": "Vert and Rose",
+    "designer": null,
+    "craft": "knitting",
+    "category": "hat",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Joannahatpattern.pdf",
+      "creator_handle": "@vert.and.rose"
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/joanna-hat.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\Joannahatpattern.png",
+      "alt": "Joanna Hat by Vert and Rose"
+    },
+    "recommended_yarn": {
+      "main_combination": "One strand fingering held with one strand mohair",
+      "quantity_m_each_by_size": [200, 200, 250, 300, 400],
+      "substitution_note": "A single strand of DK yarn may replace the two-yarn combination."
+    },
+    "gauge": {
+      "stitches": 26,
+      "rounds": 34,
+      "over": "10 cm",
+      "stitch_pattern": "stockinette stitch in the round"
+    },
+    "tools": [
+      "3.5 mm circular needles",
+      "second set of 3.5 mm or smaller needles for provisional stitches",
+      "stitch markers",
+      "tapestry needle"
+    ],
+    "sizes": [
+      { "name": "Baby", "finished_circumference_cm": 31 },
+      { "name": "Toddler", "finished_circumference_cm": 35 },
+      { "name": "Child", "finished_circumference_cm": 39 },
+      { "name": "Adult small", "finished_circumference_cm": 47 },
+      { "name": "Adult large", "finished_circumference_cm": 54 }
+    ],
+    "techniques": ["bottom-up construction", "knit in the round", "provisional cast on", "double-folded brim", "picot edge", "bobble flowers", "crown decreases", "wet blocking"],
+    "mood_tags": ["whimsical", "flower crown", "romantic", "warm", "family sizing"],
+    "stash_match": {
+      "weight_categories": ["fingering plus mohair", "dk"],
+      "best_for": ["soft next-to-skin yarn", "contrast-color bobbles", "matching family hats"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "little-cinnamon-teddy-bear",
+    "title": "Little Cinnamon Teddy Bear",
+    "brand": null,
+    "designer": null,
+    "craft": "knitting",
+    "category": "toy",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\LittleCinnamonTeddyBear.pdf",
+      "rights_note": "Personal use only; forwarding, publishing, distribution, and commercial use are prohibited."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/little-cinnamon-teddy-bear.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\LittleCinnamonTeddyBear.png",
+      "alt": "Little Cinnamon Teddy Bear knitted toy"
+    },
+    "recommended_yarn": {
+      "brand": "Nako",
+      "base": "Paris",
+      "color": "11237",
+      "quantity": "1 skein"
+    },
+    "gauge": { "status": "not specified in the PDF" },
+    "tools": [
+      "2.5-4 mm knitting needles; designer used 2.5 mm",
+      "sewing needle",
+      "scissors",
+      "toy stuffing",
+      "two 4 mm black beads",
+      "small amount of beige or brown yarn",
+      "black embroidery yarn"
+    ],
+    "sizes": [{ "name": "One size", "finished_height_cm": 12 }],
+    "techniques": ["stockinette stitch", "knit front and back increases", "knit-two-together decreases", "flat pieces", "seaming", "stuffing", "facial embroidery"],
+    "mood_tags": ["miniature", "keepsake", "soft toy", "cinnamon", "handmade gift"],
+    "stash_match": {
+      "best_for": ["one-skein toy yarn", "small neutral leftovers", "soft yarn with stitch definition"]
+    },
+    "notes": "The PDF does not include basic knitting lessons. Catalog entry only; refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "needle-and-feather-peace-by-piece",
+    "title": "Peace By Piece",
+    "brand": "Needle and Feather",
+    "designer": "Annah",
+    "craft": "knitting",
+    "category": "blanket",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\PeaceByPieceprint.pdf",
+      "source_url": "https://needleandfeather.com/",
+      "published": "2023",
+      "rights_note": "Personal use only."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/peace-by-piece.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\PeaceByPieceprint.png",
+      "alt": "Peace By Piece colorwork blanket by Needle and Feather"
+    },
+    "recommended_yarn": {
+      "brand": "Drops",
+      "base": "Nepal",
+      "fiber": "65% wool, 35% alpaca",
+      "weight": "Aran / worsted",
+      "skein": { "weight_g": 50 },
+      "palette": "21 colors",
+      "alternatives": ["Cascade 220", "KnitPicks Wool of the Andes"],
+      "substitution_note": "DK or bulky yarn can be used for a different scale; match needle size to yarn weight."
+    },
+    "gauge": {
+      "status": "No stitch gauge specified",
+      "blocked_square_size_cm": "12 x 12",
+      "note": "Swatch to establish your own square dimensions before edging or joining."
+    },
+    "tools": [
+      "5 mm / US 8 knitting needles",
+      "5 mm / US 8 crochet hook",
+      "darning needle",
+      "blocking pins and board",
+      "optional 5 mm / US 8 long circular needle for a mitred border"
+    ],
+    "sizes": [
+      { "name": "Lap blanket", "squares": 40, "finished_cm": "96 x 60", "approx_weight_g": 560, "approx_length_m": 790 },
+      { "name": "Throw blanket", "squares": 80, "finished_cm": "96 x 120", "approx_weight_g": 1200, "approx_length_m": 1580 },
+      { "name": "Full blanket", "squares": 144, "finished_cm": "152 x 152", "approx_weight_g": 2400, "approx_length_m": 3024 }
+    ],
+    "techniques": ["flat stranded colorwork", "chart reading", "crochet edging", "slip-stitch joining", "wet blocking", "optional mitred border", "optional applied I-cord"],
+    "mood_tags": ["heirloom", "graphic", "modular", "slow craft", "color study"],
+    "stash_match": {
+      "fiber_categories": ["wool", "wool blend", "alpaca blend"],
+      "weight_categories": ["aran", "worsted"],
+      "best_for": ["large coordinated palettes", "modular long-term projects", "colorwork leftovers"]
+    },
+    "notes": "Quantities are approximate and vary with tension. Catalog entry only; refer to the local PDF for charts and complete instructions."
+  },
+  {
+    "id": "loupy-studio-crochet-scrunchie-bag",
+    "title": "Crochet Scrunchie Bag",
+    "brand": "Loupy Studio",
+    "designer": "Evvia Gonzales",
+    "craft": "crochet",
+    "category": "bag",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\scrunchiebagcrochet.pdf",
+      "published": "2024",
+      "creator_handle": "@loupystudio",
+      "rights_note": "Individual, non-commercial use only; reproduction, publication, distribution, and sale are prohibited."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/crochet-scrunchie-bag.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\scrunchiebagcrochet.png",
+      "alt": "Crochet Scrunchie Bag by Evvia Gonzales"
+    },
+    "recommended_yarn": {
+      "weight": "DK scraps",
+      "quantity": {
+        "total_min_g": 350,
+        "dark_group_min_g": 175,
+        "light_group_min_g": 175
+      },
+      "substitution_note": "Fingering or sock yarn may be held double; slightly heavier scraps can be balanced with a thinner opposite stripe."
+    },
+    "gauge": {
+      "status": "Gauge is not critical",
+      "fabric_goal": "Dense, structured fabric that resists stretching"
+    },
+    "tools": [
+      "4 mm crochet hook",
+      "stitch markers or safety pins",
+      "2.5-4 m cord, ribbon, or durable chunky yarn",
+      "optional cord stopper"
+    ],
+    "sizes": [{ "name": "One size", "customization_note": "Add stripes before decreasing for a longer crossbody version." }],
+    "techniques": ["worked flat", "two-row striping", "half double crochet through all three loops", "paired increases and decreases", "slip-stitch seaming", "single-crochet border", "threaded drawcord"],
+    "mood_tags": ["scrap friendly", "striped", "playful", "structured", "crossbody"],
+    "stash_match": {
+      "weight_categories": ["dk", "fingering held double"],
+      "best_for": ["mixed scraps", "high-contrast light and dark palettes", "durable bag yarn"]
+    },
+    "notes": "Uses US crochet terminology. Catalog entry only; refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "maxim-cyr-you-better-work-socks",
+    "title": "You Better Work Socks",
+    "brand": "Maxim Cyr Knitwear",
+    "designer": "Maxim Cyr",
+    "craft": "knitting",
+    "category": "socks",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\You Better Work Socks v.1_EN.pdf",
+      "version": "1.0",
+      "published": "2020-2021",
+      "creator_handle": "@maxtheknitter",
+      "rights_note": "Private use only; do not copy, sell, distribute, or systematically sell finished products."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/you-better-work-socks.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\YouBetterWorkSocks.png",
+      "alt": "You Better Work Socks by Maxim Cyr"
+    },
+    "recommended_yarn": {
+      "weight": "fingering",
+      "sample_yarn": "Dyed by Delz",
+      "sample_colors": ["Max's Camo", "Betty's White", "You've Been Red"],
+      "yardage_yd_by_size": {
+        "main_color": [215, 235, 260, 285, 315, 345, 380],
+        "contrast_color_1": [100, 110, 120, 130, 145, 160, 175],
+        "contrast_color_2": [8, 9, 10, 11, 12, 13, 14]
+      }
+    },
+    "gauge": {
+      "stitches": 32,
+      "rounds": 44,
+      "over": "4 in / 10 cm",
+      "stitch_pattern": "stockinette stitch in the round"
+    },
+    "tools": [
+      "2.25 mm / US 1 DPNs or circular needles, or size needed for gauge",
+      "tapestry needle",
+      "stitch markers"
+    ],
+    "sizes": [
+      { "name": "1", "finished_circumference_in": 6, "to_fit_in": 7.5 },
+      { "name": "2", "finished_circumference_in": 6.5, "to_fit_in": 8 },
+      { "name": "3", "finished_circumference_in": 7, "to_fit_in": 8.5 },
+      { "name": "4", "finished_circumference_in": 7.5, "to_fit_in": 9 },
+      { "name": "5", "finished_circumference_in": 8, "to_fit_in": 9.5 },
+      { "name": "6", "finished_circumference_in": 8.5, "to_fit_in": 10 },
+      { "name": "7", "finished_circumference_in": 9, "to_fit_in": 10.5 }
+    ],
+    "fit": "Choose approximately 1.5 in / 3 cm negative ease around the foot.",
+    "techniques": ["toe-up construction", "Judy's Magic Cast-On", "knit in the round", "reverse stockinette", "gusset increases", "German short-row doubled stitches", "heel flap", "striping", "sewn bind off"],
+    "mood_tags": ["graphic", "sporty", "retro", "contrast toe and cuff", "playful"],
+    "stash_match": {
+      "weight_categories": ["fingering", "sock"],
+      "best_for": ["three-color sock palettes", "small accent leftovers", "high-twist sock yarn"]
+    },
+    "notes": "Catalog entry only. Refer to the local PDF for complete instructions."
+  },
+  {
+    "id": "eungeung-overlap-scarf",
+    "title": "Overlap Scarf",
+    "brand": "Knitup Magazine",
+    "designer": "은긍 (Eungeung)",
+    "craft": "crochet",
+    "category": "scarf",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Knitup Magazine Vol.1 작가은긍.pdf",
+      "publication": "Knitup Magazine Vol. 1",
+      "published": "2026",
+      "pdf_pages": "33-37",
+      "instruction_page": 36,
+      "access_note": "Free pattern included in the magazine PDF.",
+      "creator_handle": "@eun_geung_knit",
+      "rights_note": "Copyright belongs to Eungeung. Unauthorized copying, redistribution, modification, and commercial use are prohibited."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/overlap-scarf-knitup.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\OverlapScarf_KnitUp.png",
+      "alt": "Overlap Scarf crochet pattern by Eungeung in Knitup Magazine"
+    },
+    "recommended_yarn": {
+      "brand": "나영모사",
+      "base": "솔솔",
+      "color": "401 화이트",
+      "skein": {
+        "weight_g": 40,
+        "length_m": 148
+      },
+      "quantity_note": "The PDF lists the yarn and ball size but does not separately state total consumption."
+    },
+    "gauge": {
+      "status": "not specified in the PDF"
+    },
+    "tools": [
+      "2/0 crochet hook / approximately 2 mm",
+      "tapestry needle"
+    ],
+    "sizes": [
+      {
+        "name": "One size",
+        "finished_width_cm": 6,
+        "finished_length_cm": 140
+      }
+    ],
+    "construction": {
+      "starting_chain_stitches": 19,
+      "pattern_rows": 116,
+      "orientation": "Worked lengthwise as a narrow repeating lace strip"
+    },
+    "techniques": [
+      "chain stitch",
+      "slip stitch",
+      "double crochet",
+      "crochet-two-together decrease",
+      "tall crochet stitches",
+      "repeating overlap lace motif"
+    ],
+    "inspiration": "Inspired by overlapping circular forms in a metal window frame photographed on film during the designer's time in Japan.",
+    "mood_tags": [
+      "delicate",
+      "overlapping circles",
+      "architectural",
+      "lace",
+      "narrow scarf"
+    ],
+    "stash_match": {
+      "best_for": [
+        "a single small ball",
+        "smooth yarn with clear stitch definition",
+        "light neutral colors",
+        "delicate crochet accessories"
+      ]
+    },
+    "notes": "Catalog entry only. Refer to PDF page 36 for the symbol chart and complete instructions."
+  },
+  {
+    "id": "auld-lang-syne-leftover-beanie",
+    "title": "Leftover Beanie",
+    "original_title": "자투리 비니",
+    "brand": "Knitup Magazine",
+    "designer": "Auld Lang Syne",
+    "craft": "knitting",
+    "category": "hat",
+    "pattern_access": {
+      "type": "user_provided_capture",
+      "publication": "Knitup Magazine",
+      "creator_handle": "@__aulddlangsyne",
+      "access_note": "Pattern metadata was transcribed from the user-provided magazine capture; complete instructions are not stored in this catalog."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/leftover-beanie-knitup.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\leftoverBeanie_KnitUp.png",
+      "alt": "Colorful Leftover Beanie by Auld Lang Syne for Knitup Magazine"
+    },
+    "recommended_yarn": {
+      "brand": "아임울",
+      "base": "아임울2",
+      "construction_note": "Hold two strands together, equivalent to 아임울4 thickness; designed for leftover yarn."
+    },
+    "gauge": {
+      "stitches": 20,
+      "rows": 18,
+      "over": "measurement not stated in the capture"
+    },
+    "tools": [
+      "4.5 mm knitting needles",
+      "tapestry needle for joining and finishing"
+    ],
+    "sizes": [
+      {
+        "name": "One size",
+        "finished_height_cm": "27-28",
+        "finished_width_cm": 21
+      }
+    ],
+    "construction": {
+      "orientation": "Garter-stitch fabric shaped with short-row wedges, seamed, then gathered at the crown",
+      "customization_note": "Adjust the number of repeated wedge sections to suit the wearer's head circumference."
+    },
+    "techniques": [
+      "garter stitch",
+      "short-row shaping",
+      "wrapped stitches",
+      "side seam",
+      "gathered crown"
+    ],
+    "difficulty": "beginner-friendly",
+    "mood_tags": [
+      "scrap friendly",
+      "colorful",
+      "playful",
+      "textured",
+      "upcycled"
+    ],
+    "stash_match": {
+      "best_for": [
+        "many short leftover lengths",
+        "mixing colors of a similar thickness",
+        "small-batch yarn experiments",
+        "colorful one-of-a-kind hats"
+      ]
+    },
+    "notes": "Catalog entry only. Keep the full making instructions with the original Knitup Magazine source."
+  },
+  {
+    "id": "yycc-fringe-checked-scarf",
+    "title": "Fringe Checked Scarf",
+    "original_title": "프린지 체크 머플러",
+    "brand": "YYCC / Yawning Yarning Crochet Club",
+    "designer": "야닝야닝",
+    "craft": "crochet",
+    "category": "scarf",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\[YYCC] FringeCheckedScarf.pdf",
+      "rights_note": "Do not share the pattern or pattern URL. Refer to the PDF for the designer's full usage terms."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/fringe-checked-scarf.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\FringeCheckedScarf.png",
+      "alt": "Pink and beige Fringe Checked Scarves by YYCC"
+    },
+    "recommended_yarn": {
+      "brand": "바늘이야기",
+      "base": "새틴 알파카 모헤어",
+      "quantity": {
+        "total_balls": 5,
+        "color_a_balls": 2,
+        "color_b_balls": 2,
+        "color_c_balls": 1
+      },
+      "construction_note": "Hold two strands together, taking one strand from the outside and one from the center of the same ball.",
+      "sample_palettes": [
+        {
+          "name": "Pink",
+          "colors": ["A 13 Rose Pink", "B 09 Light Gray", "C 11 Powder Lavender"]
+        },
+        {
+          "name": "Beige",
+          "colors": ["A 07 Dark Gray", "B 03 Caramel", "C 010 Ivory"]
+        }
+      ]
+    },
+    "gauge": {
+      "status": "not specified in the PDF"
+    },
+    "tools": [
+      "모사용 7호 crochet hook",
+      "tapestry needle",
+      "stitch markers",
+      "scissors",
+      "ruler",
+      "optional metal label"
+    ],
+    "sizes": [
+      {
+        "name": "One size",
+        "finished_width_cm": 17,
+        "finished_length_cm": 150,
+        "measurement_note": "Fringe excluded; individual variation expected."
+      }
+    ],
+    "construction": {
+      "orientation": "Rectangular scarf built from repeating three-color blocks and finished with fringe",
+      "color_blocks": 26,
+      "yardage_note": "One full ball yields approximately 7-8 color blocks; fringe uses roughly 2-3 rows worth of yarn."
+    },
+    "techniques": [
+      "double crochet",
+      "two strands held together",
+      "color changes",
+      "checked stripe sequence",
+      "fringe attachment",
+      "weaving in ends"
+    ],
+    "mood_tags": [
+      "checked",
+      "fringed",
+      "soft",
+      "brushed",
+      "pastel",
+      "graphic"
+    ],
+    "stash_match": {
+      "best_for": [
+        "coordinated three-color palettes",
+        "brushed alpaca or mohair blends",
+        "soft tonal checks",
+        "contrasting fringe colors"
+      ]
+    },
+    "notes": "The PDF recommends washing the finished scarf and lightly shaking out the brushed fibers after drying. Catalog entry only; refer to the local PDF and companion video for complete instructions."
+  }
+]

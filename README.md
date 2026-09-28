@@ -212,7 +212,7 @@ The stash currently includes a growing Qing Fibre collection across several base
 - Dashing Fingering
 - Dashing Sassy
 - Merino Singles
-- Yak
+- Yak Single
 
 This includes regular skeins, Lucky Dip Bag skeins, archived colourways, and one Moonage Fade Set skein.
 

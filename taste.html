@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f6f1" />
+  <title>Cabinet | Skein to Mood</title>
+  <meta name="description" content="Skein to Mood personal cabinet." />
+  <script src="./site-state.js?v=20260928-3"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./cabinet.css?v=20260928-7" />
+</head>
+<body data-cabinet="taste">
+  <header class="site-header">
+    <a class="brand" href="./wireframe.html#top" aria-label="Skein to Mood 홈"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Skein to Mood</span></a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="./index.html#stash">실 보관함</a>
+      <a data-page="patterns" href="./patterns.html#top">패턴 보관함</a>
+      <a data-page="items" href="./items.html#top">나의 아이템</a>
+      <a data-page="taste" href="./taste.html#top">취향 보관함</a>
+    </nav>
+    <div class="header-actions">
+      <span class="header-count"><strong id="headerCount">00</strong> <span id="headerUnit">items</span></span>
+      <div class="language-toggle" role="group" aria-label="언어 선택"><button type="button" data-language="en" aria-pressed="false">EN</button><button class="active" type="button" data-language="ko" aria-pressed="true">한</button></div>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="다크 모드로 전환" aria-pressed="false">☀</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="cabinet-hero" aria-labelledby="pageTitle">
+      <div><p id="heroEyebrow" class="eyebrow"></p><h1 id="pageTitle"></h1><p id="heroNote" class="hero-note"></p></div>
+      <dl id="stats" class="stats" aria-label="보관함 요약"></dl>
+    </section>
+    <section class="library-section" aria-labelledby="collectionTitle">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="collectionTitle"></h2></div><button id="mobileFilterButton" class="mobile-filter-button" type="button" aria-controls="filters" aria-expanded="false">필터</button></div>
+      <div id="libraryLayout" class="library-layout">
+        <aside id="filters" class="filters" aria-label="보관함 필터">
+          <div class="filter-heading"><h3>FILTERS</h3><button id="resetFilters" class="text-button" type="button">RESET</button></div>
+          <label class="search-field" for="searchInput"><span>SEARCH</span><input id="searchInput" type="search" placeholder="Name, type, detail..." autocomplete="off" /></label>
+          <div id="filterGroups"></div>
+        </aside>
+        <div class="collection">
+          <div id="collectionToolbar" class="collection-toolbar">
+            <p><strong id="resultCount">0</strong> results</p>
+            <div class="toolbar-controls">
+              <label><span class="sr-only">정렬</span><select id="sortSelect" class="sort-select"><option value="name">Name A-Z</option><option value="category">Category</option><option value="type">Type</option></select></label>
+              <div id="viewToggle" class="view-toggle" role="group" aria-label="보기 방식"><button class="active" type="button" data-view="grid" aria-pressed="true">Grid</button><button type="button" data-view="list" aria-pressed="false">List</button></div>
+            </div>
+          </div>
+          <div id="itemGrid" class="item-grid" aria-live="polite"></div>
+          <div id="filterEmpty" class="empty-state" hidden><div class="empty-mark">○</div><h3>조건에 맞는 항목이 없어요</h3><p>검색어나 필터 범위를 조금 넓혀보세요.</p><button id="emptyReset" class="outline-button" type="button">필터 초기화</button></div>
+          <div id="tasteEmpty" class="empty-state" hidden><div class="empty-mark">+</div><h3>아직 모아둔 취향이 없어요</h3><p>Pinterest 보드를 연결하면 좋아하는 색, 질감, 공간과 오브제를 이 보관함의 재료로 가져올 수 있어요.</p><button id="connectPinterest" class="outline-button" type="button">Pinterest 보드 연결</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Skein to Mood · Four cabinets</span><a href="./wireframe.html#top">Mix Room으로 돌아가기 ↑</a></footer>
+  <dialog id="itemDialog" class="item-dialog"><button id="closeDialog" class="dialog-close" type="button" aria-label="닫기">×</button><div class="dialog-shell"><div class="dialog-media"><img id="dialogImage" alt="" /><div id="dialogPlaceholder" class="dialog-placeholder" hidden><small>LOTUS YARNS</small><strong>SAHARA</strong><b>5\" INTERCHANGEABLE SET</b></div></div><div class="dialog-copy"><p id="dialogEyebrow" class="eyebrow"></p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><dl id="dialogMeta" class="dialog-meta"></dl></div></div></dialog>
+  <dialog id="pinterestDialog" class="pinterest-dialog"><form id="pinterestForm"><h2>Pinterest 보드 연결</h2><p>공유 보드도 연결할 수 있어요. 먼저 공개 또는 접근 가능한 보드 주소를 확인하고, 실제 자동 동기화 단계에서 Pinterest 로그인을 연결합니다.</p><label for="pinterestUrl">BOARD URL<input id="pinterestUrl" type="url" placeholder="https://www.pinterest.com/.../.../" required /></label><p id="connectionNote" class="connection-note" aria-live="polite"></p><div class="dialog-actions"><button id="cancelPinterest" type="button">취소</button><button class="primary" type="submit">주소 확인</button></div></form></dialog>
+  <script>document.querySelector(`[data-page="${document.body.dataset.cabinet}"]`)?.classList.add("active");</script>
+  <script src="./cabinet.js" type="module"></script>
+</body>
+</html>

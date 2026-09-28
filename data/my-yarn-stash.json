@@ -247,7 +247,7 @@
   {
     "id": "qing-fibre-yak-awoken",
     "brand": "Qing Fibre",
-    "base": "Yak",
+    "base": "Yak Single",
     "colorway": "Awoken",
     "quantity": 1,
     "weight": "fingering",
@@ -550,7 +550,7 @@
   {
     "id": "qing-fibre-yak-somnia",
     "brand": "Qing Fibre",
-    "base": "Yak",
+    "base": "Yak Single",
     "colorway": "Somnia",
     "quantity": 1,
     "weight": "fingering",
