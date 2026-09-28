@@ -43,7 +43,7 @@
     } catch (error) {
       console.warn("Could not read the theme preference", error);
     }
-    return "light";
+    return "dark";
   }
 
   function renderTheme(theme) {

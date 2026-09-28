@@ -118,7 +118,7 @@ h1 {
   background: transparent;
 }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 38px; }
-.section-heading h2 { margin: 0; color: var(--brown-dark); font-size: clamp(2.3rem, 4vw, 3.5rem); font-weight: 500; line-height: 1; }
+.section-heading h2 { margin: 0; color: var(--brown-dark); font-size: clamp(1.38rem, 2.4vw, 2.1rem); font-weight: 500; line-height: 1; }
 .stash-section .eyebrow { color: var(--sky-dark); }
 .stash-layout { display: grid; grid-template-columns: 256px minmax(0, 1fr); gap: clamp(32px, 4vw, 64px); align-items: start; }
 .filters {
@@ -179,7 +179,7 @@ h1 {
 .yarn-card-body { padding: 13px 3px 0; }
 .card-title-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
 .yarn-base { margin-bottom: 4px; color: var(--surface-text-muted); font-size: .67rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
-.yarn-card h3 { margin-bottom: 0; color: var(--brown-dark); font-family: var(--font-display); font-size: clamp(1.08rem, 1.4vw, 1.35rem); font-weight: 500; line-height: 1.2; }
+.yarn-card h3 { margin-bottom: 0; color: var(--brown-dark); font-family: var(--font-display); font-size: clamp(.72rem, .84vw, .85rem); font-weight: 500; line-height: 1.25; }
 .mini-swatches { display: flex; padding-top: 3px; }
 .mini-swatches i { width: 14px; height: 14px; margin-left: -4px; border: 1px solid var(--white); border-radius: 50%; background: var(--swatch); }
 .card-meta { display: flex; flex-wrap: wrap; gap: 6px 13px; margin-top: 10px; color: var(--surface-text-muted); font-size: .7rem; }
@@ -190,7 +190,7 @@ h1 {
 .list-view .yarn-photo { aspect-ratio: 1; }
 .list-view .brand-badge { display: none; }
 .list-view .yarn-card-body { display: flex; flex-direction: column; justify-content: center; padding: 0; }
-.list-view .yarn-card h3 { font-size: 1.45rem; }
+.list-view .yarn-card h3 { font-size: .9rem; }
 
 .empty-state { padding: 100px 20px; border: 1px dashed var(--sky); border-radius: var(--radius); color: var(--brown-dark); text-align: center; }
 .empty-symbol { margin-bottom: 8px; color: var(--sky-dark); font-size: 3rem; }
