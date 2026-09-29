@@ -179,7 +179,7 @@ init().catch((error) => {
 async function init() {
   const [basesResponse, stashResponse] = await Promise.all([
     fetch("./data/shop-yarn-bases.json"),
-    fetch("./data/my-yarn-stash.json")
+    fetch("./data/my-yarn-stash.json?v=20260928-2")
   ]);
   if (!basesResponse.ok || !stashResponse.ok) throw new Error("Could not load stash data");
 
