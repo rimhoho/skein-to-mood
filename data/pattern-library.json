@@ -121,12 +121,13 @@
     "id": "my-favourite-things-knitwear-beanie-no-6",
     "title": "Beanie No. 6",
     "brand": "My Favourite Things Knitwear",
-    "designer": null,
+    "designer": "Louise",
     "craft": "knitting",
     "category": "hat",
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\BEANIENO6.ENG.pdf",
+      "purchase_url": "https://myfavouritethings-knitwear.com/collections/english/products/beanie-no-6-english",
       "rights_note": "Private use only; do not copy, redistribute, or sell the pattern."
     },
     "image": {
@@ -187,6 +188,7 @@
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Brigitte+Headband.pdf",
+      "purchase_url": "https://www.starcrossedknits.com/patterns/p/brigitte-headband",
       "rights_note": "Personal, non-commercial use only."
     },
     "image": {
@@ -223,12 +225,13 @@
     "id": "my-favourite-things-knitwear-cardigan-no-4",
     "title": "Cardigan No. 4",
     "brand": "My Favourite Things Knitwear",
-    "designer": null,
+    "designer": "Louise",
     "craft": "knitting",
     "category": "cardigan",
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\CARDIGANNO4.ENG.1.pdf",
+      "purchase_url": "https://myfavouritethings-knitwear.com/collections/english/products/cardigan-no-4-eng",
       "rights_note": "Refer to the PDF for the pattern's usage terms."
     },
     "image": {
@@ -285,6 +288,7 @@
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Harlequin Shawlette Pattern v2.0 - March 2026.pdf",
+      "purchase_url": "https://www.qingfibre.com/products/harlequin-shawlette-knit-kits-baby-teddy-and-dashing-fingering?variant=58759941128566",
       "version": "2.0",
       "published": "2026-03",
       "rights_note": "Personal use only; do not reproduce, distribute, or sell the pattern."
@@ -334,7 +338,8 @@
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Joannahatpattern.pdf",
-      "creator_handle": "@vert.and.rose"
+      "creator_handle": "@vert.and.rose",
+      "purchase_url": "https://www.etsy.com/listing/1789989294/feminine-hat-pattern-with-girly-knit"
     },
     "image": {
       "asset_path": "./assets/images/pattern/joanna-hat.png",
@@ -425,6 +430,7 @@
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\PeaceByPieceprint.pdf",
       "source_url": "https://needleandfeather.com/",
+      "purchase_url": "https://www.etsy.com/listing/1593155858/peace-by-piece-blanket-pattern-digital?ref=yr_purchases",
       "published": "2023",
       "rights_note": "Personal use only."
     },
@@ -479,6 +485,7 @@
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\scrunchiebagcrochet.pdf",
+      "purchase_url": "https://www.loupystudio.co.uk/product/scrunchie-bag-crochet",
       "published": "2024",
       "creator_handle": "@loupystudio",
       "rights_note": "Individual, non-commercial use only; reproduction, publication, distribution, and sale are prohibited."
@@ -529,6 +536,7 @@
       "version": "1.0",
       "published": "2020-2021",
       "creator_handle": "@maxtheknitter",
+      "purchase_url": "https://boutiquelesgarcons.com/products/you-better-work-socks",
       "rights_note": "Private use only; do not copy, sell, distribute, or systematically sell finished products."
     },
     "image": {

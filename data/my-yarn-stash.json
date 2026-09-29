@@ -4,6 +4,7 @@
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Moonage Fade Set - Unnamed Pink Lavender Skein",
+    "palette_hex": ["#e6d9df", "#cfa4c9", "#a77bb7"],
     "set_name": "Moonage Fade Set - Melted Baby Suri",
     "quantity": 1,
     "weight": "sport / fluffy brushed suri",
@@ -17,23 +18,41 @@
     "yardage_yd": 191,
     "batch_code": null,
     "care": "Hand wash cold, lay flat to dry.",
-    "color_family": ["soft pink", "pale lavender", "cream", "dusty mauve"],
-    "mood": ["dreamy", "cloudy", "romantic", "pastel fade", "soft moonlight"],
-    "texture": ["brushed", "fluffy", "halo", "airy"],
+    "color_family": [
+      "soft pink",
+      "pale lavender",
+      "cream",
+      "dusty mauve"
+    ],
+    "mood": [
+      "dreamy",
+      "cloudy",
+      "romantic",
+      "pastel",
+      "soft moonlight"
+    ],
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
     "source": {
       "type": "official_product_page",
       "name": "Moonage Fade Set - Melted Baby Suri",
-      "note": "Official page describes the set as 5 skeins of Melted Baby Suri fading from gentle pinks to dewy violets; individual skein names are not listed."
+      "url": "https://www.qingfibre.com/products/moonage-fade-set-melted-baby-suri",
+      "note": "Official set contains 5 skeins fading from gentle pinks to dewy violets. This stash entry represents only one skein from that set."
     },
-    "notes": "Likely one skein from Qing Fibre's Moonage Fade Set. Individual colorway name is not shown on the official page, so stored as an unnamed set skein."
+    "notes": "Owns ONE skein only from Qing Fibre's 5-skein Moonage Fade Set, not the complete set. Current pink-lavender colour tags describe the individual stash skein; the official page does not provide individual skein names."
   },
   {
     "id": "qing-fibre-melted-baby-suri-okinami",
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Okinami",
+    "palette_hex": ["#11293f", "#174c5c", "#1e6970"],
     "quantity": 1,
-    "weight": "lace / fluffy lace",
+    "weight": "sport / fluffy brushed suri",
     "fiber_content": {
       "baby_suri_alpaca": 65,
       "merino": 20,
@@ -41,18 +60,40 @@
     },
     "skein_weight_g": 50,
     "yardage_m": 175,
+    "yardage_yd": 191,
     "batch_code": "2649",
-    "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
-    "color_family": ["pale pink", "lavender", "cream", "soft mauve"],
-    "mood": ["dreamy", "soft", "pastel", "cloudy", "romantic"],
-    "texture": ["fluffy", "halo", "airy"],
-    "notes": "Pastel pink-lavender suri halo yarn. Good as a carry-along yarn or soft accent.",
+    "care": "Hand wash cold, lay flat to dry.",
+    "color_family": [
+      "deep petrol blue",
+      "deep teal",
+      "dark navy teal",
+      "blue green"
+    ],
+    "mood": [
+      "deep ocean",
+      "inky",
+      "moody",
+      "saturated",
+      "night sea"
+    ],
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
+    "source": {
+      "type": "official_product_page",
+      "name": "Melted Baby Suri - Okinami",
+      "url": "https://www.qingfibre.com/products/melted-baby-suri-okinami-1"
+    },
+    "notes": "Deep saturated petrol-blue and teal Melted Baby Suri. Official photography reads strongly teal/petrol; the physical skein can read closer to dark navy in lower light.",
     "pattern_ideas": [
-      "collar accent",
-      "button band accent",
-      "soft scarf",
-      "cloudy headband",
-      "lightweight cardigan held double"
+      "Fringe Checked Scarf - shared C color",
+      "contrast scarf stripe",
+      "deep teal beanie",
+      "soft cowl",
+      "dark accent in held-together projects"
     ]
   },
   {
@@ -60,6 +101,7 @@
     "brand": "Qing Fibre",
     "base": "Merino Singles",
     "colorway": "Raven",
+    "palette_hex": ["#684e46", "#8a6672", "#a28a9b"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -70,9 +112,24 @@
     "batch_code": "2705",
     "barcode": "19378038",
     "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
-    "color_family": ["warm brown", "muted mauve", "dusty lavender", "taupe"],
-    "mood": ["night brown", "soft dusk", "quiet", "moody", "vintage"],
-    "texture": ["single ply", "smooth", "soft sheen"],
+    "color_family": [
+      "warm brown",
+      "muted mauve",
+      "dusty lavender",
+      "taupe"
+    ],
+    "mood": [
+      "night brown",
+      "soft dusk",
+      "quiet",
+      "moody",
+      "vintage"
+    ],
+    "texture": [
+      "single ply",
+      "smooth",
+      "soft sheen"
+    ],
     "notes": "Brown-based Merino Singles with a subtle mauve-lavender cast; feels like a soft night/dusk shade rather than black.",
     "pattern_ideas": [
       "minimal beanie",
@@ -87,8 +144,9 @@
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Moon Goddess",
+    "palette_hex": ["#aac3d0", "#879bc2", "#c44b91"],
     "quantity": 1,
-    "weight": "lace / fluffy lace",
+    "weight": "sport / fluffy brushed suri",
     "fiber_content": {
       "baby_suri_alpaca": 65,
       "merino": 20,
@@ -96,18 +154,43 @@
     },
     "skein_weight_g": 50,
     "yardage_m": 175,
+    "yardage_yd": 191,
     "batch_code": "2639",
     "sku": "MBS-MNGDDS-001",
-    "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
-    "color_family": ["misty blue", "lavender", "violet", "soft green", "grey"],
-    "mood": ["lunar", "misty", "ethereal", "watercolor", "dreamy"],
-    "texture": ["fluffy", "halo", "airy"],
-    "notes": "Misty blue-lavender suri with small green and violet shifts.",
+    "care": "Hand wash cold, lay flat to dry.",
+    "color_family": [
+      "icy blue",
+      "pale blue grey",
+      "periwinkle",
+      "lime green speckles",
+      "fuchsia speckles",
+      "violet speckles"
+    ],
+    "mood": [
+      "lunar",
+      "electric mist",
+      "starlit",
+      "ethereal",
+      "playful speckle"
+    ],
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
+    "source": {
+      "type": "official_product_page",
+      "name": "Melted Baby Suri - Moon Goddess",
+      "url": "https://www.qingfibre.com/products/melted-baby-suri-moon-goddess",
+      "note": "Official description emphasizes speckled blue depths."
+    },
+    "notes": "Icy pale blue to blue-grey base with visible lime-green, fuchsia and violet speckled accents. More colourful than the previous misty blue-lavender description suggested.",
     "pattern_ideas": [
+      "statement scarf",
       "soft neck warmer",
       "held-together cardigan",
-      "dreamy scarf",
-      "suri stripe accent",
+      "speckled suri accent",
       "cloud-like hat"
     ]
   },
@@ -116,6 +199,7 @@
     "brand": "Qing Fibre",
     "base": "Baby Teddy",
     "colorway": "Echo",
+    "palette_hex": ["#899589", "#a6afa0", "#707b76"],
     "quantity": 1,
     "weight": "lace / boucle-style fluffy yarn",
     "fiber_content": {
@@ -127,9 +211,24 @@
     "batch_code": "2695",
     "barcode": "20830582",
     "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
-    "color_family": ["sage grey", "soft green", "mist grey"],
-    "mood": ["quiet", "mossy", "foggy", "natural", "soft minimal"],
-    "texture": ["boucle", "fluffy", "nubby", "soft halo"],
+    "color_family": [
+      "sage grey",
+      "soft green",
+      "mist grey"
+    ],
+    "mood": [
+      "quiet",
+      "mossy",
+      "foggy",
+      "natural",
+      "soft minimal"
+    ],
+    "texture": [
+      "boucle",
+      "fluffy",
+      "nubby",
+      "soft halo"
+    ],
     "notes": "Muted sage-grey Baby Teddy with boucle texture.",
     "pattern_ideas": [
       "textured scarf",
@@ -144,6 +243,7 @@
     "brand": "Qing Fibre",
     "base": "Teddy",
     "colorway": "Crop Circle",
+    "palette_hex": ["#b9858f", "#7f8659", "#a8bd57"],
     "quantity": 1,
     "weight": "boucle / DK-ish fluffy texture",
     "fiber_content": {
@@ -168,7 +268,12 @@
       "spring picnic",
       "playful boucle"
     ],
-    "texture": ["boucle", "nubby", "soft", "textured"],
+    "texture": [
+      "boucle",
+      "nubby",
+      "soft",
+      "textured"
+    ],
     "notes": "Dusty pink boucle base with mossy green sections and tiny bright speckles. Cute, textured, slightly whimsical.",
     "pattern_ideas": [
       "textured cowl",
@@ -183,6 +288,7 @@
     "brand": "Qing Fibre",
     "base": "Dashing Fingering",
     "colorway": "Rose Tinted",
+    "palette_hex": ["#e7b4c2", "#c9859b", "#c6bacb"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -200,8 +306,19 @@
       "soft lavender",
       "tiny dark speckles"
     ],
-    "mood": ["sweet", "soft candy", "rose milk", "gentle", "romantic speckle"],
-    "texture": ["smooth", "plied", "soft", "speckled"],
+    "mood": [
+      "sweet",
+      "soft candy",
+      "rose milk",
+      "gentle",
+      "romantic speckle"
+    ],
+    "texture": [
+      "smooth",
+      "plied",
+      "soft",
+      "speckled"
+    ],
     "notes": "Soft pink fingering yarn with pale grey-lavender areas and small scattered speckles.",
     "pattern_ideas": [
       "lightweight socks",
@@ -216,6 +333,7 @@
     "brand": "Qing Fibre",
     "base": "Baby Teddy",
     "colorway": "Noctilucent Cloud",
+    "palette_hex": ["#a9bec8", "#8f9eae", "#c2c9d0"],
     "quantity": 1,
     "weight": "lace / boucle-style fluffy yarn",
     "fiber_content": {
@@ -233,8 +351,19 @@
       "cloud grey",
       "soft periwinkle"
     ],
-    "mood": ["mist", "night cloud", "quiet sky", "dreamy", "soft fog"],
-    "texture": ["boucle", "fluffy", "nubby", "airy"],
+    "mood": [
+      "mist",
+      "night cloud",
+      "quiet sky",
+      "dreamy",
+      "soft fog"
+    ],
+    "texture": [
+      "boucle",
+      "fluffy",
+      "nubby",
+      "airy"
+    ],
     "notes": "Blue-grey Baby Teddy with a soft cloud-like boucle texture. More quiet and misty than bright.",
     "pattern_ideas": [
       "cloudy cowl",
@@ -249,6 +378,7 @@
     "brand": "Qing Fibre",
     "base": "Yak Single",
     "colorway": "Awoken",
+    "palette_hex": ["#9b8975", "#b09d83", "#756758"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -260,9 +390,25 @@
     "yardage_m": 480,
     "batch_code": null,
     "care": "Cold water with a little bit of wool wash. May bleed during the first couple of washes. Lay flat to dry.",
-    "color_family": ["warm taupe", "beige brown", "greige", "soft bronze"],
-    "mood": ["quiet luxury", "warm neutral", "soft earth", "minimal", "calm"],
-    "texture": ["single ply", "soft sheen", "drapey", "smooth"],
+    "color_family": [
+      "warm taupe",
+      "beige brown",
+      "greige",
+      "soft bronze"
+    ],
+    "mood": [
+      "quiet luxury",
+      "warm neutral",
+      "soft earth",
+      "minimal",
+      "calm"
+    ],
+    "texture": [
+      "single ply",
+      "soft sheen",
+      "drapey",
+      "smooth"
+    ],
     "notes": "Warm taupe-beige Yak base with a subtle silky sheen. Neutral but not flat, giving a soft bronze/greige mood.",
     "pattern_ideas": [
       "lightweight cardigan",
@@ -277,6 +423,7 @@
     "brand": "Qing Fibre",
     "base": "Dashing Sassy",
     "colorway": "Punjabi",
+    "palette_hex": ["#48513d", "#dc4778", "#d4d34b"],
     "collection": "Classics",
     "source": "Lucky Dip Bag",
     "quantity": 1,
@@ -305,7 +452,13 @@
       "night bloom",
       "lucky dip surprise"
     ],
-    "texture": ["single ply", "smooth", "soft sheen", "variegated", "speckled"],
+    "texture": [
+      "single ply",
+      "smooth",
+      "soft sheen",
+      "variegated",
+      "speckled"
+    ],
     "notes": "Lucky Dip Bag yarn. Dark olive-brown base with vivid hot pink, neon yellow, violet, cream, and mossy variegation. Archived Qing Fibre colourway name identified as Punjabi from the Classics collection.",
     "pattern_ideas": [
       "statement shawl",
@@ -320,6 +473,7 @@
     "brand": "Qing Fibre",
     "base": "Dashing Sassy",
     "colorway": "Cha Cha",
+    "palette_hex": ["#493b35", "#7a657a", "#b58b36"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -345,7 +499,12 @@
       "dramatic",
       "retro"
     ],
-    "texture": ["single ply", "smooth", "soft sheen", "variegated"],
+    "texture": [
+      "single ply",
+      "smooth",
+      "soft sheen",
+      "variegated"
+    ],
     "source": {
       "type": "archived_colourway_page",
       "name": "Cha Cha",
@@ -365,8 +524,9 @@
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Antique Rose",
+    "palette_hex": ["#a36f7b", "#c15183", "#70704f"],
     "quantity": 1,
-    "weight": "lace / fluffy lace",
+    "weight": "sport / fluffy brushed suri",
     "fiber_content": {
       "baby_suri_alpaca": 65,
       "merino": 20,
@@ -374,15 +534,17 @@
     },
     "skein_weight_g": 50,
     "yardage_m": 175,
+    "yardage_yd": 191,
     "batch_code": "2585",
-    "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
+    "care": "Hand wash cold, lay flat to dry.",
     "color_family": [
-      "antique pink",
+      "blush pink",
       "rose pink",
-      "soft mauve",
-      "deep purple",
-      "moss green",
-      "charcoal"
+      "dusty mauve",
+      "fuchsia",
+      "olive green",
+      "smoky taupe",
+      "deep plum"
     ],
     "mood": [
       "vintage rose",
@@ -391,13 +553,23 @@
       "soft drama",
       "floral"
     ],
-    "texture": ["fluffy", "halo", "airy", "brushed"],
-    "notes": "Pink Melted Baby Suri with deeper purple, mossy green, and smoky accents.",
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
+    "source": {
+      "type": "official_product_page",
+      "name": "Melted Baby Suri - Antique Rose",
+      "url": "https://www.qingfibre.com/products/melted-baby-suri-antique-rose-2"
+    },
+    "notes": "Rose-pink dominant Melted Baby Suri with brighter fuchsia, dusty mauve, small olive-green accents and smoky taupe-plum shadows.",
     "pattern_ideas": [
+      "Fringe Checked Scarf - Option 1 A",
       "soft scarf",
       "romantic collar trim",
       "held-together cardigan",
-      "cloudy cowl",
       "suri accent stripe"
     ]
   },
@@ -406,8 +578,9 @@
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Smoke",
-    "quantity": 1,
-    "weight": "lace / fluffy lace",
+    "palette_hex": ["#aebdc2", "#899f96", "#a66c43"],
+    "quantity": 6,
+    "weight": "sport / fluffy brushed suri",
     "fiber_content": {
       "baby_suri_alpaca": 65,
       "merino": 20,
@@ -415,24 +588,42 @@
     },
     "skein_weight_g": 50,
     "yardage_m": 175,
+    "yardage_yd": 191,
     "batch_code": "2649",
-    "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
+    "care": "Hand wash cold, lay flat to dry.",
     "color_family": [
-      "pale blue grey",
+      "pale icy blue grey",
       "mist grey",
-      "soft green",
-      "muted gold",
-      "smoky blue"
+      "sage green",
+      "ochre",
+      "rust brown",
+      "smoky brown"
     ],
-    "mood": ["misty", "quiet", "foggy", "soft smoke", "winter garden"],
-    "texture": ["fluffy", "halo", "airy", "brushed"],
-    "notes": "Pale smoky blue-grey Melted Baby Suri with muted green and golden-brown patches.",
+    "mood": [
+      "misty",
+      "weathered",
+      "winter garden",
+      "quiet",
+      "softly earthy"
+    ],
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
+    "source": {
+      "type": "official_product_page",
+      "name": "Melted Baby Suri - Smoke",
+      "url": "https://www.qingfibre.com/products/melted-baby-suri-smoke-2"
+    },
+    "notes": "Pale icy blue-grey Melted Baby Suri with distinct sage-green, ochre, rust and smoky-brown hand-dyed patches.",
     "pattern_ideas": [
-      "held-together cardigan",
+      "Fringe Checked Scarf - Option 1 B",
+      "Fringe Checked Scarf - Option 2 A",
       "misty neck warmer",
       "soft hat",
-      "collar accent",
-      "gentle stripe project"
+      "held-together cardigan"
     ]
   },
   {
@@ -440,8 +631,9 @@
     "brand": "Qing Fibre",
     "base": "Melted Baby Suri",
     "colorway": "Kaleidoscope",
+    "palette_hex": ["#8d8279", "#d47b73", "#b84683"],
     "quantity": 1,
-    "weight": "lace / fluffy lace",
+    "weight": "sport / fluffy brushed suri",
     "fiber_content": {
       "baby_suri_alpaca": 65,
       "merino": 20,
@@ -449,31 +641,38 @@
     },
     "skein_weight_g": 50,
     "yardage_m": 175,
+    "yardage_yd": 191,
     "batch_code": "2585",
-    "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
+    "care": "Hand wash cold, lay flat to dry.",
     "color_family": [
-      "dusty mauve",
-      "soft grey",
-      "muted pink",
-      "blue grey",
-      "charcoal",
-      "tiny red accents"
+      "greige",
+      "taupe grey",
+      "smoky brown",
+      "salmon pink",
+      "coral orange",
+      "fuchsia",
+      "deep blue"
     ],
     "mood": [
       "muted prism",
-      "dreamy",
-      "dusty rainbow",
-      "soft dusk",
-      "watercolor"
+      "artful",
+      "warm dusk",
+      "vintage colour",
+      "eclectic"
     ],
-    "texture": ["fluffy", "halo", "airy", "brushed"],
-    "notes": "Muted mauve-grey Melted Baby Suri with soft pink, blue-grey, charcoal, and tiny red accents.",
+    "texture": [
+      "brushed",
+      "fluffy",
+      "halo",
+      "airy"
+    ],
+    "notes": "Greige, taupe-grey and smoky-brown base with prominent salmon-coral orange, vivid pink/fuchsia and occasional deep-blue accents. Warmer and more colourful than the previous mauve-grey description.",
     "pattern_ideas": [
-      "dreamy scarf",
+      "Fringe Checked Scarf - Option 2 B",
+      "statement scarf",
       "suri stripe accent",
       "held-together cardigan",
-      "soft cowl",
-      "cloud-like beanie"
+      "soft cowl"
     ]
   },
   {
@@ -481,6 +680,7 @@
     "brand": "Qing Fibre",
     "base": "Dashing Sassy",
     "colorway": "Anemone",
+    "palette_hex": ["#e5dcc5", "#c7b1cc", "#d3a3ad"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -505,7 +705,13 @@
       "watercolor",
       "fresh"
     ],
-    "texture": ["single ply", "smooth", "soft sheen", "variegated", "speckled"],
+    "texture": [
+      "single ply",
+      "smooth",
+      "soft sheen",
+      "variegated",
+      "speckled"
+    ],
     "source": {
       "type": "archived_colourway_page",
       "name": "Anemone",
@@ -525,6 +731,7 @@
     "brand": "Qing Fibre",
     "base": "Baby Teddy",
     "colorway": "Bamboo",
+    "palette_hex": ["#a8d2c2", "#8fc7bd", "#bddcc7"],
     "quantity": 1,
     "weight": "lace / boucle-style fluffy yarn",
     "fiber_content": {
@@ -535,9 +742,25 @@
     "yardage_m": 325,
     "batch_code": "2583",
     "care": "Cold water with a little bit of wool wash. May bleed during the first couple of washes. Lay flat to dry.",
-    "color_family": ["mint", "pale aqua", "seafoam", "soft green"],
-    "mood": ["fresh", "gentle", "mint cloud", "spring water", "soft clean"],
-    "texture": ["boucle", "fluffy", "nubby", "airy"],
+    "color_family": [
+      "mint",
+      "pale aqua",
+      "seafoam",
+      "soft green"
+    ],
+    "mood": [
+      "fresh",
+      "gentle",
+      "mint cloud",
+      "spring water",
+      "soft clean"
+    ],
+    "texture": [
+      "boucle",
+      "fluffy",
+      "nubby",
+      "airy"
+    ],
     "notes": "Pale mint-aqua Baby Teddy with a soft boucle texture.",
     "pattern_ideas": [
       "fresh cowl",
@@ -552,6 +775,7 @@
     "brand": "Qing Fibre",
     "base": "Yak Single",
     "colorway": "Somnia",
+    "palette_hex": ["#1d6f73", "#174e5f", "#294b3c"],
     "quantity": 1,
     "weight": "fingering",
     "fiber_content": {
@@ -581,7 +805,13 @@
       "night sea",
       "immersive fade"
     ],
-    "texture": ["single ply", "smooth", "soft sheen", "drapey", "luxurious"],
+    "texture": [
+      "single ply",
+      "smooth",
+      "soft sheen",
+      "drapey",
+      "luxurious"
+    ],
     "source": {
       "type": "official_product_page",
       "name": "Yak Single - Somnia",
@@ -610,6 +840,7 @@
     "base": "Estuary",
     "base_id": "purl-soho-estuary",
     "colorway": "Yellow Saffron",
+    "palette_hex": ["#c6922f", "#a66f22", "#d6c28e"],
     "quantity": 3,
     "unit": "skein",
     "remaining_quantity": 3,
@@ -626,8 +857,19 @@
       "cream",
       "natural linen beige"
     ],
-    "mood": ["sunlit", "warm", "golden hour", "harvest", "soft fade"],
-    "texture": ["single ply", "soft sheen", "linen fleck", "fluid"],
+    "mood": [
+      "sunlit",
+      "warm",
+      "golden hour",
+      "harvest",
+      "soft fade"
+    ],
+    "texture": [
+      "single ply",
+      "soft sheen",
+      "linen fleck",
+      "fluid"
+    ],
     "notes": "Hand-dyed Yellow Saffron Estuary. Image shows a warm golden saffron fade with creamy pale sections and linen-like beige undertones.",
     "pattern_ideas": [
       "light shawl",
@@ -643,6 +885,7 @@
     "base": "Cotton Pure",
     "base_id": "purl-soho-cotton-pure",
     "colorway": "Water Drop",
+    "palette_hex": ["#9fd0d8", "#7fc1cf", "#b8dae0"],
     "quantity": 2,
     "unit": "skein",
     "remaining_quantity": 2,
@@ -651,9 +894,24 @@
       "type": "official_product_page",
       "url": "https://www.purlsoho.com/cotton-pure.html?ps-pid=26711"
     },
-    "color_family": ["pale blue", "clear aqua", "soft water blue"],
-    "mood": ["fresh", "clean", "watery", "light", "calm"],
-    "texture": ["matte cotton", "smooth", "soft", "stitch definition"],
+    "color_family": [
+      "pale blue",
+      "clear aqua",
+      "soft water blue"
+    ],
+    "mood": [
+      "fresh",
+      "clean",
+      "watery",
+      "light",
+      "calm"
+    ],
+    "texture": [
+      "matte cotton",
+      "smooth",
+      "soft",
+      "stitch definition"
+    ],
     "notes": "Soft sport-weight cotton in a clear pale blue shade.",
     "pattern_ideas": [
       "summer washcloth",
@@ -669,6 +927,7 @@
     "base": "Serif",
     "base_id": "purl-soho-serif",
     "colorway": "Warm Rock",
+    "palette_hex": ["#b8a58c", "#9e9283", "#d0c0a6"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 0.67,
@@ -679,8 +938,18 @@
       "url": "https://www.purlsoho.com/serif.html",
       "note": "User wrote 'Warm Lock'; stored as likely Purl Soho colorway 'Warm Rock'."
     },
-    "color_family": ["warm beige", "stone", "sand", "oatmeal"],
-    "mood": ["quiet neutral", "warm stone", "minimal", "soft natural"],
+    "color_family": [
+      "warm beige",
+      "stone",
+      "sand",
+      "oatmeal"
+    ],
+    "mood": [
+      "quiet neutral",
+      "warm stone",
+      "minimal",
+      "soft natural"
+    ],
     "texture": [
       "pima cotton",
       "single ply",
@@ -702,6 +971,7 @@
     "base": "Serif",
     "base_id": "purl-soho-serif",
     "colorway": "Red Hellebore",
+    "palette_hex": ["#a44c52", "#7f3448", "#b96862"],
     "quantity": 2,
     "unit": "skein",
     "remaining_quantity": 2,
@@ -710,7 +980,12 @@
       "type": "official_product_page",
       "url": "https://www.purlsoho.com/serif.html"
     },
-    "color_family": ["muted red", "berry red", "rose clay", "warm floral red"],
+    "color_family": [
+      "muted red",
+      "berry red",
+      "rose clay",
+      "warm floral red"
+    ],
     "mood": [
       "botanical",
       "warm",
@@ -739,6 +1014,7 @@
     "base": "Echo Cashmere",
     "base_id": "purl-soho-echo-cashmere",
     "colorway": "Osprey Nest",
+    "palette_hex": ["#8a8986", "#666966", "#aaa6a0"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 1,
@@ -748,9 +1024,24 @@
       "url": "https://www.purlsoho.com/echo-cashmere.html?ps-pid=39942",
       "note": "Official product page currently does not show the selected color detail in the static page text; colorway confirmed from user stash and image."
     },
-    "color_family": ["heather grey", "soft charcoal", "warm grey"],
-    "mood": ["quiet", "soft nest", "minimal", "cashmere grey", "cozy"],
-    "texture": ["woolen spun", "fuzzy", "airy", "cashmere bloom"],
+    "color_family": [
+      "heather grey",
+      "soft charcoal",
+      "warm grey"
+    ],
+    "mood": [
+      "quiet",
+      "soft nest",
+      "minimal",
+      "cashmere grey",
+      "cozy"
+    ],
+    "texture": [
+      "woolen spun",
+      "fuzzy",
+      "airy",
+      "cashmere bloom"
+    ],
     "notes": "Heathered grey Echo Cashmere. Image reads as a soft nest-like neutral grey.",
     "pattern_ideas": [
       "light beanie",
@@ -766,6 +1057,7 @@
     "base": "Echo Cashmere",
     "base_id": "purl-soho-echo-cashmere",
     "colorway": "Conifer Green",
+    "palette_hex": ["#26342c", "#35463a", "#526052"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 1,
@@ -781,8 +1073,19 @@
       "evergreen",
       "dark pine"
     ],
-    "mood": ["forest", "quiet luxury", "winter green", "deep", "soft dark"],
-    "texture": ["woolen spun", "fuzzy", "airy", "cashmere bloom"],
+    "mood": [
+      "forest",
+      "quiet luxury",
+      "winter green",
+      "deep",
+      "soft dark"
+    ],
+    "texture": [
+      "woolen spun",
+      "fuzzy",
+      "airy",
+      "cashmere bloom"
+    ],
     "notes": "Deep heathered green Echo Cashmere. Image reads as a dark conifer/forest shade.",
     "pattern_ideas": [
       "cashmere beanie",
@@ -798,6 +1101,7 @@
     "base": "Echo Cashmere",
     "base_id": "purl-soho-echo-cashmere",
     "colorway": "Wild Currant",
+    "palette_hex": ["#6f3047", "#8b4058", "#a45a70"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 1,
@@ -807,9 +1111,25 @@
       "url": "https://www.purlsoho.com/echo-cashmere.html?ps-pid=39942",
       "note": "Official product page currently does not show the selected color detail in the static page text; colorway confirmed from user stash and image."
     },
-    "color_family": ["currant", "berry plum", "wine", "muted magenta"],
-    "mood": ["berry", "warm", "winter fruit", "soft jewel", "romantic"],
-    "texture": ["woolen spun", "fuzzy", "airy", "cashmere bloom"],
+    "color_family": [
+      "currant",
+      "berry plum",
+      "wine",
+      "muted magenta"
+    ],
+    "mood": [
+      "berry",
+      "warm",
+      "winter fruit",
+      "soft jewel",
+      "romantic"
+    ],
+    "texture": [
+      "woolen spun",
+      "fuzzy",
+      "airy",
+      "cashmere bloom"
+    ],
     "notes": "Berry-plum Echo Cashmere. Image reads as a muted wild currant shade with soft heathering.",
     "pattern_ideas": [
       "cashmere cowl",
@@ -825,6 +1145,7 @@
     "base": "Linen Quill Minis",
     "base_id": "purl-soho-linen-quill-minis",
     "colorway": "Wheat Flour",
+    "palette_hex": ["#e2d6bb", "#f0e9d8", "#cbbd9f"],
     "quantity": 1,
     "unit": "mini ball",
     "mini_skein_weight_g": 25,
@@ -839,9 +1160,24 @@
       "color_reference_url": "https://www.purlsoho.com/linen-quill.html?ps-pid=24969",
       "note": "Free 25g mini skein; color detail referenced from the main Linen Quill colorway."
     },
-    "color_family": ["warm cream", "flour white", "natural wool", "soft beige"],
-    "mood": ["natural", "quiet", "warm neutral", "soft rustic"],
-    "texture": ["wool alpaca linen blend", "rustic", "soft", "linen fleck"],
+    "color_family": [
+      "warm cream",
+      "flour white",
+      "natural wool",
+      "soft beige"
+    ],
+    "mood": [
+      "natural",
+      "quiet",
+      "warm neutral",
+      "soft rustic"
+    ],
+    "texture": [
+      "wool alpaca linen blend",
+      "rustic",
+      "soft",
+      "linen fleck"
+    ],
     "notes": "Free Linen Quill mini in Wheat Flour.",
     "pattern_ideas": [
       "contrast stripe",
@@ -857,6 +1193,7 @@
     "base": "Linen Quill Minis",
     "base_id": "purl-soho-linen-quill-minis",
     "colorway": "Salt + Pepper",
+    "palette_hex": ["#8c8d8a", "#d9d6cf", "#3f403e"],
     "quantity": 1,
     "unit": "mini ball",
     "mini_skein_weight_g": 25,
@@ -877,8 +1214,19 @@
       "pepper black",
       "soft charcoal"
     ],
-    "mood": ["classic", "neutral", "peppered", "rustic", "quiet"],
-    "texture": ["wool alpaca linen blend", "rustic", "soft", "linen fleck"],
+    "mood": [
+      "classic",
+      "neutral",
+      "peppered",
+      "rustic",
+      "quiet"
+    ],
+    "texture": [
+      "wool alpaca linen blend",
+      "rustic",
+      "soft",
+      "linen fleck"
+    ],
     "notes": "Free Linen Quill mini in Salt + Pepper.",
     "pattern_ideas": [
       "contrast stripe",
@@ -894,6 +1242,7 @@
     "base": "Knitting Yarn DK",
     "base_id": "purl-soho-knitting-yarn-dk",
     "colorway": "Sour Citron",
+    "palette_hex": ["#b8ca2b", "#d1dc3d", "#8ba72c"],
     "quantity": 1,
     "unit": "mini ball",
     "mini_skein_weight_g": 25,
@@ -913,8 +1262,19 @@
       "acid yellow green",
       "bright citrus"
     ],
-    "mood": ["electric", "fresh", "playful", "citrus pop", "bright accent"],
-    "texture": ["merino", "springy", "smooth", "four ply"],
+    "mood": [
+      "electric",
+      "fresh",
+      "playful",
+      "citrus pop",
+      "bright accent"
+    ],
+    "texture": [
+      "merino",
+      "springy",
+      "smooth",
+      "four ply"
+    ],
     "notes": "Free 25g mini in bright Sour Citron.",
     "pattern_ideas": [
       "color pop accent",
@@ -930,6 +1290,7 @@
     "base": "Knitting Yarn DK",
     "base_id": "purl-soho-knitting-yarn-dk",
     "colorway": "Golden Raisin",
+    "palette_hex": ["#b37a22", "#c99532", "#8f5d18"],
     "quantity": 1,
     "unit": "mini ball",
     "mini_skein_weight_g": 25,
@@ -949,8 +1310,19 @@
       "warm ochre",
       "deep yellow"
     ],
-    "mood": ["warm", "autumn", "golden", "earthy", "small accent"],
-    "texture": ["merino", "springy", "smooth", "four ply"],
+    "mood": [
+      "warm",
+      "autumn",
+      "golden",
+      "earthy",
+      "small accent"
+    ],
+    "texture": [
+      "merino",
+      "springy",
+      "smooth",
+      "four ply"
+    ],
     "notes": "Free 25g mini in Golden Raisin.",
     "pattern_ideas": [
       "color pop accent",
@@ -966,6 +1338,7 @@
     "base": "Cashmere Merino Bloom",
     "base_id": "purl-soho-cashmere-merino-bloom",
     "colorway": "Wheat Flour",
+    "palette_hex": ["#e2d6bb", "#ece4d0", "#c9b99c"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 0.25,
@@ -981,8 +1354,19 @@
       "soft oatmeal",
       "natural neutral"
     ],
-    "mood": ["soft", "warm neutral", "cashmere cloud", "gentle", "minimal"],
-    "texture": ["merino cashmere", "soft halo", "bloomy", "two ply"],
+    "mood": [
+      "soft",
+      "warm neutral",
+      "cashmere cloud",
+      "gentle",
+      "minimal"
+    ],
+    "texture": [
+      "merino cashmere",
+      "soft halo",
+      "bloomy",
+      "two ply"
+    ],
     "notes": "Wheat Flour Cashmere Merino Bloom. About one quarter of the skein remains.",
     "pattern_ideas": [
       "small luxury accessory",
@@ -998,6 +1382,7 @@
     "base": "Blackbird Linen",
     "base_id": "purl-soho-blackbird-linen",
     "colorway": "Galapagos Teal",
+    "palette_hex": ["#174956", "#28616a", "#3b7880"],
     "quantity": 1,
     "unit": "skein",
     "remaining_quantity": 0.2,
@@ -1007,9 +1392,25 @@
       "type": "official_product_page",
       "url": "https://www.purlsoho.com/blackbird-linen.html?ps-pid=31283"
     },
-    "color_family": ["teal", "blue green", "deep aqua", "cool linen"],
-    "mood": ["coastal", "cool", "linen summer", "deep water", "clean"],
-    "texture": ["linen", "cool touch", "loosely spun", "softens with wear"],
+    "color_family": [
+      "teal",
+      "blue green",
+      "deep aqua",
+      "cool linen"
+    ],
+    "mood": [
+      "coastal",
+      "cool",
+      "linen summer",
+      "deep water",
+      "clean"
+    ],
+    "texture": [
+      "linen",
+      "cool touch",
+      "loosely spun",
+      "softens with wear"
+    ],
     "notes": "Galapagos Teal Blackbird Linen. About one fifth of the skein remains.",
     "pattern_ideas": [
       "bag detail",
@@ -1025,6 +1426,7 @@
     "brand": "Qing Fibre",
     "base_name": "Yak Single",
     "colorway": "Rothko Fade Set",
+    "palette_hex": ["#5b4148", "#80616b", "#aa8589"],
     "quantity": 5,
     "set": true,
     "set_colorways": [],
@@ -1037,11 +1439,26 @@
       "rust red"
     ],
     "color_palette": {
-      "primary": ["deep cacao brown", "smoky taupe", "mushroom beige"],
-      "secondary": ["dark plum", "dusty blush"],
-      "accent": ["rust red"]
+      "primary": [
+        "deep cacao brown",
+        "smoky taupe",
+        "mushroom beige"
+      ],
+      "secondary": [
+        "dark plum",
+        "dusty blush"
+      ],
+      "accent": [
+        "rust red"
+      ]
     },
-    "style": ["fade", "variegated", "speckled", "muted", "tonal"],
+    "style": [
+      "fade",
+      "variegated",
+      "speckled",
+      "muted",
+      "tonal"
+    ],
     "mood": [
       "painterly",
       "moody",
@@ -1061,6 +1478,7 @@
     "brand": "Qing Fibre",
     "base_name": "Yak Single",
     "colorway": "Boreal Cloud Fade Set",
+    "palette_hex": ["#5f7f85", "#89a4a7", "#bac7c6"],
     "quantity": 5,
     "set": true,
     "set_colorways": [
@@ -1080,11 +1498,27 @@
       "teal green"
     ],
     "color_palette": {
-      "primary": ["pale mushroom", "sage green", "deep forest green"],
-      "secondary": ["dusty blush", "pine green", "teal green"],
-      "accent": ["muted peach"]
+      "primary": [
+        "pale mushroom",
+        "sage green",
+        "deep forest green"
+      ],
+      "secondary": [
+        "dusty blush",
+        "pine green",
+        "teal green"
+      ],
+      "accent": [
+        "muted peach"
+      ]
     },
-    "style": ["fade", "variegated", "speckled", "muted", "earthy"],
+    "style": [
+      "fade",
+      "variegated",
+      "speckled",
+      "muted",
+      "earthy"
+    ],
     "mood": [
       "boreal forest",
       "woodland",
@@ -1105,6 +1539,7 @@
     "brand": "Qing Fibre",
     "base_name": "Dashing DK",
     "colorway": "Equinox",
+    "palette_hex": ["#4a4d3d", "#707054", "#9a8055"],
     "quantity": 4,
     "set": false,
     "colors": [
@@ -1115,12 +1550,31 @@
       "peach beige"
     ],
     "color_palette": {
-      "primary": ["moss green", "warm cream"],
-      "secondary": ["olive green", "sage green"],
-      "accent": ["peach beige"]
+      "primary": [
+        "moss green",
+        "warm cream"
+      ],
+      "secondary": [
+        "olive green",
+        "sage green"
+      ],
+      "accent": [
+        "peach beige"
+      ]
     },
-    "style": ["variegated", "earthy", "soft contrast"],
-    "mood": ["woodland", "mossy", "natural", "vintage", "soft autumn", "cozy"],
+    "style": [
+      "variegated",
+      "earthy",
+      "soft contrast"
+    ],
+    "mood": [
+      "woodland",
+      "mossy",
+      "natural",
+      "vintage",
+      "soft autumn",
+      "cozy"
+    ],
     "source_url": "https://www.qingfibre.com/products/dashing-dk-equinox",
     "status": "stash",
     "notes": ""

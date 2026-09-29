@@ -3,13 +3,14 @@ const PATTERNS = [
   ["Beanie No. 6", "beanie-no-6.png?v=20260928-2", "Knit", "Beginner", "Hat"],
   ["Brigitte Headband", "brigitte-headband.png", "Knit", "Beginner", "Headband"],
   ["Cardigan No. 4", "cardigan-no-4.png?v=20260928-2", "Knit", "Advanced", "Cardigan"],
-  ["Crochet Scrunchie Bag", "crochet-scrunchie-bag.png", "Crochet", "Intermediate", "Bag"],
+  ["Crochet Scrunchie Bag", "crochet-scrunchie-bag.png?v=20260928-2", "Crochet", "Intermediate", "Bag"],
+  ["Fringe Checked Scarf", "fringe-checked-scarf.png?v=20260928-2", "Crochet", "Intermediate", "Scarf"],
   ["Harlequin Shawlette", "harlequin-shawlette.png", "Knit", "Intermediate", "Shawl"],
-  ["Joanna Hat", "joanna-hat.png", "Knit", "Intermediate", "Hat"],
+  ["Joanna Hat", "joanna-hat.png?v=20260928-2", "Knit", "Intermediate", "Hat"],
   ["Little Cinnamon Teddy Bear", "little-cinnamon-teddy-bear.png", "Crochet", "Intermediate", "Toy"],
   ["Overlap Scarf Knitup", "overlap-scarf-knitup.png", "Knit", "Intermediate", "Scarf"],
-  ["Peace by Piece", "peace-by-piece.png", "Knit", "Intermediate", "Top"],
-  ["You Better Work Socks", "you-better-work-socks.png", "Knit", "Advanced", "Socks"]
+  ["Peace by Piece", "peace-by-piece.png?v=20260928-2", "Knit", "Intermediate", "Top"],
+  ["You Better Work Socks", "you-better-work-socks.png?v=20260928-2", "Knit", "Advanced", "Socks"]
 ].map(([name, file, craft, skill, type, relatedItem]) => ({ name, image: `./assets/images/pattern/${file}`, category: craft, detail: skill, type, date: "Saved pattern", relatedItem }));
 
 const ITEMS = [
@@ -164,10 +165,10 @@ const UI_COPY = {
     results: "개 결과", sort: "정렬", sortName: "이름순", sortCategory: "카테고리순", sortType: "유형순", grid: "격자", list: "목록",
     noResults: "조건에 맞는 항목이 없어요", noResultsNote: "검색어나 필터 범위를 조금 넓혀보세요.", clearFilters: "필터 초기화",
     emptyTaste: "아직 모아둔 취향이 없어요", emptyTasteNote: "Pinterest 보드를 연결하면 좋아하는 색, 질감, 공간과 오브제를 이 보관함의 재료로 가져올 수 있어요.", connectPinterest: "Pinterest 보드 연결",
-    back: "믹스 룸으로 돌아가기 ↑", detailView: "상세 보기", close: "닫기", source: "공식 제품 페이지 ↗", freePattern: "무료 패턴 보기 ↗", discontinuedPattern: "판매 종료된 원작 페이지 ↗", viewMadeItem: "완성작 보기 ↗", viewSavedPattern: "패턴 보관함에서 보기 ↗", viewBoard: "Pinterest 보드 열기 ↗",
+    back: "믹스 룸으로 돌아가기 ↑", detailView: "상세 보기", close: "닫기", source: "공식 제품 페이지 ↗", buyPattern: "패턴 구매 페이지 ↗", freePattern: "무료 패턴 보기 ↗", discontinuedPattern: "판매 종료된 원작 페이지 ↗", viewMadeItem: "완성작 보기 ↗", viewSavedPattern: "패턴 보관함에서 보기 ↗", viewBoard: "Pinterest 보드 열기 ↗",
     pinterestTitle: "Pinterest 보드 연결", pinterestNote: "공유 보드도 연결할 수 있어요. 먼저 공개 또는 접근 가능한 보드 주소를 확인하고, 실제 자동 동기화 단계에서 Pinterest 로그인을 연결합니다.", boardUrl: "보드 주소", cancel: "취소", checkUrl: "주소 확인",
     filterNames: { CRAFT: "기법", SKILL: "난이도", TYPE: "유형", "NEEDLE SIZE": "바늘 크기", CATEGORY: "분류", STATUS: "상태" },
-    values: { Knit: "대바늘", Crochet: "코바늘", Advanced: "고급", Intermediate: "중급", Beginner: "초급", Bag: "가방", Blanket: "블랭킷", Cardigan: "카디건", Hat: "모자", Headband: "헤드밴드", Scarf: "스카프", Shawl: "숄", Socks: "양말", Toy: "인형", Top: "상의", YES: "예", "Made by Me": "내가 만든 것", Tool: "도구", Pinterest: "Pinterest", "Pattern inspiration": "패턴 레퍼런스", "Connected pin": "연결된 핀", "Crochet hooks": "코바늘 세트", "Knitting needles": "대바늘 세트", Finished: "완성", "In use": "사용 중", Loved: "애정 도구", "Free pattern": "무료 패턴", Discontinued: "판매 종료", "Saved pattern": "저장한 패턴", "Not specified": "정보 미등록", "Gauge is not critical": "게이지가 중요하지 않음", "No stitch gauge specified": "스티치 게이지 미지정", "Tulip ETIMO Red Crochet Hook Set": "튤립 에티모 레드 코바늘 세트", "ChiaoGoo TWIST Blue Shorties": "치아오구 트위스트 블루 쇼티 세트", "KnitPro Ginger Grande 5-inch Set": "니트프로 진저 그란데 5인치 세트", "Clover Takumi Combo Set": "클로버 타쿠미 콤보 세트", "Lotus Sahara 5-inch Set": "로터스 사하라 5인치 세트", "Basket Bag": "바스켓 백", "Beanie No. 6": "비니 No. 6", "Brigitte Headband": "브리짓 헤드밴드", "Cardigan No. 4": "카디건 No. 4", "Crochet Scrunchie Bag": "코바늘 스크런치 백", "Harlequin Shawlette": "할리퀸 숄렛", "Joanna Hat": "조안나 햇", "Little Cinnamon Teddy Bear": "리틀 시나몬 테디 베어", "Overlap Scarf": "오버랩 스카프", "Peace By Piece": "피스 바이 피스", "You Better Work Socks": "유 베터 워크 삭스" },
+    values: { Knit: "대바늘", Crochet: "코바늘", Advanced: "고급", Intermediate: "중급", Beginner: "초급", Bag: "가방", Blanket: "블랭킷", Cardigan: "카디건", Hat: "모자", Headband: "헤드밴드", Scarf: "스카프", Shawl: "숄", Socks: "양말", Toy: "인형", Top: "상의", YES: "예", "Made by Me": "내가 만든 것", Tool: "도구", Pinterest: "Pinterest", "Pattern inspiration": "패턴 레퍼런스", "Connected pin": "연결된 핀", "Crochet hooks": "코바늘 세트", "Knitting needles": "대바늘 세트", Finished: "완성", "In use": "사용 중", Loved: "애정 도구", "Free pattern": "무료 패턴", Discontinued: "판매 종료", "Saved pattern": "저장한 패턴", "Not specified": "정보 미등록", "Gauge is not critical": "게이지가 중요하지 않음", "No stitch gauge specified": "스티치 게이지 미지정", "Tulip ETIMO Red Crochet Hook Set": "튤립 에티모 레드 코바늘 세트", "ChiaoGoo TWIST Blue Shorties": "치아오구 트위스트 블루 쇼티 세트", "KnitPro Ginger Grande 5-inch Set": "니트프로 진저 그란데 5인치 세트", "Clover Takumi Combo Set": "클로버 타쿠미 콤보 세트", "Lotus Sahara 5-inch Set": "로터스 사하라 5인치 세트", "Basket Bag": "바스켓 백", "Beanie No. 6": "비니 No. 6", "Brigitte Headband": "브리짓 헤드밴드", "Cardigan No. 4": "카디건 No. 4", "Crochet Scrunchie Bag": "코바늘 스크런치 백", "Fringe Checked Scarf": "프린지 체크 스카프", "Harlequin Shawlette": "할리퀸 숄렛", "Joanna Hat": "조안나 햇", "Little Cinnamon Teddy Bear": "리틀 시나몬 테디 베어", "Overlap Scarf": "오버랩 스카프", "Peace By Piece": "피스 바이 피스", "You Better Work Socks": "유 베터 워크 삭스" },
     statNames: { PATTERNS: "패턴", CRAFTS: "기법", TYPES: "유형", ITEMS: "아이템", TOOLS: "도구", "MADE BY ME": "내가 만든 것", REFERENCES: "레퍼런스", BOARDS: "보드", CONNECTED: "연결" },
     meta: { BRAND: "브랜드", DESIGNER: "디자이너", GAUGE: "게이지", "ORIGINAL YARN": "원작실", NEEDLE: "바늘", TYPE: "유형", MATERIAL: "재질", SIZES: "크기", CABLES: "케이블", INCLUDES: "구성품", COMPATIBLE: "호환", SOURCE: "출처", PATTERN: "원작 패턴", STATUS: "패턴 상태", "MADE ITEM": "나의 완성작", "SAVED PATTERN": "저장한 패턴", DETAIL: "상태", DATE: "완성일" }
   },
@@ -176,7 +177,7 @@ const UI_COPY = {
     results: "results", sort: "Sort", sortName: "Name A-Z", sortCategory: "Category", sortType: "Type", grid: "Grid", list: "List",
     noResults: "No matching items", noResultsNote: "Try widening the search or filters.", clearFilters: "Clear filters",
     emptyTaste: "No taste references yet", emptyTasteNote: "Connect a Pinterest board to bring colors, textures, spaces, and objects into this cabinet.", connectPinterest: "Connect Pinterest board",
-    back: "Back to Mix Room ↑", detailView: "View details", close: "Close", source: "Official product page ↗", freePattern: "View free pattern ↗", discontinuedPattern: "View discontinued source ↗", viewMadeItem: "View finished item ↗", viewSavedPattern: "View saved pattern ↗", viewBoard: "Open Pinterest board ↗",
+    back: "Back to Mix Room ↑", detailView: "View details", close: "Close", source: "Official product page ↗", buyPattern: "Buy pattern ↗", freePattern: "View free pattern ↗", discontinuedPattern: "View discontinued source ↗", viewMadeItem: "View finished item ↗", viewSavedPattern: "View saved pattern ↗", viewBoard: "Open Pinterest board ↗",
     pinterestTitle: "Connect Pinterest board", pinterestNote: "Shared boards can be connected too. Check the board URL first, then connect your Pinterest login for live sync.", boardUrl: "Board URL", cancel: "Cancel", checkUrl: "Check URL",
     filterNames: {}, values: {}, statNames: {}, meta: {}
   }
@@ -234,6 +235,7 @@ async function enrichPatternDetails() {
       item.originalYarn = formatOriginalYarn(source.recommended_yarn);
       item.needle = source.gauge?.needle || source.tools?.[0] || "Not specified";
       item.needleSize = formatNeedleSize(item.needle);
+      item.patternUrl = source.pattern_access?.purchase_url || null;
     });
   } catch (error) {
     PATTERNS.forEach((item) => {
@@ -380,7 +382,7 @@ function openItem(index) {
     ? pageKey === "patterns" ? "이 패턴을 다음 믹스의 형태와 구조로 사용할 수 있어요." : pageKey === "taste" ? "연결한 Pinterest 보드에서 가져온 패턴 레퍼런스예요." : item.category === "Tool" ? "손에 익은 도구의 재료와 세트 구성을 기록해두었어요." : "나의 작업 과정과 함께 기억해둘 아이템이에요."
     : pageKey === "patterns" ? "Use this pattern as the form and structure of a future mix." : pageKey === "taste" ? "A pattern reference from the connected Pinterest board." : item.category === "Tool" ? "Materials and set contents for a familiar tool." : "An item to remember with its making process.";
   el("dialogMeta").innerHTML = pageKey === "patterns"
-    ? `<div><dt>${metaLabel("BRAND")}</dt><dd>${item.brand}</dd></div><div><dt>${metaLabel("DESIGNER")}</dt><dd>${translated(item.designer)}</dd></div><div><dt>${metaLabel("GAUGE")}</dt><dd>${translated(item.gauge)}</dd></div><div><dt>${metaLabel("ORIGINAL YARN")}</dt><dd>${item.originalYarn}</dd></div><div><dt>${metaLabel("NEEDLE")}</dt><dd>${translated(item.needle)}</dd></div>${item.relatedItem ? `<div><dt>${metaLabel("MADE ITEM")}</dt><dd><a href="./items.html?open=${encodeURIComponent(item.relatedItem)}">${UI_COPY[state.language].viewMadeItem}</a></dd></div>` : ""}`
+    ? `<div><dt>${metaLabel("BRAND")}</dt><dd>${item.brand}</dd></div><div><dt>${metaLabel("DESIGNER")}</dt><dd>${translated(item.designer)}</dd></div><div><dt>${metaLabel("GAUGE")}</dt><dd>${translated(item.gauge)}</dd></div><div><dt>${metaLabel("ORIGINAL YARN")}</dt><dd>${item.originalYarn}</dd></div><div><dt>${metaLabel("NEEDLE")}</dt><dd>${translated(item.needle)}</dd></div>${item.patternUrl ? `<div><dt>${metaLabel("SOURCE")}</dt><dd><a href="${item.patternUrl}" target="_blank" rel="noreferrer">${UI_COPY[state.language].buyPattern}</a></dd></div>` : ""}${item.relatedItem ? `<div><dt>${metaLabel("MADE ITEM")}</dt><dd><a href="./items.html?open=${encodeURIComponent(item.relatedItem)}">${UI_COPY[state.language].viewMadeItem}</a></dd></div>` : ""}`
     : pageKey === "taste"
       ? `<div><dt>${metaLabel("TYPE")}</dt><dd>${translated(item.type)}</dd></div><div><dt>BOARD</dt><dd>${item.date}</dd></div><div><dt>${metaLabel("SOURCE")}</dt><dd><a href="${item.source}" target="_blank" rel="noreferrer">${UI_COPY[state.language].viewBoard}</a></dd></div>`
     : item.specs

@@ -1,256 +1,147 @@
 # Skein to Mood
 
-**A visual yarn closet & knit planning journal.**
+**A personal mood-mapping studio for yarn, patterns, handmade objects, and visual references.**
 
-Skein to Mood is a personal yarn archive built as a colorful GitHub Pages project site.  
-It tracks yarn stash like a virtual closet, turns each yarn’s color and fiber into moodboards, and helps plan future knitting or crochet projects.
-
-## Concept
-
-뉴욕에서 우연히 시작한 뜨개가 목도리, 넥워머, 가방, 버킷햇, 니트모자로 이어졌고, 어느새 손염색실을 모으는 무서운 길에 들어섰다.
-
-Skein to Mood는 쌓여가는 실을 가상 클로젯처럼 기록하고, 각 실이 가진 색과 재질을 무드보드로 풀어내며, 그 실에 어울리는 패턴을 찾아가는 니트 플래닝 저널.
+Skein to Mood는 실 보관함에서 시작해 패턴, 직접 만든 아이템, 취향 레퍼런스를 함께 모으고 조합하는 개인 아카이브다. 오늘의 기분을 선택하면 실과 패턴을 무작위로 매칭하고, 선택한 실의 색과 질감을 패턴 이미지에 입힌 합성 미리보기를 만든다.
 
 ## Live Site
 
-```txt
-https://rimhoho.github.io/skein-to-mood/
-```
+[https://rimhoho.github.io/skein-to-mood/](https://rimhoho.github.io/skein-to-mood/)
 
-## Site Goals
+이전 `wireframe.html` 주소는 메인 페이지로 자동 이동한다.
 
-- Show yarn stash visually.
-- Record brand, base, colorway, fiber content, weight, quantity, yardage, and mood.
-- Build color moodboards from yarns.
-- Match yarns with knitting/crochet pattern ideas.
-- Keep a `chatgpt-instructions.md` file that can be copied into ChatGPT custom instructions or project context.
-- Keep yarn data structured enough to update, filter, and expand over time.
+## Current Pages
+
+| Page | URL | Purpose |
+| --- | --- | --- |
+| The Mix Room | `/` | 오늘의 무드 체크인, 실·패턴 조합 생성, 합성 미리보기, 믹스 저장 |
+| Yarn Cabinet | `/yarns.html#stash` | 실 검색, 정렬, 브랜드·굵기·베이스·섬유·색상 필터와 상세 정보 |
+| Pattern Cabinet | `/patterns.html#top` | 패턴 검색과 필터, 게이지·원작실·니들 사이즈 상세 정보 |
+| My Items | `/items.html#top` | 도구와 직접 만든 작품 기록 |
+| Taste Cabinet | `/taste.html#top` | 취향 레퍼런스와 Pinterest 보드 연결 진입점 |
+
+## Main Features
+
+- **Mood check-in:** 온도와 에너지 슬라이더, 무드 키워드로 오늘의 감각을 선택한다.
+- **Feeling Lucky / 조합 생성:** 보관함의 실과 패턴을 새로 조합한다.
+- **Pattern synthesis preview:** 패턴 대표 이미지 위에 선택한 실의 평균 색상과 실제 실 이미지를 Canvas로 혼합한다.
+- **Saved mixes:** 합성 결과와 연결 정보를 브라우저 `localStorage`에 저장하고 상세 팝업에서 확인하거나 삭제한다.
+- **Four cabinets:** Yarn, Pattern, My Items, Taste를 독립된 보관함으로 탐색한다.
+- **Filtering and sorting:** 각 보관함에서 검색, 카테고리 필터, 정렬, Grid/List 전환을 제공한다.
+- **Detail dialogs:** 카드 또는 믹스를 선택하면 이미지와 메타데이터를 오프화이트 톤 팝업으로 보여준다. 팝업 바깥을 눌러 닫을 수 있다.
+- **Shared language state:** 한국어/영어 선택이 모든 페이지에 이어진다.
+- **Shared theme state:** 기본 다크 테마와 라이트 테마를 해/달 버튼으로 전환하며 선택은 모든 페이지에 유지된다.
+- **Responsive navigation:** 모바일에서는 로고와 사이트명 아래에 보관함 내비게이션이 배치된다.
+- **Pinterest entry point:** 공개 Pinterest 보드 URL을 확인하고 외부 보드로 이동할 수 있다. Pinterest API 기반 자동 동기화는 아직 구현되지 않았다.
+
+## Current Collection
+
+- Yarn entries: **33**
+- Total skeins: **53**
+- Brands: **2**
+- Pattern entries: **12**
+- Yarn images: **30**
+- Pattern images: **13**
+- Made-by-me images: **6**
+- Tool images: **4**
+
+수량과 이미지 수는 컬렉션 업데이트에 따라 달라질 수 있다.
 
 ## Design Direction
 
-The site uses a bold, colorful, editorial layout inspired by playful DTC websites.
+Are.na의 조용하고 정보 중심적인 피드와 아카이브 UI를 참고해, 장식보다 콘텐츠가 먼저 보이는 개인 작업실을 지향한다.
 
-Style keywords:
+- 오프화이트와 따뜻한 회갈색 기반의 라이트/다크 테마
+- 굵은 프레임 대신 얇은 경계선
+- IBM Plex Sans KR 중심의 절제된 타이포그래피
+- 카드보다 이미지와 메타데이터를 중심으로 한 플랫한 레이아웃
+- 모바일에서도 빠르게 보관함 사이를 이동할 수 있는 고정 헤더
 
-- Big typography
-- Full-color sections
-- Chunky rounded buttons
-- Rounded yarn cards
-- Moodboard color chips
-- Cozy but modern visual identity
-- Personal archive feeling, like a virtual yarn closet
+## Data
 
-Main palette:
+### `data/my-yarn-stash.json`
 
-| Name | Hex |
-| --- | --- |
-| Cream | `#F4EBDD` |
-| Oatmeal Beige | `#D8C3A8` |
-| Rothko Taupe Brown | `#7B6555` |
-| Smoky Gray | `#8A8882` |
-| Smoke Blue Gray | `#B8C5D3` |
-| Pale Lilac Gray | `#A79BA5` |
-| Antique Rose Brown | `#9A6F67` |
-| Deep Cacao Plum | `#302226` |
-| Ink Brown | `#241D1A` |
+실 재고의 원본 데이터다. 각 항목은 다음과 같은 정보를 포함할 수 있다.
+
+- `id`, `brand`, `base`, `colorway`, `quantity`
+- `weight`, `fiber_content`, `skein_weight_g`, `yardage_m`
+- `color_family`, `palette_hex`, `mood`, `texture`, `pattern_ideas`
+- `batch_code`, `care`, `notes`, `source`, `image`
+
+`id`는 소문자 kebab-case, `quantity`는 숫자, 알 수 없는 값은 `null`을 사용한다. `palette_hex`에는 보관함 컬러칩과 패턴 합성에 함께 쓰는 대표색 2~3개를 저장한다. 같은 색상이라도 베이스가 다르면 별도 항목으로 기록한다.
+
+### `data/pattern-library.json`
+
+패턴 카드와 상세 팝업에서 사용하는 패턴 데이터다. 디자이너, 기술 수준, 게이지, 원작실, 니들 사이즈, 관련 완성작 등의 정보를 담는다.
+
+### `data/shop-yarn-bases.json`
+
+브랜드와 실 베이스의 보조 메타데이터다. 실 상세 정보와 Mix Room의 조합 설명을 보완한다.
+
+## State Management
+
+이 프로젝트는 백엔드 없이 브라우저에서 동작한다.
+
+- 언어: `skein-to-mood:language`
+- 테마: `skein-to-mood:theme`
+- 저장한 믹스: `localStorage`의 Mix Room 전용 키
+
+`site-state.js`가 언어와 테마를 공통 관리하고, 각 페이지는 `storage` 이벤트를 통해 변경 상태를 공유한다. 저장한 믹스는 현재 브라우저와 기기에만 남는다.
 
 ## File Structure
 
 ```txt
 skein-to-mood/
-├─ index.html
+├─ index.html              # The Mix Room / main page
+├─ yarns.html              # Yarn Cabinet
+├─ patterns.html           # Pattern Cabinet
+├─ items.html              # My Items
+├─ taste.html              # Taste Cabinet
+├─ wireframe.html          # Legacy URL redirect
+├─ wireframe.css
+├─ wireframe.js
 ├─ styles.css
 ├─ script.js
-├─ my-yarn-stash.json
+├─ cabinet.css
+├─ cabinet.js
+├─ site-state.js           # Shared language and theme state
+├─ data/
+│  ├─ my-yarn-stash.json
+│  ├─ pattern-library.json
+│  └─ shop-yarn-bases.json
+├─ assets/images/
+│  ├─ yarn/
+│  ├─ pattern/
+│  ├─ madeByMe/
+│  ├─ tools/
+│  └─ textures/
 ├─ _config.yml
 ├─ chatgpt-instructions.md
-├─ README.md
-├─ .gitignore
-└─ assets/
-   └─ images/
-      ├─ yak-single-rothko.jpg
-      ├─ melted-baby-suri-smoke.jpg
-      ├─ blackbird-linen-ink-blue.jpg
-      └─ quartz-fume.jpg
+└─ README.md
 ```
 
-## Yarn Stash Data
+## Local Development
 
-Yarn inventory is stored in `my-yarn-stash.json`.
+빌드 과정이나 npm 의존성은 없다. JSON을 `fetch()`하므로 `file://`로 직접 열지 말고 간단한 정적 서버를 사용한다.
 
-Each yarn entry records both practical knitting information and mood-board information:
-
-- brand
-- base
-- colorway
-- quantity
-- yarn weight
-- fiber content
-- skein weight
-- yardage
-- batch code, barcode, or SKU when available
-- color family
-- mood keywords
-- texture keywords
-- pattern ideas
-- notes
-- source information when the yarn is from a set, lucky dip bag, or archived colourway page
-
-## How to Add a Yarn
-
-Add a new item to `my-yarn-stash.json`.
-
-Basic example:
-
-```json
-{
-  "id": "qing-fibre-melted-baby-suri-smoke",
-  "brand": "Qing Fibre",
-  "base": "Melted Baby Suri",
-  "colorway": "Smoke",
-  "quantity": 1,
-  "weight": "lace / fluffy lace",
-  "fiber_content": {
-    "baby_suri_alpaca": 65,
-    "merino": 20,
-    "silk": 15
-  },
-  "skein_weight_g": 50,
-  "yardage_m": 175,
-  "batch_code": "2649",
-  "care": "Wash before use in cold water with a little wool wash. May bleed during first couple of washes. Lay flat to dry.",
-  "color_family": [
-    "pale blue grey",
-    "mist grey",
-    "soft green",
-    "muted gold",
-    "smoky blue"
-  ],
-  "mood": [
-    "misty",
-    "quiet",
-    "foggy",
-    "soft smoke",
-    "winter garden"
-  ],
-  "texture": [
-    "fluffy",
-    "halo",
-    "airy",
-    "brushed"
-  ],
-  "notes": "Pale smoky blue-grey Melted Baby Suri with muted green and golden-brown patches.",
-  "pattern_ideas": [
-    "held-together cardigan",
-    "misty neck warmer",
-    "soft hat",
-    "collar accent",
-    "gentle stripe project"
-  ]
-}
+```powershell
+python -m http.server 4173
 ```
 
-## Data Conventions
+브라우저에서 [http://127.0.0.1:4173/](http://127.0.0.1:4173/)을 연다.
 
-- `id` uses lowercase kebab-case.
-  - Example: `qing-fibre-baby-teddy-noctilucent-cloud`
-- `brand`, `base`, and `colorway` use display-ready names.
-  - Example: `Qing Fibre`, `Baby Teddy`, `Noctilucent Cloud`
-- `colorway` names use Title Case.
-  - Example: `Crop Circle`, `Rose Tinted`, `Moon Goddess`
-- If the same colorway exists on different bases, each base is stored as a separate yarn item.
-  - Example: `Baby Teddy / Echo` and `Yak / Echo`
-- Unknown values are stored as `null`.
-- `quantity` is stored as a number.
-  - Example: `1`
-- Fiber content is stored as an object with percentage values.
-- Yardage is stored in meters when available.
-- `pattern_ideas` are planning prompts, not confirmed pattern matches.
-- `notes` can include personal observations about color, texture, or project ideas.
+## GitHub Pages
 
-## Special Yarn Sources
+이 저장소는 GitHub Pages project site다.
 
-Some skeins are from lucky dip bags, fade sets, or archived colourways.
-
-When a detailed product page is no longer available, the `source` field records where the colorway was identified.
-
-Example:
-
-```json
-{
-  "source": {
-    "type": "archived_colourway_page",
-    "name": "Punjabi",
-    "note": "Detailed product page is no longer available; colorway is identified from Qing Fibre's colourway archive."
-  }
-}
-```
-
-When a skein belongs to a fade set and the individual skein name is not listed, it is recorded with the set name and a descriptive temporary colorway name.
-
-Example:
-
-```json
-{
-  "colorway": "Moonage Fade Set - Unnamed Pink Lavender Skein",
-  "set_name": "Moonage Fade Set - Melted Baby Suri",
-  "source": {
-    "type": "official_product_page",
-    "name": "Moonage Fade Set - Melted Baby Suri",
-    "note": "Official page describes the set as 5 skeins of Melted Baby Suri fading from gentle pinks to dewy violets; individual skein names are not listed."
-  }
-}
-```
-
-## Current Stash Notes
-
-The stash currently includes a growing Qing Fibre collection across several bases:
-
-- Melted Baby Suri
-- Baby Teddy
-- Teddy
-- Dashing Fingering
-- Dashing Sassy
-- Merino Singles
-- Yak Single
-
-This includes regular skeins, Lucky Dip Bag skeins, archived colourways, and one Moonage Fade Set skein.
-
-## GitHub Pages Setup
-
-This is a project site.
-
-Repository name:
-
-```txt
-skein-to-mood
-```
-
-Published URL:
-
-```txt
-https://rimhoho.github.io/skein-to-mood/
-```
-
-In GitHub:
-
-1. Go to repository **Settings**
-2. Open **Pages**
-3. Set source to `Deploy from a branch`
-4. Choose `main`
-5. Choose `/root`
-6. Save
+1. Repository **Settings**에서 **Pages**를 연다.
+2. Source를 `Deploy from a branch`로 선택한다.
+3. `main` 브랜치와 `/root` 폴더를 선택한다.
+4. 배포가 끝나면 루트 URL에서 `index.html`의 Mix Room이 열린다.
 
 ## Notes
 
-This is a static site. No build tools, npm, or backend are required for the first version.
-
-Future ideas:
-
-- Yarn detail pages
-- Filter by fiber, weight, season, or mood
-- Pattern match database
-- Moodboard generator
-- Project journal entries
-- Copyable ChatGPT context export
-- Archive notes for discontinued or lucky dip colorways
+- 사이트는 정적 HTML, CSS, JavaScript로 구성된다.
+- 합성 이미지는 서버 생성 이미지가 아니라 브라우저 Canvas 미리보기다.
+- 사용자 계정이나 클라우드 동기화는 아직 없다.
+- 실과 패턴 데이터는 JSON 파일을 수정해 확장한다.

@@ -14,9 +14,9 @@
 </head>
 <body data-cabinet="taste">
   <header class="site-header">
-    <a class="brand" href="./wireframe.html#top" aria-label="Skein to Mood 홈"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Skein to Mood</span></a>
+    <a class="brand" href="./index.html#top" aria-label="Skein to Mood 홈"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Skein to Mood</span></a>
     <nav class="site-nav" aria-label="주요 메뉴">
-      <a href="./index.html#stash">실 보관함</a>
+      <a href="./yarns.html#stash">실 보관함</a>
       <a data-page="patterns" href="./patterns.html#top">패턴 보관함</a>
       <a data-page="items" href="./items.html#top">나의 아이템</a>
       <a data-page="taste" href="./taste.html#top">취향 보관함</a>
@@ -55,10 +55,10 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer"><span>Skein to Mood · Four cabinets</span><a href="./wireframe.html#top">Mix Room으로 돌아가기 ↑</a></footer>
+  <footer class="site-footer"><span>Skein to Mood · Four cabinets</span><a href="./index.html#top">Mix Room으로 돌아가기 ↑</a></footer>
   <dialog id="itemDialog" class="item-dialog"><button id="closeDialog" class="dialog-close" type="button" aria-label="닫기">×</button><div class="dialog-shell"><div class="dialog-media"><img id="dialogImage" alt="" /><div id="dialogPlaceholder" class="dialog-placeholder" hidden><small>LOTUS YARNS</small><strong>SAHARA</strong><b>5\" INTERCHANGEABLE SET</b></div></div><div class="dialog-copy"><p id="dialogEyebrow" class="eyebrow"></p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><dl id="dialogMeta" class="dialog-meta"></dl></div></div></dialog>
   <dialog id="pinterestDialog" class="pinterest-dialog"><form id="pinterestForm"><h2>Pinterest 보드 연결</h2><p>공유 보드도 연결할 수 있어요. 먼저 공개 또는 접근 가능한 보드 주소를 확인하고, 실제 자동 동기화 단계에서 Pinterest 로그인을 연결합니다.</p><label for="pinterestUrl">BOARD URL<input id="pinterestUrl" type="url" placeholder="https://www.pinterest.com/.../.../" required /></label><p id="connectionNote" class="connection-note" aria-live="polite"></p><div class="dialog-actions"><button id="cancelPinterest" type="button">취소</button><button class="primary" type="submit">주소 확인</button></div></form></dialog>
   <script>document.querySelector(`[data-page="${document.body.dataset.cabinet}"]`)?.classList.add("active");</script>
-  <script src="./cabinet.js" type="module"></script>
+  <script src="./cabinet.js?v=20260928-2" type="module"></script>
 </body>
 </html>

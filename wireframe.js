@@ -7,25 +7,22 @@ const mixes = {
     { name: "Galapagos Teal", meta: "Blackbird Linen · DK", image: "./assets/images/yarn/purl-soho-blackbird-linen-galapagos-teal.png" }
   ],
   pattern: [
-    { name: "Joanna Hat", meta: "Hat · Intermediate", image: "./assets/images/pattern/joanna-hat.png" },
+    { name: "Joanna Hat", meta: "Hat · Intermediate", image: "./assets/images/pattern/joanna-hat.png?v=20260928-2" },
     { name: "Harlequin Shawlette", meta: "Shawl · Intermediate", image: "./assets/images/pattern/harlequin-shawlette.png" },
     { name: "Cardigan No. 4", meta: "Cardigan · Advanced", image: "./assets/images/pattern/cardigan-no-4.png?v=20260928-2" },
     { name: "Basket Bag", meta: "Bag · Intermediate", image: "./assets/images/pattern/basket-bag.png?v=20260928-3" }
-  ],
-  element: [
-    { name: "Pattern reference 01", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/36/09/80/36098060bf30080736310c9e353b021f.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
-    { name: "Pattern reference 02", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/dd/72/8a/dd728a458d8c710ac74fd474f63bbfd1.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
-    { name: "Pattern reference 03", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/44/9a/41/449a41f450cfa32f5d704f51c7b437fd.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
-    { name: "Pattern reference 04", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/b8/68/2f/b8682f184982dfa419ad7f039dcb8932.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } },
-    { name: "Pattern reference 05", meta: "Pinterest · Pattern inspiration", image: "https://i.pinimg.com/474x/64/f0/cf/64f0cf52aec18d93fc497014c3d2c856.jpg", visualLabel: "", details: { CATEGORY: "Taste", TYPE: "Pattern inspiration", BOARD: "패턴", CABINET: "Taste" } }
   ]
 };
 
+let libraryCache = { yarns: [], patterns: [], yarnBases: [] };
 const libraryData = Promise.all([
   fetch("./data/my-yarn-stash.json").then((response) => response.ok ? response.json() : []),
   fetch("./data/pattern-library.json").then((response) => response.ok ? response.json() : []),
   fetch("./data/shop-yarn-bases.json").then((response) => response.ok ? response.json() : [])
-]).then(([yarns, patterns, yarnBases]) => ({ yarns, patterns, yarnBases })).catch(() => ({ yarns: [], patterns: [], yarnBases: [] }));
+]).then(([yarns, patterns, yarnBases]) => {
+  libraryCache = { yarns, patterns, yarnBases };
+  return libraryCache;
+}).catch(() => libraryCache);
 
 const translations = {
   ko: {
@@ -47,27 +44,21 @@ const translations = {
 };
 
 const STORAGE_KEY = "skein-to-mood:saved-mixes";
-const DEFAULT_SAVED_MIXES = [
-  { id: "mix-001", title: "Powder & Air", tags: "tender · hazy · rose", primary: "./assets/images/yarn/qing-fibre-melted-baby-suri-antique-rose.png", secondary: "./assets/images/pattern/harlequin-shawlette.png", savedDate: "2026-09-28", note: "부드러운 재료와 느린 리듬이 만나는 조합. 다음 프로젝트를 위한 출발점.", connections: { yarn: "Antique Rose", pattern: "Harlequin Shawlette", element: "Pattern reference 01" } },
-  { id: "mix-002", title: "Night Geometry", tags: "quiet · graphic · deep", primary: "./assets/images/yarn/qing-fibre-yak-somnia.png", secondary: "./assets/images/pattern/joanna-hat.png", savedDate: "2026-09-28", note: "깊은 색과 또렷한 구조가 만나는 차분한 조합.", connections: { yarn: "Somnia", pattern: "Joanna Hat", element: "Pattern reference 02" } },
-  { id: "mix-003", title: "Warm Interval", tags: "sunny · tactile · slow", primary: "./assets/images/yarn/purl-soho-estuary-yellow-saffron.png", secondary: "./assets/images/pattern/basket-bag.png?v=20260928-3", savedDate: "2026-09-28", note: "따뜻한 색과 손에 잡히는 구조를 천천히 이어가는 조합.", connections: { yarn: "Yellow Saffron", pattern: "Basket Bag", element: "Pattern reference 03" } }
-];
+const LEGACY_SAMPLE_IDS = new Set(["mix-001", "mix-002", "mix-003"]);
 
 function loadSavedMixes() {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    const saved = Array.isArray(stored) ? stored : DEFAULT_SAVED_MIXES;
-    return saved.map((mix, index) => ({
+    const saved = Array.isArray(stored) ? stored.filter((mix) => !LEGACY_SAMPLE_IDS.has(mix.id)) : [];
+    return saved.map((mix) => ({
       ...mix,
       connections: {
         ...mix.connections,
-        element: mixes.element.some((item) => item.name === mix.connections?.element)
-          ? mix.connections.element
-          : mixes.element[index % mixes.element.length].name
+        element: `${mix.connections?.yarn || "Yarn"} × ${mix.connections?.pattern || "Pattern"}`
       }
     }));
   } catch {
-    return DEFAULT_SAVED_MIXES;
+    return [];
   }
 }
 
@@ -108,7 +99,15 @@ function randomItem(items, currentName) {
   return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function updateSlot(type) {
+function waitForImage(image) {
+  if (image.complete && image.naturalWidth) return Promise.resolve();
+  return new Promise((resolve, reject) => {
+    image.addEventListener("load", resolve, { once: true });
+    image.addEventListener("error", reject, { once: true });
+  });
+}
+
+async function updateSlot(type) {
   const slot = document.querySelector(`[data-slot="${type}"]`);
   if (slot.querySelector(".lock-button").getAttribute("aria-pressed") === "true") return;
   const name = document.querySelector(`#${type}Name`);
@@ -126,12 +125,150 @@ function updateSlot(type) {
   }
   image.alt = next.name;
   slot.querySelector(".slot-detail-trigger").setAttribute("aria-label", `${next.name} 상세 보기`);
-  if (type === "element") {
-    const visualLabel = document.querySelector("#elementVisualLabel");
-    const media = visualLabel.closest(".element-media");
-    visualLabel.textContent = next.visualLabel;
-    visualLabel.hidden = !next.visualLabel;
-    media.classList.toggle("placeholder", !next.image);
+  await waitForImage(image);
+}
+
+function drawCover(context, image, width, height) {
+  const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight);
+  const drawnWidth = image.naturalWidth * scale;
+  const drawnHeight = image.naturalHeight * scale;
+  context.drawImage(image, (width - drawnWidth) / 2, (height - drawnHeight) / 2, drawnWidth, drawnHeight);
+}
+
+function averageYarnColor(image) {
+  const sample = document.createElement("canvas");
+  sample.width = 48;
+  sample.height = 48;
+  const context = sample.getContext("2d", { willReadFrequently: true });
+  const cropWidth = image.naturalWidth * .58;
+  const cropHeight = image.naturalHeight * .58;
+  context.drawImage(image, (image.naturalWidth - cropWidth) / 2, (image.naturalHeight - cropHeight) / 2, cropWidth, cropHeight, 0, 0, 48, 48);
+  const pixels = context.getImageData(0, 0, 48, 48).data;
+  let red = 0;
+  let green = 0;
+  let blue = 0;
+  let count = 0;
+  for (let index = 0; index < pixels.length; index += 4) {
+    const brightness = (pixels[index] + pixels[index + 1] + pixels[index + 2]) / 3;
+    if (pixels[index + 3] < 200 || brightness < 22 || brightness > 242) continue;
+    red += pixels[index];
+    green += pixels[index + 1];
+    blue += pixels[index + 2];
+    count += 1;
+  }
+  return count ? [red / count, green / count, blue / count].map(Math.round) : [112, 102, 92];
+}
+
+function hexToRgb(hex) {
+  const value = Number.parseInt(hex.slice(1), 16);
+  return [(value >> 16) & 255, (value >> 8) & 255, value & 255];
+}
+
+function rgbToHsl(red, green, blue) {
+  const r = red / 255;
+  const g = green / 255;
+  const b = blue / 255;
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const lightness = (max + min) / 2;
+  if (max === min) return [0, 0, lightness];
+  const delta = max - min;
+  const saturation = lightness > .5 ? delta / (2 - max - min) : delta / (max + min);
+  let hue = max === r ? (g - b) / delta + (g < b ? 6 : 0) : max === g ? (b - r) / delta + 2 : (r - g) / delta + 4;
+  return [hue * 60, saturation, lightness];
+}
+
+function hslToRgb(hue, saturation, lightness) {
+  const chroma = (1 - Math.abs(2 * lightness - 1)) * saturation;
+  const section = hue / 60;
+  const x = chroma * (1 - Math.abs((section % 2) - 1));
+  const [r1, g1, b1] = section < 1 ? [chroma, x, 0] : section < 2 ? [x, chroma, 0] : section < 3 ? [0, chroma, x] : section < 4 ? [0, x, chroma] : section < 5 ? [x, 0, chroma] : [chroma, 0, x];
+  const match = lightness - chroma / 2;
+  return [r1, g1, b1].map((channel) => Math.round((channel + match) * 255));
+}
+
+function hueDistance(first, second) {
+  const distance = Math.abs(first - second);
+  return Math.min(distance, 360 - distance);
+}
+
+function dominantGarmentHue(pixels, width, height) {
+  const bins = new Array(24).fill(0);
+  const xStart = Math.floor(width * .18);
+  const xEnd = Math.ceil(width * .82);
+  const yStart = Math.floor(height * .14);
+  const yEnd = Math.ceil(height * .86);
+  for (let y = yStart; y < yEnd; y += 2) {
+    for (let x = xStart; x < xEnd; x += 2) {
+      const index = (y * width + x) * 4;
+      const [hue, saturation, lightness] = rgbToHsl(pixels[index], pixels[index + 1], pixels[index + 2]);
+      if (saturation < .16 || lightness < .08 || lightness > .92) continue;
+      bins[Math.floor(hue / 15) % bins.length] += saturation * (1 - Math.abs(lightness - .5));
+    }
+  }
+  const strongest = Math.max(...bins);
+  return strongest > 0 ? (bins.indexOf(strongest) + .5) * 15 : null;
+}
+
+function recolorGarment(context, yarnImage, targetPalette, width, height) {
+  const patternData = context.getImageData(0, 0, width, height);
+  const pixels = patternData.data;
+  const garmentHue = dominantGarmentHue(pixels, width, height);
+  const targetColors = targetPalette.map((color) => rgbToHsl(...color));
+
+  const textureCanvas = document.createElement("canvas");
+  textureCanvas.width = width;
+  textureCanvas.height = height;
+  const textureContext = textureCanvas.getContext("2d", { willReadFrequently: true });
+  drawCover(textureContext, yarnImage, width, height);
+  const texture = textureContext.getImageData(0, 0, width, height).data;
+
+  for (let index = 0; index < pixels.length; index += 4) {
+    const [sourceHue, sourceSaturation, sourceLightness] = rgbToHsl(pixels[index], pixels[index + 1], pixels[index + 2]);
+    const hueMatch = garmentHue === null ? 0 : Math.max(0, 1 - hueDistance(sourceHue, garmentHue) / 42);
+    const chromaMask = Math.min(1, sourceSaturation / .32);
+    const mask = hueMatch * chromaMask;
+    if (mask < .06) continue;
+
+    const textureLightness = (texture[index] + texture[index + 1] + texture[index + 2]) / 765;
+    const paletteIndex = textureLightness > .62 && targetColors[1] ? 1 : textureLightness < .38 && targetColors[2] ? 2 : 0;
+    const [targetHue, targetSaturation, targetLightness] = targetColors[paletteIndex];
+    const texturedLightness = Math.max(.06, Math.min(.9, targetLightness + (sourceLightness - .5) * .45 + (textureLightness - .5) * .05));
+    const recolored = hslToRgb(targetHue, Math.max(.24, Math.min(.72, targetSaturation * .9)), texturedLightness);
+    const strength = mask * .9;
+    pixels[index] = Math.round(pixels[index] * (1 - strength) + recolored[0] * strength);
+    pixels[index + 1] = Math.round(pixels[index + 1] * (1 - strength) + recolored[1] * strength);
+    pixels[index + 2] = Math.round(pixels[index + 2] * (1 - strength) + recolored[2] * strength);
+  }
+  context.putImageData(patternData, 0, 0);
+}
+
+async function renderSynthesis() {
+  const yarnImage = document.querySelector("#yarnImage");
+  const patternImage = document.querySelector("#patternImage");
+  const canvas = document.querySelector("#resultCanvas");
+  const status = document.querySelector("#resultStatus");
+  status.textContent = state.language === "ko" ? "합성 중" : "Generating";
+
+  try {
+    await Promise.all([waitForImage(yarnImage), waitForImage(patternImage)]);
+    const context = canvas.getContext("2d");
+    const { width, height } = canvas;
+    context.clearRect(0, 0, width, height);
+    drawCover(context, patternImage, width, height);
+
+    const yarnName = document.querySelector("#yarnName").textContent;
+    const yarn = mixes.yarn.find((item) => item.name === yarnName);
+    const yarnRecord = libraryCache.yarns.find((item) => item.colorway === yarnName);
+    const targetPalette = yarnRecord?.palette_hex?.length ? yarnRecord.palette_hex.map(hexToRgb) : [averageYarnColor(yarnImage)];
+    recolorGarment(context, yarnImage, targetPalette, width, height);
+
+    const patternName = document.querySelector("#patternName").textContent;
+    document.querySelector("#resultName").textContent = `${yarnName} × ${patternName}`;
+    canvas.setAttribute("aria-label", `${yarnName} 색상과 재질을 ${patternName} 패턴에 합성한 결과`);
+    status.textContent = "";
+  } catch {
+    status.textContent = state.language === "ko" ? "미리보기 실패" : "Preview unavailable";
   }
 }
 
@@ -176,10 +313,12 @@ async function openMixItemDetail(type) {
   const { yarns, patterns, yarnBases } = await libraryData;
   const name = document.querySelector(`#${type}Name`).textContent;
   const meta = document.querySelector(`#${type}Meta`).textContent;
-  const image = document.querySelector(`#${type}Image`).getAttribute("src") || "";
-  let label = "TASTE";
+  const image = type === "result"
+    ? document.querySelector("#resultCanvas").toDataURL("image/jpeg", .9)
+    : document.querySelector(`#${type}Image`).getAttribute("src") || "";
+  let label = "RESULT";
   let rows = {};
-  let note = "이 조합에 개인적인 취향과 리듬을 더하는 조각이에요.";
+  let note = "선택한 실의 색상과 섬유 질감을 패턴 이미지의 명암 위에 합성한 브라우저 미리보기예요.";
 
   if (type === "yarn") {
     const item = yarns.find((entry) => entry.colorway === name) || {};
@@ -205,10 +344,11 @@ async function openMixItemDetail(type) {
     };
     note = "실의 성격을 실제 형태와 구조로 연결하는 조합의 뼈대예요.";
   } else {
-    const item = mixes.element.find((entry) => entry.name === name);
-    label = "TASTE";
-    rows = item?.details || { CATEGORY: "Taste", TYPE: meta.split(" · ")[1], CABINET: "Taste" };
-    note = "취향 보관함에서 고른 이미지가 실과 패턴의 색, 질감, 분위기를 연결해요.";
+    rows = {
+      YARN: document.querySelector("#yarnName").textContent,
+      PATTERN: document.querySelector("#patternName").textContent,
+      METHOD: state.language === "ko" ? "색상 혼합 · 재질 오버레이" : "Color blend · texture overlay"
+    };
   }
 
   const detailImage = document.querySelector("#mixItemImage");
@@ -256,8 +396,9 @@ document.querySelectorAll(".mood-tags button").forEach((button) => {
 
 [elements.energy, elements.texture, elements.color].forEach((input) => input.addEventListener("input", updateMood));
 
-function generateMix() {
-  ["yarn", "pattern", "element"].forEach(updateSlot);
+async function generateMix() {
+  await Promise.all([updateSlot("yarn"), updateSlot("pattern")]);
+  await renderSynthesis();
   elements.save.classList.remove("saved");
   elements.save.textContent = translations[state.language].save;
   updateMood();
@@ -267,7 +408,6 @@ function updateSavedCount() {
   const count = state.savedMixes.length;
   document.querySelector("#savedCount").textContent = String(count).padStart(2, "0");
   document.querySelector("#heroSavedCount").textContent = String(count).padStart(2, "0");
-  document.querySelector(".feed-count").textContent = state.language === "ko" ? `${count}개의 조합` : `${count} ${count === 1 ? "combination" : "combinations"}`;
 }
 
 function renderSavedMixes() {
@@ -278,34 +418,41 @@ function renderSavedMixes() {
     return;
   }
   grid.innerHTML = state.savedMixes.map((mix, index) => `
-    <button class="saved-item" type="button" data-detail-index="${index}">
-      <div class="saved-stack"><img src="${escapeHtml(mix.primary)}" alt="${escapeHtml(mix.connections.yarn)} ${state.language === "ko" ? "실" : "yarn"}" /><img src="${escapeHtml(mix.secondary)}" alt="${escapeHtml(mix.connections.pattern)} ${state.language === "ko" ? "패턴 대표 이미지" : "pattern cover"}" /></div>
-      <div><span>MIX ${String(index + 1).padStart(3, "0")}</span><h3>${escapeHtml(mix.title)}</h3><p>${escapeHtml(mix.tags)}</p></div>
-    </button>`).join("");
+    <article class="saved-item">
+      <button class="saved-item-open" type="button" data-detail-index="${index}">
+        <div class="saved-stack"><img src="${escapeHtml(mix.result || mix.primary)}" alt="${escapeHtml(mix.title)} ${state.language === "ko" ? "합성 결과" : "result"}" /><img src="${escapeHtml(mix.secondary)}" alt="${escapeHtml(mix.connections.pattern)} ${state.language === "ko" ? "패턴 대표 이미지" : "pattern cover"}" /></div>
+        <div><span>MIX ${String(index + 1).padStart(3, "0")}</span><h3>${escapeHtml(mix.title)}</h3><p>${escapeHtml(mix.tags)}</p></div>
+      </button>
+      <button class="saved-item-delete" type="button" data-delete-index="${index}" aria-label="${state.language === "ko" ? "저장한 믹스 삭제" : "Delete saved mix"}" title="${state.language === "ko" ? "삭제" : "Delete"}">×</button>
+    </article>`).join("");
   updateSavedCount();
 }
 
 function currentMix() {
   const yarn = document.querySelector("#yarnName").textContent;
   const pattern = document.querySelector("#patternName").textContent;
-  const element = document.querySelector("#elementName").textContent;
+  const element = document.querySelector("#resultName").textContent;
+  const primary = document.querySelector("#yarnImage").getAttribute("src");
+  let result = primary;
+  try {
+    result = document.querySelector("#resultCanvas").toDataURL("image/jpeg", .9);
+  } catch (error) {
+    console.warn("Could not serialize the synthesis preview", error);
+  }
   return {
     id: `mix-${Date.now()}`,
     title: `${yarn} × ${pattern}`,
     tags: [elements.energyOutput.textContent, elements.textureOutput.textContent, elements.colorOutput.textContent].join(" · "),
-    primary: document.querySelector("#yarnImage").getAttribute("src"),
+    primary,
     secondary: document.querySelector("#patternImage").getAttribute("src"),
+    result,
     savedDate: new Date().toISOString().slice(0, 10),
     note: elements.reason.textContent,
     connections: { yarn, pattern, element }
   };
 }
 
-document.querySelector("#luckyButton").addEventListener("click", generateMix);
-document.querySelector("#heroLuckyButton").addEventListener("click", () => {
-  generateMix();
-  document.querySelector("#mixTitle").scrollIntoView({ behavior: "smooth", block: "start" });
-});
+document.querySelector("#generateButton").addEventListener("click", generateMix);
 
 elements.save.addEventListener("click", () => {
   if (!elements.save.classList.contains("saved")) {
@@ -330,8 +477,20 @@ function applyLanguage(language, { persist = true } = {}) {
     item.textContent = item.dataset[language];
   });
   elements.save.textContent = elements.save.classList.contains("saved") ? translations[language].saved : translations[language].save;
+  updateCheckinDate();
   updateMood();
   renderSavedMixes();
+}
+
+function updateCheckinDate() {
+  const date = new Date();
+  const weekendExcitement = [0, 5, 6].includes(date.getDay());
+  const label = state.language === "ko"
+    ? `${weekendExcitement ? "두근두근 · " : ""}${new Intl.DateTimeFormat("ko-KR", { month: "long", day: "numeric", weekday: "long" }).format(date)}`
+    : `${weekendExcitement ? "HEART-FLUTTERING · " : ""}${new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", weekday: "long" }).format(date)}`;
+  const dateElement = document.querySelector("#checkinDate");
+  dateElement.dateTime = date.toISOString().slice(0, 10);
+  dateElement.textContent = label;
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => {
@@ -339,15 +498,6 @@ document.querySelectorAll("[data-language]").forEach((button) => {
 });
 window.addEventListener("site-language-change", (event) => applyLanguage(event.detail.language, { persist: false }));
 
-document.querySelectorAll(".feed-tabs button").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".feed-tabs button").forEach((item) => {
-      const active = item === button;
-      item.classList.toggle("active", active);
-      item.setAttribute("aria-selected", String(active));
-    });
-  });
-});
 
 const detailDialog = document.querySelector("#detailDialog");
 let activeDetailIndex = 0;
@@ -357,8 +507,8 @@ let deleteArmed = false;
 function mixDetailMeta(item) {
   const savedDate = item.savedDate || "2026-09-28";
   return state.language === "ko"
-    ? { "구성": "실 · 패턴 · 취향 요소", "저장일": savedDate, "기분": item.tags }
-    : { CONTENTS: "Yarn · Pattern · Taste", SAVED: savedDate, MOOD: item.tags };
+    ? { "구성": "실 · 패턴 · 합성 결과", "저장일": savedDate, "기분": item.tags }
+    : { CONTENTS: "Yarn · Pattern · Result", SAVED: savedDate, MOOD: item.tags };
 }
 
 function patternSize(pattern = {}) {
@@ -367,8 +517,8 @@ function patternSize(pattern = {}) {
 
 function renderMixConnections(connections) {
   const copy = state.language === "ko"
-    ? { heading: "연결된 조각", yarn: "실", pattern: "패턴", element: "취향 요소" }
-    : { heading: "Connected pieces", yarn: "Yarn", pattern: "Pattern", element: "Taste" };
+    ? { heading: "연결된 조각", yarn: "실", pattern: "패턴", element: "합성 결과" }
+    : { heading: "Connected pieces", yarn: "Yarn", pattern: "Pattern", element: "Result" };
   document.querySelector("#detailConnections").innerHTML = `
     <div class="detail-subheading"><span>${copy.heading}</span><b>3</b></div>
     <button type="button"><span>${copy.yarn}</span><strong id="detailYarnName">${escapeHtml(connections.yarn)}</strong></button>
@@ -391,8 +541,8 @@ function renderDetail(index) {
   document.querySelector("#detailLabel").textContent = `MIX ${String(index + 1).padStart(3, "0")}`;
   document.querySelector("#detailTitle").textContent = item.title;
   document.querySelector("#detailTags").textContent = item.tags;
-  document.querySelector("#detailPrimaryImage").src = item.primary;
-  document.querySelector("#detailPrimaryImage").alt = `${item.title} primary`;
+  document.querySelector("#detailPrimaryImage").src = item.result || item.primary;
+  document.querySelector("#detailPrimaryImage").alt = `${item.title} ${state.language === "ko" ? "합성 결과" : "result"}`;
   document.querySelector("#detailSecondaryImage").src = item.secondary;
   document.querySelector("#detailSecondaryImage").alt = `${connections.pattern} 패턴 대표 이미지`;
   document.querySelector("#detailPatternThumbnail").setAttribute("aria-label", `${connections.pattern} 패턴 상세 보기`);
@@ -456,7 +606,16 @@ function toggleSavedDetailView() {
 }
 
 document.querySelector(".saved-grid").addEventListener("click", (event) => {
-  const item = event.target.closest(".saved-item");
+  const deleteButton = event.target.closest(".saved-item-delete");
+  if (deleteButton) {
+    state.savedMixes.splice(Number(deleteButton.dataset.deleteIndex), 1);
+    persistSavedMixes();
+    renderSavedMixes();
+    elements.save.classList.remove("saved");
+    elements.save.textContent = translations[state.language].save;
+    return;
+  }
+  const item = event.target.closest(".saved-item-open");
   if (!item) return;
   renderDetail(Number(item.dataset.detailIndex));
   detailDialog.showModal();
@@ -494,3 +653,4 @@ detailDialog.addEventListener("click", (event) => {
 
 persistSavedMixes();
 applyLanguage(state.language, { persist: false });
+libraryData.finally(renderSynthesis);

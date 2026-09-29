@@ -440,8 +440,9 @@ function weightOrder(weight) {
 }
 
 function cardTemplate(yarn) {
-  const swatches = yarn.colorGroups.slice(0, 4).map((color) => `<i style="--swatch: ${COLOR_HEX[color]}"></i>`).join("");
-  const fallback = yarn.colorGroups.slice(0, 3).map((color) => COLOR_HEX[color]).join(", ") || "#d8d0c2, #aaa399";
+  const palette = yarn.palette_hex?.length ? yarn.palette_hex : yarn.colorGroups.slice(0, 3).map((color) => COLOR_HEX[color]);
+  const swatches = palette.slice(0, 4).map((color) => `<i style="--swatch: ${color}"></i>`).join("");
+  const fallback = palette.join(", ") || "#d8d0c2, #aaa399";
   return `
     <article class="yarn-card" data-id="${yarn.id}" tabindex="0" role="button" aria-label="${escapeHtml(`${yarn.colorway} ${t("viewDetails")}`)}">
       <div class="yarn-photo" style="--fallback: linear-gradient(135deg, ${fallback})">
