@@ -6,7 +6,7 @@ const COLOR_GROUPS = [
   { id: "blue", label: "Blue", hex: "#5d8797", terms: ["blue", "aqua", "teal", "turquoise", "seafoam", "petrol", "periwinkle"] },
   { id: "purple", label: "Purple", hex: "#806682", terms: ["purple", "plum", "violet", "lavender", "mauve"] },
   { id: "brown", label: "Brown", hex: "#806554", terms: ["brown", "taupe", "cacao", "bronze", "rust"] },
-  { id: "neutral", label: "Neutral", hex: "#d8d0c2", terms: ["cream", "white", "grey", "gray", "beige", "oatmeal", "linen", "natural", "sand", "stone", "wheat", "flour", "mushroom", "charcoal", "black"] }
+  { id: "neutral", label: "Neutral", hex: "#d8d0c2", terms: ["cream", "white", "grey", "gray", "beige", "oatmeal", "linen", "natural", "sand", "stone", "wheat", "flour", "mushroom", "charcoal", "black", "taupe", "greige"] }
 ];
 
 const COLOR_HEX = Object.fromEntries(COLOR_GROUPS.map((group) => [group.id, group.hex]));
@@ -179,7 +179,7 @@ init().catch((error) => {
 async function init() {
   const [basesResponse, stashResponse] = await Promise.all([
     fetch("./data/shop-yarn-bases.json"),
-    fetch("./data/my-yarn-stash.json?v=20260928-2")
+    fetch("./data/my-yarn-stash.json?v=20260928-5")
   ]);
   if (!basesResponse.ok || !stashResponse.ok) throw new Error("Could not load stash data");
 
@@ -197,6 +197,13 @@ async function init() {
 function normalizeYarn(item, index) {
   const colors = item.color_family || item.colors || [];
   const rawBase = item.base || item.base_name || "Unknown base";
+  const inferredColorGroups = COLOR_GROUPS.filter((group) => {
+    const candidates = group.id === "neutral" ? colors.slice(0, 1) : colors;
+    return candidates.some((color) => group.terms.some((term) => color.toLowerCase().includes(term)));
+  }).map((group) => group.id);
+  const colorGroups = Array.isArray(item.filter_color_groups)
+    ? item.filter_color_groups.filter((group) => COLOR_HEX[group])
+    : inferredColorGroups;
   return {
     ...item,
     index,
@@ -206,9 +213,7 @@ function normalizeYarn(item, index) {
     weight: normalizeWeight(item.weight_category || item.weight || "Unspecified"),
     quantity: Number(item.quantity || 0),
     image: `./assets/images/yarn/${IMAGE_ALIASES[item.id] || item.id}.png`,
-    colorGroups: COLOR_GROUPS.filter((group) =>
-      colors.some((color) => group.terms.some((term) => color.toLowerCase().includes(term)))
-    ).map((group) => group.id)
+    colorGroups
   };
 }
 

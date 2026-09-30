@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./wireframe.css?v=20260928-10" />
+  <link rel="stylesheet" href="./wireframe.css?v=20260930-9" />
 </head>
 <body>
   <header class="site-header">
@@ -43,10 +43,10 @@
       </div>
       <div class="hero-side">
         <div class="hero-index" aria-label="컬렉션 요약">
-          <div><span data-ko="실" data-en="Yarn">실</span><strong>33</strong></div>
-          <div><span data-ko="패턴" data-en="Patterns">패턴</span><strong>13</strong></div>
-          <div><span data-ko="아이템" data-en="Items">아이템</span><strong>11</strong></div>
-          <div><span data-ko="취향" data-en="Taste">취향</span><strong>40</strong></div>
+          <a href="./yarns.html#stash"><span data-ko="실" data-en="Yarn">실</span><strong>33</strong></a>
+          <a href="./patterns.html#top"><span data-ko="패턴" data-en="Patterns">패턴</span><strong>14</strong></a>
+          <a href="./items.html#top"><span data-ko="아이템" data-en="Items">아이템</span><strong>11</strong></a>
+          <a href="./taste.html#top"><span data-ko="취향" data-en="Taste">취향</span><strong>40</strong></a>
           <div><span data-ko="저장" data-en="Saved">저장</span><strong id="heroSavedCount">03</strong></div>
         </div>
       </div>
@@ -58,33 +58,42 @@
           <p class="eyebrow" data-ko="오늘의 체크인" data-en="Today's check-in">오늘의 체크인</p>
           <time id="checkinDate" class="date-stamp"></time>
         </div>
-        <h2 id="moodTitle" data-ko="지금 어떤 결인가요?" data-en="What is your texture today?">지금 어떤 결인가요?</h2>
+        <h2 id="moodTitle" data-ko="오늘은 무엇을 만들까요?" data-en="What shall we make today?">오늘은 무엇을 만들까요?</h2>
 
-        <div class="mood-scale">
-          <div class="scale-heading"><span data-ko="에너지" data-en="Energy">에너지</span><output id="energyOutput">고요한</output></div>
-          <input id="energyRange" type="range" min="0" max="4" value="1" aria-label="에너지" />
-          <div class="scale-ends"><span data-ko="잔잔함" data-en="Still">잔잔함</span><span data-ko="활기참" data-en="Alive">활기참</span></div>
+        <div class="checkin-fields">
+          <label class="checkin-field">
+            <span data-ko="도구" data-en="Craft">도구</span>
+            <select id="craftFilter">
+              <option value="all" data-ko="상관없음" data-en="Either">상관없음</option>
+              <option value="knitting" data-ko="대바늘" data-en="Knitting">대바늘</option>
+              <option value="crochet" data-ko="코바늘" data-en="Crochet">코바늘</option>
+            </select>
+          </label>
+          <label class="checkin-field">
+            <span data-ko="만들 것" data-en="Make">만들 것</span>
+            <select id="itemFilter">
+              <option value="all" data-ko="상관없음" data-en="Anything">상관없음</option>
+              <option value="accessory" data-ko="작은 소품" data-en="Accessories">작은 소품</option>
+              <option value="garment" data-ko="의류" data-en="Garments">의류</option>
+              <option value="home" data-ko="가방·홈·토이" data-en="Bags, home &amp; toys">가방·홈·토이</option>
+            </select>
+          </label>
+          <label class="checkin-field">
+            <span data-ko="사용할 바늘" data-en="Needle / hook">사용할 바늘</span>
+            <select id="needleFilter">
+              <option value="all" data-ko="전체 크기" data-en="Any size">전체 크기</option>
+              <option value="2.25">2.25 mm</option><option value="2.5">2.5 mm</option>
+              <option value="3">3 mm</option><option value="3.5">3.5 mm</option>
+              <option value="4">4 mm</option><option value="4.5">4.5 mm</option>
+              <option value="5">5 mm</option><option value="5.5">5.5 mm</option>
+              <option value="6">6 mm</option>
+            </select>
+          </label>
+          <label class="stash-toggle">
+            <input id="stashOnlyFilter" type="checkbox" checked />
+            <span data-ko="지금 가진 양으로 완성 가능한 조합만" data-en="Only combinations my stash can complete">지금 가진 양으로 완성 가능한 조합만</span>
+          </label>
         </div>
-
-        <div class="mood-scale">
-          <div class="scale-heading"><span data-ko="촉감" data-en="Texture">촉감</span><output id="textureOutput">부드러운</output></div>
-          <input id="textureRange" type="range" min="0" max="4" value="1" aria-label="촉감" />
-          <div class="scale-ends"><span data-ko="포근함" data-en="Soft">포근함</span><span data-ko="선명함" data-en="Crisp">선명함</span></div>
-        </div>
-
-        <div class="mood-scale">
-          <div class="scale-heading"><span data-ko="색감" data-en="Color">색감</span><output id="colorOutput">차분한</output></div>
-          <input id="colorRange" type="range" min="0" max="4" value="2" aria-label="색감" />
-          <div class="scale-ends"><span data-ko="뮤트" data-en="Muted">뮤트</span><span data-ko="비비드" data-en="Vivid">비비드</span></div>
-        </div>
-
-        <fieldset class="mood-tags">
-          <legend data-ko="오늘의 단어" data-en="Words for today">오늘의 단어</legend>
-          <button class="selected" type="button" aria-pressed="true" data-ko="호기심" data-en="Curious">호기심</button>
-          <button type="button" aria-pressed="false" data-ko="다정함" data-en="Tender">다정함</button>
-          <button type="button" aria-pressed="false" data-ko="대담함" data-en="Bold">대담함</button>
-          <button type="button" aria-pressed="false" data-ko="느긋함" data-en="Leisurely">느긋함</button>
-        </fieldset>
 
         <button id="generateButton" class="lucky-button generate-button" type="button">
           <span data-ko="조합 생성" data-en="Generate">조합 생성</span>
@@ -104,7 +113,7 @@
         <div class="mix-slots" aria-live="polite">
           <article class="mix-slot" data-slot="yarn">
             <button class="slot-detail-trigger" type="button" aria-label="Conifer Green 실 상세 보기">
-              <span class="slot-media"><img id="yarnImage" src="./assets/images/yarn/purl-soho-echo-cashmere-conifer-green.png" alt="Conifer Green 실" /></span>
+              <span class="slot-media yarn-media"><img id="yarnImage" src="./assets/images/yarn/purl-soho-echo-cashmere-conifer-green.png" alt="Conifer Green 실" /><img id="yarnImageSecondary" class="secondary-yarn" alt="" hidden /></span>
               <span class="slot-copy">
                 <span class="slot-label"><span>01</span><b data-ko="실" data-en="Yarn">실</b></span>
                 <span class="slot-title" id="yarnName">Conifer Green</span>
@@ -128,25 +137,25 @@
             <button class="lock-button" type="button" aria-pressed="false" aria-label="패턴 고정"><span aria-hidden="true"></span><b data-ko="고정" data-en="Lock">고정</b></button>
           </article>
 
-          <span class="mix-sign" aria-hidden="true">+</span>
+          <span class="mix-sign" aria-hidden="true">=</span>
 
           <article class="mix-slot result-slot" data-slot="result">
-            <button class="slot-detail-trigger" type="button" aria-label="합성 결과 상세 보기">
-              <span class="slot-media result-media"><canvas id="resultCanvas" width="720" height="783" aria-label="선택한 실의 색상과 질감을 패턴에 합성한 결과"></canvas><span id="resultStatus" class="result-status" aria-live="polite"></span></span>
+            <button class="slot-detail-trigger" type="button" aria-label="추천 결과 상세 보기">
+              <span class="slot-media result-media"><canvas id="resultCanvas" width="720" height="783" aria-label="호환되는 실과 패턴의 조합 미리보기"></canvas><span id="resultStatus" class="result-status" aria-live="polite"></span></span>
               <span class="slot-copy">
-                <span class="slot-label"><span>03</span><b data-ko="합성 결과" data-en="Result">합성 결과</b></span>
+                <span class="slot-label"><span>03</span><b data-ko="추천 결과" data-en="Recommendation">추천 결과</b></span>
                 <span class="slot-title" id="resultName">Conifer Green × Joanna Hat</span>
-                <span class="slot-meta" id="resultMeta" data-ko="실 색상 · 재질 · 패턴" data-en="Yarn color · texture · pattern">실 색상 · 재질 · 패턴</span>
+                <span class="slot-meta" id="resultMeta">스와치 후 게이지 확인</span>
               </span>
             </button>
-            <span class="result-badge" data-ko="미리보기" data-en="Preview">미리보기</span>
+            <span class="result-badge" data-ko="호환 추천" data-en="Compatible">호환 추천</span>
           </article>
         </div>
 
         <div class="mix-conclusion">
           <div>
             <span data-ko="이 조합의 이유" data-en="Why this mix">이 조합의 이유</span>
-            <p id="mixReason">고요한 에너지에 짙은 초록과 부드러운 리브 조직이 자연스럽게 이어져요.</p>
+            <div id="mixReason" class="mix-reason">굵기, 바늘, 보유량과 취향 조건을 계산하고 있어요.</div>
           </div>
           <button id="saveMixButton" class="save-button" type="button" data-ko="조합 저장" data-en="Save mix">조합 저장</button>
         </div>
@@ -181,7 +190,7 @@
           <div class="cabinet-filters"><span>COLOR</span><span>WEIGHT</span><span>FIBER</span><span>BRAND</span></div>
         </a>
         <a class="cabinet-block" href="./patterns.html#top">
-          <div class="cabinet-meta"><span>02 · PATTERN</span><strong>13</strong></div>
+          <div class="cabinet-meta"><span>02 · PATTERN</span><strong>14</strong></div>
           <div class="cabinet-preview">
             <img src="./assets/images/pattern/joanna-hat.png" alt="Joanna Hat 패턴 대표 이미지" />
             <img src="./assets/images/pattern/cardigan-no-4.png?v=20260928-2" alt="Cardigan No. 4 패턴 대표 이미지" />
@@ -202,10 +211,10 @@
         </a>
         <a class="cabinet-block" href="./taste.html#top">
           <div class="cabinet-meta"><span>04 · TASTE</span><strong>40</strong></div>
-          <div class="cabinet-preview">
-            <img src="https://i.pinimg.com/474x/36/09/80/36098060bf30080736310c9e353b021f.jpg" alt="취향 레퍼런스 01" />
-            <img src="https://i.pinimg.com/474x/dd/72/8a/dd728a458d8c710ac74fd474f63bbfd1.jpg" alt="취향 레퍼런스 02" />
-            <img src="https://i.pinimg.com/474x/44/9a/41/449a41f450cfa32f5d704f51c7b437fd.jpg" alt="취향 레퍼런스 03" />
+          <div class="cabinet-preview taste-preview" role="img" aria-label="취향 색상과 질감 미리보기">
+            <span class="taste-swatch taste-swatch-olive"></span>
+            <span class="taste-swatch taste-swatch-rose"></span>
+            <span class="taste-swatch taste-swatch-sky"></span>
           </div>
           <h3 data-ko="취향 보관함" data-en="Taste Cabinet">취향 보관함</h3>
           <div class="cabinet-filters"><span>MOOD</span><span>COLOR</span><span>TEXTURE</span><span>TYPE</span></div>
@@ -216,17 +225,18 @@
 
   <dialog id="mixItemDialog" class="detail-dialog mix-item-dialog" aria-labelledby="mixItemTitle">
     <div class="detail-shell">
-      <div class="detail-visual mix-item-visual"><img id="mixItemImage" src="" alt="" /></div>
+      <div class="detail-visual mix-item-visual">
+        <img id="mixItemImage" src="" alt="" />
+        <img id="mixItemSecondaryImage" class="mix-item-secondary" src="" alt="" hidden />
+        <div id="mixItemThumbnails" class="mix-item-thumbnails" aria-label="추천 실 목록" hidden></div>
+      </div>
       <aside class="detail-panel">
         <div class="detail-actions"><button id="mixItemClose" type="button" aria-label="닫기">×</button></div>
+        <div id="mixItemTabs" class="mix-item-tabs" role="tablist" aria-label="추천 상세 정보" hidden></div>
         <p id="mixItemLabel" class="detail-label">YARN</p>
         <h2 id="mixItemTitle"></h2>
         <p id="mixItemTags" class="detail-tags"></p>
         <dl id="mixItemMeta" class="detail-meta"></dl>
-        <div class="detail-note">
-          <span data-ko="믹스에서의 역할" data-en="Role in this mix">믹스에서의 역할</span>
-          <p id="mixItemNote"></p>
-        </div>
       </aside>
     </div>
   </dialog>
@@ -253,7 +263,7 @@
         <dl id="detailMeta" class="detail-meta">
           <div><dt data-ko="구성" data-en="Contents">구성</dt><dd data-ko="실 · 패턴 · 합성 결과" data-en="Yarn · Pattern · Result">실 · 패턴 · 합성 결과</dd></div>
           <div><dt data-ko="저장일" data-en="Saved">저장일</dt><dd>SEP 28, 2026</dd></div>
-          <div><dt data-ko="기분" data-en="Mood">기분</dt><dd data-ko="고요함 · 호기심" data-en="Still · Curious">고요함 · 호기심</dd></div>
+          <div><dt data-ko="조건" data-en="Criteria">조건</dt><dd data-ko="도구 · 품목 · 바늘 · 보유량" data-en="Craft · item · needle · quantity">도구 · 품목 · 바늘 · 보유량</dd></div>
         </dl>
         <div id="detailConnections" class="detail-connections">
           <div class="detail-subheading"><span data-ko="연결된 조각" data-en="Connected pieces">연결된 조각</span><b>3</b></div>
@@ -270,6 +280,6 @@
   </dialog>
 
   <footer class="site-footer"><strong>Skein to Mood</strong><span>WIREFRAME 01 · THE MIX ROOM</span></footer>
-  <script src="./wireframe.js?v=20260928-8" type="module"></script>
+  <script src="./wireframe.js?v=20260930-15" type="module"></script>
 </body>
 </html>

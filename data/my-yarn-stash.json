@@ -69,6 +69,7 @@
       "dark navy teal",
       "blue green"
     ],
+    "filter_color_groups": ["blue"],
     "mood": [
       "deep ocean",
       "inky",
@@ -261,6 +262,7 @@
       "lime green",
       "tiny coral speckles"
     ],
+    "filter_color_groups": ["pink", "green"],
     "mood": [
       "garden fairy",
       "vintage floral",
@@ -306,6 +308,7 @@
       "soft lavender",
       "tiny dark speckles"
     ],
+    "filter_color_groups": ["pink", "purple"],
     "mood": [
       "sweet",
       "soft candy",
@@ -546,6 +549,7 @@
       "smoky taupe",
       "deep plum"
     ],
+    "filter_color_groups": ["pink", "purple"],
     "mood": [
       "vintage rose",
       "romantic",
@@ -1117,6 +1121,7 @@
       "wine",
       "muted magenta"
     ],
+    "filter_color_groups": ["red"],
     "mood": [
       "berry",
       "warm",
@@ -1151,6 +1156,7 @@
     "mini_skein_weight_g": 25,
     "yardage_m": 100,
     "yardage_yd": 109,
+    "remaining_weight_g": 25,
     "remaining_quantity": 1,
     "remaining_fraction": 1,
     "acquired_via": "free mini skein",
@@ -1199,6 +1205,7 @@
     "mini_skein_weight_g": 25,
     "yardage_m": 100,
     "yardage_yd": 109,
+    "remaining_weight_g": 25,
     "remaining_quantity": 1,
     "remaining_fraction": 1,
     "acquired_via": "free mini skein",
@@ -1248,6 +1255,7 @@
     "mini_skein_weight_g": 25,
     "estimated_yardage_m": 50,
     "estimated_yardage_yd": 54.75,
+    "remaining_weight_g": 25,
     "remaining_quantity": 1,
     "remaining_fraction": 1,
     "acquired_via": "free mini skein",
@@ -1296,6 +1304,7 @@
     "mini_skein_weight_g": 25,
     "estimated_yardage_m": 50,
     "estimated_yardage_yd": 54.75,
+    "remaining_weight_g": 25,
     "remaining_quantity": 1,
     "remaining_fraction": 1,
     "acquired_via": "free mini skein",
@@ -1385,9 +1394,10 @@
     "palette_hex": ["#174956", "#28616a", "#3b7880"],
     "quantity": 1,
     "unit": "skein",
-    "remaining_quantity": 0.2,
-    "remaining_fraction": 0.2,
-    "usage_note": "About 1/5 remaining.",
+    "remaining_weight_g": 10,
+    "remaining_quantity": 0.1,
+    "remaining_fraction": 0.1,
+    "usage_note": "About 10g remaining.",
     "source": {
       "type": "official_product_page",
       "url": "https://www.purlsoho.com/blackbird-linen.html?ps-pid=31283"
@@ -1398,6 +1408,7 @@
       "deep aqua",
       "cool linen"
     ],
+    "filter_color_groups": ["blue"],
     "mood": [
       "coastal",
       "cool",
@@ -1411,7 +1422,7 @@
       "loosely spun",
       "softens with wear"
     ],
-    "notes": "Galapagos Teal Blackbird Linen. About one fifth of the skein remains.",
+    "notes": "Galapagos Teal Blackbird Linen. About 10g remains.",
     "pattern_ideas": [
       "bag detail",
       "small trim",

@@ -23,8 +23,8 @@ Skein to Mood는 실 보관함에서 시작해 패턴, 직접 만든 아이템, 
 ## Main Features
 
 - **Mood check-in:** 온도와 에너지 슬라이더, 무드 키워드로 오늘의 감각을 선택한다.
-- **Feeling Lucky / 조합 생성:** 보관함의 실과 패턴을 새로 조합한다.
-- **Pattern synthesis preview:** 패턴 대표 이미지 위에 선택한 실의 평균 색상과 실제 실 이미지를 Canvas로 혼합한다.
+- **Compatibility recommendations:** 패턴 게이지, 실 굵기, 권장 바늘, 보유량으로 1합 또는 2합 후보를 먼저 추리고 프로젝트 규모, 계절, 색감으로 순위를 조정한다.
+- **Combination board:** 패턴 원본 이미지를 유지한 채 추천 실 사진과 저장된 HEX 팔레트, 합수와 신뢰도를 함께 보여준다.
 - **Saved mixes:** 합성 결과와 연결 정보를 브라우저 `localStorage`에 저장하고 상세 팝업에서 확인하거나 삭제한다.
 - **Four cabinets:** Yarn, Pattern, My Items, Taste를 독립된 보관함으로 탐색한다.
 - **Filtering and sorting:** 각 보관함에서 검색, 카테고리 필터, 정렬, Grid/List 전환을 제공한다.
@@ -41,7 +41,7 @@ Skein to Mood는 실 보관함에서 시작해 패턴, 직접 만든 아이템, 
 - Brands: **2**
 - Pattern entries: **12**
 - Yarn images: **30**
-- Pattern images: **13**
+- Pattern images: **14**
 - Made-by-me images: **6**
 - Tool images: **4**
 

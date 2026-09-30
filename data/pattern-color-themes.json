@@ -1,0 +1,58 @@
+{
+  "purl-soho-basket-bag": {
+    "original": [{ "name": "Petrol Blue", "name_ko": "페트롤 블루", "hex": "#174E60" }, { "name": "Ink Navy", "name_ko": "잉크 네이비", "hex": "#272A3D" }],
+    "recommended": [{ "name": "Natural Linen", "name_ko": "내추럴 린넨", "hex": "#D8CFBA" }, { "name": "Poppy Red", "name_ko": "파피 레드", "hex": "#B85242" }, { "name": "Charcoal", "name_ko": "차콜", "hex": "#3D3D3B" }]
+  },
+  "my-favourite-things-knitwear-beanie-no-6": {
+    "original": [{ "name": "Mushroom", "name_ko": "머쉬룸", "hex": "#75675E" }, { "name": "Oatmeal", "name_ko": "오트밀", "hex": "#D8C9B4" }],
+    "recommended": [{ "name": "Forest", "name_ko": "포레스트", "hex": "#405348" }, { "name": "Powder Blue", "name_ko": "파우더 블루", "hex": "#AABEC4" }, { "name": "Aubergine", "name_ko": "오베르진", "hex": "#5C3F50" }]
+  },
+  "starcrossed-knits-brigitte-headband": {
+    "original": [{ "name": "Vermilion Red", "name_ko": "버밀리언 레드", "hex": "#B20D1D" }],
+    "recommended": [{ "name": "Ballet Pink", "name_ko": "발레 핑크", "hex": "#D7A4AE" }, { "name": "Forest Green", "name_ko": "포레스트 그린", "hex": "#354F43" }, { "name": "Charcoal", "name_ko": "차콜", "hex": "#3F3C3D" }]
+  },
+  "my-favourite-things-knitwear-cardigan-no-4": {
+    "original": [{ "name": "Silver Grey", "name_ko": "실버 그레이", "hex": "#B8B8B4" }, { "name": "Soft Rose", "name_ko": "소프트 로즈", "hex": "#C7A3A5" }, { "name": "Dusty Artichoke", "name_ko": "더스티 아티초크", "hex": "#777D70" }, { "name": "Soft Blue", "name_ko": "소프트 블루", "hex": "#9BB0B9" }],
+    "recommended": [{ "name": "Warm Cream", "name_ko": "웜 크림", "hex": "#E7DFD1" }, { "name": "Deep Plum", "name_ko": "딥 플럼", "hex": "#654A59" }, { "name": "Deep Teal", "name_ko": "딥 틸", "hex": "#315D61" }, { "name": "Golden Ochre", "name_ko": "골든 오커", "hex": "#B88A38" }]
+  },
+  "qing-studio-harlequin-shawlette": {
+    "original": [{ "name": "Dusty Blue", "name_ko": "더스티 블루", "hex": "#7391AA" }, { "name": "Powder Pink", "name_ko": "파우더 핑크", "hex": "#D6A8BE" }, { "name": "Soft White", "name_ko": "소프트 화이트", "hex": "#E8E5E1" }],
+    "recommended": [{ "name": "Ink Blue", "name_ko": "잉크 블루", "hex": "#30485B" }, { "name": "Saffron", "name_ko": "사프란", "hex": "#D2A039" }, { "name": "Oat", "name_ko": "오트", "hex": "#D8CDBB" }]
+  },
+  "vert-and-rose-joanna-hat": {
+    "original": [{ "name": "Blush Pink", "name_ko": "블러시 핑크", "hex": "#D2A1B7" }, { "name": "Mauve", "name_ko": "모브", "hex": "#A97791" }, { "name": "Cream", "name_ko": "크림", "hex": "#E9E3D5" }],
+    "recommended": [{ "name": "Butter Yellow", "name_ko": "버터 옐로", "hex": "#DFC969" }, { "name": "Moss", "name_ko": "모스", "hex": "#68775A" }, { "name": "Lilac", "name_ko": "라일락", "hex": "#A99BC6" }]
+  },
+  "little-cinnamon-teddy-bear": {
+    "original": [{ "name": "Cinnamon", "name_ko": "시나몬", "hex": "#9B7355" }, { "name": "Camel", "name_ko": "카멜", "hex": "#B48E6D" }, { "name": "Dark Cocoa", "name_ko": "다크 코코아", "hex": "#49342D" }],
+    "recommended": [{ "name": "Honey", "name_ko": "허니", "hex": "#C39348" }, { "name": "Dusty Rose", "name_ko": "더스티 로즈", "hex": "#B77D82" }, { "name": "Oat", "name_ko": "오트", "hex": "#D8CCBA" }]
+  },
+  "needle-and-feather-peace-by-piece": {
+    "original": [{ "name": "Weathered Teal", "name_ko": "웨더드 틸", "hex": "#55797C" }, { "name": "Ivory", "name_ko": "아이보리", "hex": "#E8E0D0" }, { "name": "Soft Coral", "name_ko": "소프트 코랄", "hex": "#D99A87" }, { "name": "Rust", "name_ko": "러스트", "hex": "#A7674D" }],
+    "recommended": [{ "name": "Navy", "name_ko": "네이비", "hex": "#334A5B" }, { "name": "Mustard", "name_ko": "머스터드", "hex": "#C39A40" }, { "name": "Sage", "name_ko": "세이지", "hex": "#89947E" }, { "name": "Cream", "name_ko": "크림", "hex": "#E5DDCD" }]
+  },
+  "loupy-studio-crochet-scrunchie-bag": {
+    "original": [{ "name": "Acid Lime", "name_ko": "애시드 라임", "hex": "#92C957" }, { "name": "Pool Blue", "name_ko": "풀 블루", "hex": "#35A9AF" }, { "name": "Black", "name_ko": "블랙", "hex": "#242A28" }, { "name": "Coral", "name_ko": "코랄", "hex": "#E58D79" }],
+    "recommended": [{ "name": "Cobalt", "name_ko": "코발트", "hex": "#315D9A" }, { "name": "Tomato", "name_ko": "토마토", "hex": "#D4523F" }, { "name": "Butter", "name_ko": "버터", "hex": "#E0C75C" }, { "name": "Charcoal", "name_ko": "차콜", "hex": "#383C3B" }]
+  },
+  "maxim-cyr-you-better-work-socks": {
+    "original": [{ "name": "Camo Olive", "name_ko": "카모 올리브", "hex": "#4B493E" }, { "name": "Betty's White", "name_ko": "베티 화이트", "hex": "#EFECE3" }, { "name": "Deep Red", "name_ko": "딥 레드", "hex": "#8D1736" }],
+    "recommended": [{ "name": "Navy", "name_ko": "네이비", "hex": "#293B52" }, { "name": "Ice Blue", "name_ko": "아이스 블루", "hex": "#AEC5CF" }, { "name": "Signal Orange", "name_ko": "시그널 오렌지", "hex": "#D56C3E" }]
+  },
+  "eungeung-overlap-scarf": {
+    "original": [{ "name": "Warm White", "name_ko": "웜 화이트", "hex": "#E7DDCA" }, { "name": "Cocoa", "name_ko": "코코아", "hex": "#5A443A" }],
+    "recommended": [{ "name": "Poppy Red", "name_ko": "파피 레드", "hex": "#B9403B" }, { "name": "Powder Pink", "name_ko": "파우더 핑크", "hex": "#D7B0B7" }, { "name": "Graphite", "name_ko": "그래파이트", "hex": "#4A4A49" }]
+  },
+  "auld-lang-syne-leftover-beanie": {
+    "original": [{ "name": "Mustard", "name_ko": "머스터드", "hex": "#DEA929" }, { "name": "Poppy", "name_ko": "파피", "hex": "#C93B35" }, { "name": "Denim Blue", "name_ko": "데님 블루", "hex": "#657E9E" }, { "name": "Moss", "name_ko": "모스", "hex": "#667450" }, { "name": "Dusty Pink", "name_ko": "더스티 핑크", "hex": "#D2A4A5" }],
+    "recommended": [{ "name": "Aubergine", "name_ko": "오베르진", "hex": "#583D50" }, { "name": "Petrol", "name_ko": "페트롤", "hex": "#2F6670" }, { "name": "Ochre", "name_ko": "오커", "hex": "#C58E2C" }, { "name": "Brick", "name_ko": "브릭", "hex": "#A54E42" }, { "name": "Oat", "name_ko": "오트", "hex": "#D8CCBA" }]
+  },
+  "yycc-fringe-checked-scarf": {
+    "original": [{ "name": "Rose Pink", "name_ko": "로즈 핑크", "hex": "#D39AAE" }, { "name": "Light Grey", "name_ko": "라이트 그레이", "hex": "#C8C8C4" }, { "name": "Powder Lavender", "name_ko": "파우더 라벤더", "hex": "#AA9CAF" }, { "name": "Caramel", "name_ko": "카라멜", "hex": "#B79872" }, { "name": "Dark Grey", "name_ko": "다크 그레이", "hex": "#625F5C" }, { "name": "Ivory", "name_ko": "아이보리", "hex": "#E6DFD2" }],
+    "recommended": [{ "name": "Antique Rose", "name_ko": "앤티크 로즈", "hex": "#A36F7B" }, { "name": "Smoke", "name_ko": "스모크", "hex": "#AEBCC0" }, { "name": "Okinami", "name_ko": "오키나미", "hex": "#174C5C" }, { "name": "Butter Yellow", "name_ko": "버터 옐로", "hex": "#DFC969" }, { "name": "Deep Plum", "name_ko": "딥 플럼", "hex": "#654A59" }, { "name": "Warm Cream", "name_ko": "웜 크림", "hex": "#E7DFD1" }]
+  },
+  "sarahs-moon-new-grannys-hat": {
+    "original": [{ "name": "Dusty Navy", "name_ko": "더스티 네이비", "hex": "#526987" }, { "name": "Mint Green", "name_ko": "민트 그린", "hex": "#36C77D" }, { "name": "Petal Pink", "name_ko": "페탈 핑크", "hex": "#E5A1B9" }, { "name": "Olive Moss", "name_ko": "올리브 모스", "hex": "#777536" }, { "name": "Icy Blue", "name_ko": "아이스 블루", "hex": "#B8DCE0" }, { "name": "Lavender Grey", "name_ko": "라벤더 그레이", "hex": "#A6A5B9" }],
+    "recommended": [{ "name": "Deep Plum", "name_ko": "딥 플럼", "hex": "#5D4058" }, { "name": "Poppy Red", "name_ko": "파피 레드", "hex": "#C94D48" }, { "name": "Butter Yellow", "name_ko": "버터 옐로", "hex": "#DFC55A" }, { "name": "Leaf Green", "name_ko": "리프 그린", "hex": "#56835C" }, { "name": "Soft Cream", "name_ko": "소프트 크림", "hex": "#E9E0CE" }, { "name": "Petrol Blue", "name_ko": "페트롤 블루", "hex": "#315F69" }]
+  }
+}

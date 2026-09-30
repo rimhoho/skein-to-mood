@@ -130,6 +130,10 @@ body[data-cabinet="items"] .card-media img { object-fit: contain; }
 .dialog-meta dt { color: var(--muted); }
 .dialog-meta dd { margin: 0; text-align: right; }
 .dialog-meta a { text-decoration: underline; text-underline-offset: 3px; }
+.dialog-meta .color-theme-row { align-items: flex-start; }
+.color-theme { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 9px; }
+.color-theme-chip { display: inline-flex; align-items: center; gap: 5px; color: var(--ink); white-space: nowrap; }
+.color-theme-chip i { width: 12px; height: 12px; flex: 0 0 12px; border: 1px solid rgba(36,34,31,.2); border-radius: 50%; background: var(--swatch); }
 .pinterest-dialog { width: min(480px, calc(100vw - 34px)); padding: 34px; border: 1px solid var(--line-dark); background: var(--surface); }
 .pinterest-dialog h2 { margin: 0 0 12px; font-size: 1.25rem; font-weight: 500; }
 .pinterest-dialog p { color: var(--muted); font-size: .8rem; line-height: 1.7; }

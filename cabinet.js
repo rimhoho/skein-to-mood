@@ -7,8 +7,10 @@ const PATTERNS = [
   ["Fringe Checked Scarf", "fringe-checked-scarf.png?v=20260928-2", "Crochet", "Intermediate", "Scarf"],
   ["Harlequin Shawlette", "harlequin-shawlette.png", "Knit", "Intermediate", "Shawl"],
   ["Joanna Hat", "joanna-hat.png?v=20260928-2", "Knit", "Intermediate", "Hat"],
+  ["New Granny's Hat", "new-grannys-hat.png?v=20260929-1", "Crochet", "Intermediate", "Hat"],
   ["Little Cinnamon Teddy Bear", "little-cinnamon-teddy-bear.png", "Crochet", "Intermediate", "Toy"],
   ["Overlap Scarf Knitup", "overlap-scarf-knitup.png", "Knit", "Intermediate", "Scarf"],
+  ["Leftover Beanie", "leftover-beanie-knitup.png", "Knit", "Beginner", "Hat"],
   ["Peace by Piece", "peace-by-piece.png?v=20260928-2", "Knit", "Intermediate", "Top"],
   ["You Better Work Socks", "you-better-work-socks.png?v=20260928-2", "Knit", "Advanced", "Socks"]
 ].map(([name, file, craft, skill, type, relatedItem]) => ({ name, image: `./assets/images/pattern/${file}`, category: craft, detail: skill, type, date: "Saved pattern", relatedItem }));
@@ -168,9 +170,9 @@ const UI_COPY = {
     back: "믹스 룸으로 돌아가기 ↑", detailView: "상세 보기", close: "닫기", source: "공식 제품 페이지 ↗", buyPattern: "패턴 구매 페이지 ↗", freePattern: "무료 패턴 보기 ↗", discontinuedPattern: "판매 종료된 원작 페이지 ↗", viewMadeItem: "완성작 보기 ↗", viewSavedPattern: "패턴 보관함에서 보기 ↗", viewBoard: "Pinterest 보드 열기 ↗",
     pinterestTitle: "Pinterest 보드 연결", pinterestNote: "공유 보드도 연결할 수 있어요. 먼저 공개 또는 접근 가능한 보드 주소를 확인하고, 실제 자동 동기화 단계에서 Pinterest 로그인을 연결합니다.", boardUrl: "보드 주소", cancel: "취소", checkUrl: "주소 확인",
     filterNames: { CRAFT: "기법", SKILL: "난이도", TYPE: "유형", "NEEDLE SIZE": "바늘 크기", CATEGORY: "분류", STATUS: "상태" },
-    values: { Knit: "대바늘", Crochet: "코바늘", Advanced: "고급", Intermediate: "중급", Beginner: "초급", Bag: "가방", Blanket: "블랭킷", Cardigan: "카디건", Hat: "모자", Headband: "헤드밴드", Scarf: "스카프", Shawl: "숄", Socks: "양말", Toy: "인형", Top: "상의", YES: "예", "Made by Me": "내가 만든 것", Tool: "도구", Pinterest: "Pinterest", "Pattern inspiration": "패턴 레퍼런스", "Connected pin": "연결된 핀", "Crochet hooks": "코바늘 세트", "Knitting needles": "대바늘 세트", Finished: "완성", "In use": "사용 중", Loved: "애정 도구", "Free pattern": "무료 패턴", Discontinued: "판매 종료", "Saved pattern": "저장한 패턴", "Not specified": "정보 미등록", "Gauge is not critical": "게이지가 중요하지 않음", "No stitch gauge specified": "스티치 게이지 미지정", "Tulip ETIMO Red Crochet Hook Set": "튤립 에티모 레드 코바늘 세트", "ChiaoGoo TWIST Blue Shorties": "치아오구 트위스트 블루 쇼티 세트", "KnitPro Ginger Grande 5-inch Set": "니트프로 진저 그란데 5인치 세트", "Clover Takumi Combo Set": "클로버 타쿠미 콤보 세트", "Lotus Sahara 5-inch Set": "로터스 사하라 5인치 세트", "Basket Bag": "바스켓 백", "Beanie No. 6": "비니 No. 6", "Brigitte Headband": "브리짓 헤드밴드", "Cardigan No. 4": "카디건 No. 4", "Crochet Scrunchie Bag": "코바늘 스크런치 백", "Fringe Checked Scarf": "프린지 체크 스카프", "Harlequin Shawlette": "할리퀸 숄렛", "Joanna Hat": "조안나 햇", "Little Cinnamon Teddy Bear": "리틀 시나몬 테디 베어", "Overlap Scarf": "오버랩 스카프", "Peace By Piece": "피스 바이 피스", "You Better Work Socks": "유 베터 워크 삭스" },
+    values: { Knit: "대바늘", Crochet: "코바늘", Advanced: "고급", Intermediate: "중급", Beginner: "초급", Bag: "가방", Blanket: "블랭킷", Cardigan: "카디건", Hat: "모자", Headband: "헤드밴드", Scarf: "스카프", Shawl: "숄", Socks: "양말", Toy: "인형", Top: "상의", YES: "예", "Made by Me": "내가 만든 것", Tool: "도구", Pinterest: "Pinterest", "Pattern inspiration": "패턴 레퍼런스", "Connected pin": "연결된 핀", "Crochet hooks": "코바늘 세트", "Knitting needles": "대바늘 세트", Finished: "완성", "In use": "사용 중", Loved: "애정 도구", "Free pattern": "무료 패턴", Discontinued: "판매 종료", "Saved pattern": "저장한 패턴", "Not specified": "정보 미등록", "Gauge is not critical": "게이지가 중요하지 않음", "No stitch gauge specified": "스티치 게이지 미지정", "Tulip ETIMO Red Crochet Hook Set": "튤립 에티모 레드 코바늘 세트", "ChiaoGoo TWIST Blue Shorties": "치아오구 트위스트 블루 쇼티 세트", "KnitPro Ginger Grande 5-inch Set": "니트프로 진저 그란데 5인치 세트", "Clover Takumi Combo Set": "클로버 타쿠미 콤보 세트", "Lotus Sahara 5-inch Set": "로터스 사하라 5인치 세트", "Basket Bag": "바스켓 백", "Beanie No. 6": "비니 No. 6", "Brigitte Headband": "브리짓 헤드밴드", "Cardigan No. 4": "카디건 No. 4", "Crochet Scrunchie Bag": "코바늘 스크런치 백", "Fringe Checked Scarf": "프린지 체크 스카프", "Harlequin Shawlette": "할리퀸 숄렛", "Joanna Hat": "조안나 햇", "New Granny's Hat": "뉴 그래니스 햇", "Leftover Beanie": "자투리 비니", "Little Cinnamon Teddy Bear": "리틀 시나몬 테디 베어", "Overlap Scarf": "오버랩 스카프", "Peace By Piece": "피스 바이 피스", "You Better Work Socks": "유 베터 워크 삭스" },
     statNames: { PATTERNS: "패턴", CRAFTS: "기법", TYPES: "유형", ITEMS: "아이템", TOOLS: "도구", "MADE BY ME": "내가 만든 것", REFERENCES: "레퍼런스", BOARDS: "보드", CONNECTED: "연결" },
-    meta: { BRAND: "브랜드", DESIGNER: "디자이너", GAUGE: "게이지", "ORIGINAL YARN": "원작실", NEEDLE: "바늘", TYPE: "유형", MATERIAL: "재질", SIZES: "크기", CABLES: "케이블", INCLUDES: "구성품", COMPATIBLE: "호환", SOURCE: "출처", PATTERN: "원작 패턴", STATUS: "패턴 상태", "MADE ITEM": "나의 완성작", "SAVED PATTERN": "저장한 패턴", DETAIL: "상태", DATE: "완성일" }
+    meta: { BRAND: "브랜드", DESIGNER: "디자이너", GAUGE: "게이지", "ORIGINAL YARN": "원작실", "ORIGINAL COLOR THEME": "원작 컬러 테마", "RECOMMENDED COLOR THEME": "추천 컬러 테마", NEEDLE: "바늘", TYPE: "유형", MATERIAL: "재질", SIZES: "크기", CABLES: "케이블", INCLUDES: "구성품", COMPATIBLE: "호환", SOURCE: "출처", PATTERN: "원작 패턴", STATUS: "패턴 상태", "MADE ITEM": "나의 완성작", "SAVED PATTERN": "저장한 패턴", DETAIL: "상태", DATE: "완성일" }
   },
   en: {
     nav: ["Yarn", "Pattern", "My Items", "Taste"], collectionEyebrow: "The collection", filters: "Filters", reset: "Reset", search: "Search", searchPlaceholder: "Name, type, detail...",
@@ -194,7 +196,7 @@ function formatGauge(gauge = {}) {
   const rowLabel = gauge.rows ? "rows" : "rounds";
   const counts = [gauge.stitches && `${gauge.stitches} sts`, rowCount && `${rowCount} ${rowLabel}`].filter(Boolean).join(" × ");
   const measurement = gauge.over ? ` / ${gauge.over}` : "";
-  return `${counts}${measurement}` || "Not specified";
+  return [`${counts}${measurement}`, gauge.reference_note].filter(Boolean).join(" · ") || "Not specified";
 }
 
 function formatOriginalYarn(yarn = {}) {
@@ -219,9 +221,12 @@ function formatNeedleSize(value = "") {
 async function enrichPatternDetails() {
   if (pageKey !== "patterns") return;
   try {
-    const response = await fetch("./data/pattern-library.json");
-    if (!response.ok) throw new Error("Pattern metadata unavailable");
-    const metadata = await response.json();
+    const [patternResponse, colorResponse] = await Promise.all([
+      fetch("./data/pattern-library.json?v=20260930-5"),
+      fetch("./data/pattern-color-themes.json?v=20260929-2")
+    ]);
+    if (!patternResponse.ok || !colorResponse.ok) throw new Error("Pattern metadata unavailable");
+    const [metadata, colorThemes] = await Promise.all([patternResponse.json(), colorResponse.json()]);
     PATTERNS.forEach((item) => {
       const fileName = item.image.split("/").pop().split("?")[0];
       const source = metadata.find((entry) => entry.image?.asset_path?.endsWith(fileName));
@@ -236,6 +241,7 @@ async function enrichPatternDetails() {
       item.needle = source.gauge?.needle || source.tools?.[0] || "Not specified";
       item.needleSize = formatNeedleSize(item.needle);
       item.patternUrl = source.pattern_access?.purchase_url || null;
+      item.colorThemes = colorThemes[source.id] || { original: [], recommended: [] };
     });
   } catch (error) {
     PATTERNS.forEach((item) => {
@@ -277,6 +283,18 @@ function metaLabel(label) {
 
 function specValue(specs, key) {
   return state.language === "ko" ? specs.ko?.[key] || specs[key] : specs[key];
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" })[character]);
+}
+
+function colorThemeMarkup(colors = []) {
+  if (!colors.length) return `<span>${translated("Not specified")}</span>`;
+  return `<span class="color-theme">${colors.map((color) => {
+    const name = state.language === "ko" ? color.name_ko || color.name : color.name;
+    return `<span class="color-theme-chip"><i style="--swatch:${escapeHtml(color.hex)}" aria-hidden="true"></i>${escapeHtml(name)}</span>`;
+  }).join("")}</span>`;
 }
 
 function applyStaticCopy() {
@@ -382,7 +400,7 @@ function openItem(index) {
     ? pageKey === "patterns" ? "이 패턴을 다음 믹스의 형태와 구조로 사용할 수 있어요." : pageKey === "taste" ? "연결한 Pinterest 보드에서 가져온 패턴 레퍼런스예요." : item.category === "Tool" ? "손에 익은 도구의 재료와 세트 구성을 기록해두었어요." : "나의 작업 과정과 함께 기억해둘 아이템이에요."
     : pageKey === "patterns" ? "Use this pattern as the form and structure of a future mix." : pageKey === "taste" ? "A pattern reference from the connected Pinterest board." : item.category === "Tool" ? "Materials and set contents for a familiar tool." : "An item to remember with its making process.";
   el("dialogMeta").innerHTML = pageKey === "patterns"
-    ? `<div><dt>${metaLabel("BRAND")}</dt><dd>${item.brand}</dd></div><div><dt>${metaLabel("DESIGNER")}</dt><dd>${translated(item.designer)}</dd></div><div><dt>${metaLabel("GAUGE")}</dt><dd>${translated(item.gauge)}</dd></div><div><dt>${metaLabel("ORIGINAL YARN")}</dt><dd>${item.originalYarn}</dd></div><div><dt>${metaLabel("NEEDLE")}</dt><dd>${translated(item.needle)}</dd></div>${item.patternUrl ? `<div><dt>${metaLabel("SOURCE")}</dt><dd><a href="${item.patternUrl}" target="_blank" rel="noreferrer">${UI_COPY[state.language].buyPattern}</a></dd></div>` : ""}${item.relatedItem ? `<div><dt>${metaLabel("MADE ITEM")}</dt><dd><a href="./items.html?open=${encodeURIComponent(item.relatedItem)}">${UI_COPY[state.language].viewMadeItem}</a></dd></div>` : ""}`
+    ? `<div><dt>${metaLabel("BRAND")}</dt><dd>${item.brand}</dd></div><div><dt>${metaLabel("DESIGNER")}</dt><dd>${translated(item.designer)}</dd></div><div><dt>${metaLabel("GAUGE")}</dt><dd>${translated(item.gauge)}</dd></div><div><dt>${metaLabel("ORIGINAL YARN")}</dt><dd>${item.originalYarn}</dd></div><div class="color-theme-row"><dt>${metaLabel("ORIGINAL COLOR THEME")}</dt><dd>${colorThemeMarkup(item.colorThemes?.original)}</dd></div><div class="color-theme-row"><dt>${metaLabel("RECOMMENDED COLOR THEME")}</dt><dd>${colorThemeMarkup(item.colorThemes?.recommended)}</dd></div><div><dt>${metaLabel("NEEDLE")}</dt><dd>${translated(item.needle)}</dd></div>${item.patternUrl ? `<div><dt>${metaLabel("SOURCE")}</dt><dd><a href="${item.patternUrl}" target="_blank" rel="noreferrer">${UI_COPY[state.language].buyPattern}</a></dd></div>` : ""}${item.relatedItem ? `<div><dt>${metaLabel("MADE ITEM")}</dt><dd><a href="./items.html?open=${encodeURIComponent(item.relatedItem)}">${UI_COPY[state.language].viewMadeItem}</a></dd></div>` : ""}`
     : pageKey === "taste"
       ? `<div><dt>${metaLabel("TYPE")}</dt><dd>${translated(item.type)}</dd></div><div><dt>BOARD</dt><dd>${item.date}</dd></div><div><dt>${metaLabel("SOURCE")}</dt><dd><a href="${item.source}" target="_blank" rel="noreferrer">${UI_COPY[state.language].viewBoard}</a></dd></div>`
     : item.specs

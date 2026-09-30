@@ -45,6 +45,11 @@
           "skeins": 4,
           "yardage_yd": 570
         }
+      ],
+      "allowed_constructions": [
+        { "id": "dk-double-same", "mode": "held_together", "components": [
+          { "role": "main", "strands": 2, "same_yarn_group": "main", "accepted_weights": ["dk", "light worsted"] }
+        ] }
       ]
     },
     "gauge": {
@@ -128,6 +133,7 @@
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\BEANIENO6.ENG.pdf",
       "purchase_url": "https://myfavouritethings-knitwear.com/collections/english/products/beanie-no-6-english",
+      "delivery": "Digital PDF download delivered by email",
       "rights_note": "Private use only; do not copy, redistribute, or sell the pattern."
     },
     "image": {
@@ -139,25 +145,109 @@
       "lower_section": {
         "brand": "Gepard",
         "base": "Teddy Dear",
-        "skein": { "weight_g": 50, "length_m": 75 },
-        "quantity_g_by_size": [50, 100, 100, 100],
+        "origin": "Italy",
+        "fiber_content": {
+          "merino_wool_percent": 60,
+          "superfine_alpaca_percent": 40
+        },
+        "weight": "super bulky",
+        "texture": "boucle",
+        "skein": {
+          "weight_g": 50,
+          "length_m": 75,
+          "length_yd": 82
+        },
+        "recommended_knitting_needle": "6-10 mm / US 10-15",
+        "manufacturer_gauge": {
+          "stitches": "8-11",
+          "over": "10 cm / 4 in"
+        },
+        "care": "Hand wash only",
+        "ethical_attributes": [
+          "mulesing-free",
+          "spun by small family-owned Italian mills",
+          "produced to Gepard environmental and ethical standards"
+        ],
+        "quantity_g_by_size": {
+          "XXS/XS": { "min": 50, "max": 100 },
+          "XS/S": 100,
+          "S/M": 100,
+          "M/L": 100
+        },
         "construction_note": "Held single"
       },
       "upper_section_options": [
-        { "brand": "Gepard", "base": "Woolia", "skein": { "weight_g": 50, "length_m": 133 } },
-        { "brand": "Gepard", "base": "Pura Lana", "skein": { "weight_g": 50, "length_m": 115 } },
-        { "brand": "Gepard", "base": "Eco Cashmere Vintage", "skein": { "weight_g": 50, "length_m": 150 } }
+        {
+          "brand": "Gepard",
+          "base": "Woolia",
+          "fiber_content": {
+            "organic_merino_wool_percent": 100
+          },
+          "ply": 2,
+          "weight": "aran / medium",
+          "skein": {
+            "weight_g": 50,
+            "length_m": 132,
+            "length_yd": 144,
+            "pattern_listed_length_m": 133
+          },
+          "recommended_knitting_needle": "4-6 mm / US 6-10",
+          "manufacturer_gauge": {
+            "typical_stitches_per_10_cm": "16-18",
+            "by_needle": [
+              { "needle": "6 mm / US 10", "stitches": 15, "over": "10 cm", "fabric": "slightly loose" },
+              { "needle": "5.5 mm / US 9", "stitches": 16, "over": "10 cm", "fabric": "cables, Fair Isle, slightly loose" },
+              { "needle": "5 mm / US 8", "stitches": 17, "over": "10 cm", "fabric": "general sweaters" },
+              { "needle": "4.5 mm / US 7", "stitches": 18, "over": "10 cm", "fabric": "long coats and menswear" },
+              { "needle": "4 mm / US 6", "stitches": 19, "over": "10 cm", "fabric": "tighter durable knitwear" }
+            ]
+          },
+          "companion_yarn_note": "Use 5-6 mm / US 8-10 needles when held with a lace-weight companion such as IAM Hand-dyed Suri alpaca/silk or CaMaRose Midnatssol.",
+          "pattern_quantity_g_by_size": { "XXS/XS": 50, "XS/S": 50, "S/M": 50, "M/L": 50 },
+          "pattern_construction_note": "Use 50 g total and work holding two strands together."
+        },
+        {
+          "brand": "Gepard",
+          "base": "Pura Lana",
+          "skein": { "weight_g": 50, "length_m": 115 },
+          "pattern_quantity_g_by_size": { "XXS/XS": 50, "XS/S": 50, "S/M": 50, "M/L": 50 },
+          "pattern_construction_note": "Use 50 g total and work holding two strands together."
+        },
+        {
+          "brand": "Gepard",
+          "base": "Eco Cashmere Vintage",
+          "skein": { "weight_g": 50, "length_m": 150 },
+          "pattern_quantity_g_by_size": { "XXS/XS": 50, "XS/S": 50, "S/M": 50, "M/L": 50 },
+          "pattern_construction_note": "Use 50 g total and work holding two strands together."
+        }
       ],
-      "upper_quantity_g_by_size": [50, 50, 50, 50],
-      "upper_construction_note": "Hold two strands of the selected yarn together",
-      "sample_colors": ["Teddy Dear 104 Light Beige", "Eco Cashmere Vintage 110 Nougat"]
+      "upper_quantity_g_by_size": { "XXS/XS": 50, "XS/S": 50, "S/M": 50, "M/L": 50 },
+      "quantity_total_g_by_size": { "XXS/XS": 100, "XS/S": 150, "S/M": 150, "M/L": 150 },
+      "upper_construction_note": "Choose Woolia, Pura Lana, or Eco Cashmere Vintage. Use 50 g total and hold two strands of the selected yarn together.",
+      "section_construction": {
+        "lower": "One strand of Teddy Dear",
+        "upper": "Two strands of one selected upper yarn held together"
+      },
+      "sample": {
+        "lower_yarn": "Teddy Dear 104 Light Beige",
+        "upper_yarn": "Eco Cashmere Vintage 110 Nougat",
+        "model_head_circumference_cm": 56,
+        "model_size": "S/M"
+      },
+      "allowed_constructions": [
+        { "id": "teddy-single-plus-upper-double", "mode": "sectioned", "components": [
+          { "section": "lower", "role": "boucle", "strands": 1, "accepted_weights": ["super bulky"], "texture": "halo" },
+          { "section": "upper", "role": "smooth", "strands": 2, "same_yarn_group": "upper", "accepted_weights": ["worsted", "aran"] }
+        ] }
+      ]
     },
     "gauge": {
       "stitches": 15,
       "rows": 24,
       "over": "10 x 10 cm / 4 x 4 in",
       "stitch_pattern": "stockinette stitch",
-      "needle": "4.5 mm / US 7"
+      "needle": "4.5 mm / US 7",
+      "adjustment_note": "Needle size is a guideline; make a swatch and adjust as needed to obtain gauge."
     },
     "tools": [
       "4.5 mm / US 7 circular needles, 40 or 80 cm",
@@ -201,7 +291,12 @@
       "base": "Swish Worsted",
       "weight": "worsted",
       "quantity": { "yardage_yd": 35, "yardage_m": 32 },
-      "substitution_note": "Any comparable worsted-weight yarn"
+      "substitution_note": "Any comparable worsted-weight yarn",
+      "allowed_constructions": [
+        { "id": "worsted-single", "mode": "single", "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["worsted"] }
+        ] }
+      ]
     },
     "gauge": {
       "stitches": 20,
@@ -246,7 +341,12 @@
       "construction_note": "Hold three strands together",
       "quantity_total_g_by_size": [300, 300, 300, 375, 375],
       "one_color_quantity_g_by_size": [275, 275, 300, 325, 350],
-      "sample_colors": ["Soft Rose", "Dusty Artichoke", "Soft Blue"]
+      "sample_colors": ["Soft Rose", "Dusty Artichoke", "Soft Blue"],
+      "allowed_constructions": [
+        { "id": "lace-triple-same", "mode": "held_together", "components": [
+          { "role": "main", "strands": 3, "same_yarn_group": "main", "accepted_weights": ["lace"], "texture": "halo" }
+        ] }
+      ]
     },
     "gauge": {
       "stitches": 13,
@@ -312,9 +412,36 @@
         "weight": "DK / worsted",
         "skein": { "weight_g": 50, "length_m": 110, "yardage_yd": 120 },
         "required_m": 70
-      }
+      },
+      "recommended_combinations": [
+        {
+          "smooth_yarn": "Dashing Sassy",
+          "textured_yarn": "Super Floof DK",
+          "status": "suggested bases in the pattern"
+        },
+        {
+          "smooth_yarn": "Dashing Fingering",
+          "textured_yarn": "Baby Teddy",
+          "status": "recommended kit combination",
+          "source": "https://www.qingfibre.com/products/harlequin-shawlette-knit-kits-baby-teddy-and-dashing-fingering"
+        }
+      ],
+      "combination_note": "Use one smooth fingering yarn with one fluffy or brushed feature yarn; Baby Teddy plus Dashing Fingering is a recommended pairing.",
+      "allowed_constructions": [
+        { "id": "smooth-plus-textured", "mode": "held_together", "components": [
+          { "role": "smooth", "strands": 1, "accepted_weights": ["fingering"] },
+          { "role": "textured", "strands": 1, "accepted_weights": ["dk", "worsted", "bulky"], "texture": "halo" }
+        ] }
+      ]
     },
-    "gauge": { "status": "not specified in the PDF" },
+    "gauge": {
+      "stitches": 10,
+      "rows": 28,
+      "over": "6 x 7 cm / 2.3 x 2.7 in",
+      "stitch_pattern": "Harlequin Stitch Chart",
+      "needle": "5 mm / US 8",
+      "adjustment_note": "Adjust needle size as necessary to match gauge."
+    },
     "tools": ["5 mm / US 8 circular needle with 40-100 cm cable"],
     "sizes": [
       { "name": "Flat-edge tapered", "wingspan_cm": 93, "depth_cm": 23 },
@@ -332,13 +459,14 @@
     "id": "vert-and-rose-joanna-hat",
     "title": "Joanna Hat",
     "brand": "Vert and Rose",
-    "designer": null,
+    "designer": "Aleks Solowianiuk",
     "craft": "knitting",
     "category": "hat",
     "pattern_access": {
       "type": "local_pdf",
       "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\Joannahatpattern.pdf",
       "creator_handle": "@vert.and.rose",
+      "designer_shop_url": "https://www.etsy.com/shop/VertAndRoseKnits",
       "purchase_url": "https://www.etsy.com/listing/1789989294/feminine-hat-pattern-with-girly-knit"
     },
     "image": {
@@ -349,13 +477,23 @@
     "recommended_yarn": {
       "main_combination": "One strand fingering held with one strand mohair",
       "quantity_m_each_by_size": [200, 200, 250, 300, 400],
-      "substitution_note": "A single strand of DK yarn may replace the two-yarn combination."
+      "substitution_note": "A single strand of DK yarn may replace the two-yarn combination.",
+      "allowed_constructions": [
+        { "id": "fingering-plus-mohair", "mode": "held_together", "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["fingering"] },
+          { "role": "halo", "strands": 1, "accepted_weights": ["lace"], "texture": "halo" }
+        ] },
+        { "id": "dk-single", "mode": "single", "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["dk"] }
+        ] }
+      ]
     },
     "gauge": {
       "stitches": 26,
       "rounds": 34,
       "over": "10 cm",
-      "stitch_pattern": "stockinette stitch in the round"
+      "stitch_pattern": "stockinette stitch in the round",
+      "needle": "3.5 mm"
     },
     "tools": [
       "3.5 mm circular needles",
@@ -399,7 +537,33 @@
       "brand": "Nako",
       "base": "Paris",
       "color": "11237",
-      "quantity": "1 skein"
+      "weight": "DK / Light (3)",
+      "fiber_content": {
+        "premium_acrylic_percent": 40,
+        "polyamide_percent": 60
+      },
+      "skein": {
+        "weight_g": 100,
+        "length_m": 245,
+        "length_yd": 268
+      },
+      "quantity": {
+        "skeins": 1,
+        "yardage_m": 245
+      },
+      "manufacturer_gauge": {
+        "stitches": 21,
+        "rows": 30,
+        "over": "10 x 10 cm"
+      },
+      "recommended_knitting_needle": "3.5-4 mm / US 4-6",
+      "recommended_crochet_hook": "3 mm",
+      "ideal_seasons": ["spring", "summer", "autumn"],
+      "allowed_constructions": [
+        { "id": "dk-single", "mode": "single", "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["dk"] }
+        ] }
+      ]
     },
     "gauge": { "status": "not specified in the PDF" },
     "tools": [
@@ -415,6 +579,7 @@
     "techniques": ["stockinette stitch", "knit front and back increases", "knit-two-together decreases", "flat pieces", "seaming", "stuffing", "facial embroidery"],
     "mood_tags": ["miniature", "keepsake", "soft toy", "cinnamon", "handmade gift"],
     "stash_match": {
+      "weight_categories": ["dk", "light"],
       "best_for": ["one-skein toy yarn", "small neutral leftovers", "soft yarn with stitch definition"]
     },
     "notes": "The PDF does not include basic knitting lessons. Catalog entry only; refer to the local PDF for complete instructions."
@@ -446,8 +611,19 @@
       "weight": "Aran / worsted",
       "skein": { "weight_g": 50 },
       "palette": "21 colors",
+      "quantity": {
+        "project_unit": "one palm-sized square",
+        "estimated_yardage_m": 25,
+        "full_blanket_yardage_m": { "min": 840, "max": 3024 },
+        "estimate_note": "The recommendation engine treats one approximately 12 x 12 cm square as the project unit. The 25 m allowance is a conservative estimate derived from the published 840-3024 m full-blanket range and the 144-square construction."
+      },
       "alternatives": ["Cascade 220", "KnitPicks Wool of the Andes"],
-      "substitution_note": "DK or bulky yarn can be used for a different scale; match needle size to yarn weight."
+      "substitution_note": "DK or bulky yarn can be used for a different scale; match needle size to yarn weight.",
+      "allowed_constructions": [
+        { "id": "single-adjustable-scale", "mode": "single", "swatch_required": true, "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["dk", "worsted", "aran", "bulky"] }
+        ] }
+      ]
     },
     "gauge": {
       "status": "No stitch gauge specified",
@@ -502,7 +678,15 @@
         "dark_group_min_g": 175,
         "light_group_min_g": 175
       },
-      "substitution_note": "Fingering or sock yarn may be held double; slightly heavier scraps can be balanced with a thinner opposite stripe."
+      "substitution_note": "Fingering or sock yarn may be held double; slightly heavier scraps can be balanced with a thinner opposite stripe.",
+      "allowed_constructions": [
+        { "id": "dk-single", "mode": "single", "components": [
+          { "role": "scraps", "strands": 1, "accepted_weights": ["dk"] }
+        ] },
+        { "id": "fingering-double-same", "mode": "held_together", "components": [
+          { "role": "scraps", "strands": 2, "same_yarn_group": "main", "accepted_weights": ["fingering", "sock"] }
+        ] }
+      ]
     },
     "gauge": {
       "status": "Gauge is not critical",
@@ -552,7 +736,12 @@
         "main_color": [215, 235, 260, 285, 315, 345, 380],
         "contrast_color_1": [100, 110, 120, 130, 145, 160, 175],
         "contrast_color_2": [8, 9, 10, 11, 12, 13, 14]
-      }
+      },
+      "allowed_constructions": [
+        { "id": "fingering-single-three-colors", "mode": "single", "color_roles": 3, "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["fingering", "sock"] }
+        ] }
+      ]
     },
     "gauge": {
       "stitches": 32,
@@ -607,14 +796,51 @@
       "alt": "Overlap Scarf crochet pattern by Eungeung in Knitup Magazine"
     },
     "recommended_yarn": {
-      "brand": "나영모사",
+      "brand": "낙양모사",
       "base": "솔솔",
       "color": "401 화이트",
+      "origin": "Korea",
+      "fiber_content": {
+        "mercerized_cotton_percent": 39,
+        "paper_percent": 33,
+        "polyester_percent": 14,
+        "viscose_rayon_percent": 14
+      },
       "skein": {
         "weight_g": 40,
-        "length_m": 148
+        "weight_tolerance_percent": 5,
+        "length_m": 148,
+        "length_tolerance_percent": 5
       },
-      "quantity_note": "The PDF lists the yarn and ball size but does not separately state total consumption."
+      "strand_thickness_mm": 1,
+      "recommended_knitting_needle": "2.5-3 mm",
+      "recommended_crochet_hook": "Korean size 2/0-3/0",
+      "manufacturer_gauge": {
+        "knitting_stockinette": {
+          "stitches": 35,
+          "rows": 44,
+          "over": "10 x 10 cm",
+          "needle": "2.5 mm"
+        },
+        "crochet_double_crochet": {
+          "stitches": 25,
+          "rows": 10,
+          "over": "10 x 10 cm",
+          "hook": "Korean size 3/0"
+        }
+      },
+      "suggested_uses": ["knitted garments", "crocheted garments", "hats", "shawls", "scarves"],
+      "quantity": {
+        "estimated_weight_g": 20,
+        "estimated_yardage_m": 74,
+        "estimate_note": "Working estimate: approximately half of one 40 g / 148 m Solsol ball, based on treating this narrow scarf as half a petite-scarf quantity."
+      },
+      "quantity_note": "Estimated at 20 g / 74 m for compatibility scoring; the original pattern does not state total consumption.",
+      "allowed_constructions": [
+        { "id": "fine-single", "mode": "single", "components": [
+          { "role": "main", "strands": 1, "accepted_weights": ["lace", "fingering"] }
+        ] }
+      ]
     },
     "gauge": {
       "status": "not specified in the PDF"
@@ -652,9 +878,11 @@
       "narrow scarf"
     ],
     "stash_match": {
+      "fiber_categories": ["cotton", "paper", "plant fiber"],
+      "weight_categories": ["lace", "fingering"],
       "best_for": [
-        "a single small ball",
-        "smooth yarn with clear stitch definition",
+        "fine structured yarn",
+        "cotton and paper blends",
         "light neutral colors",
         "delicate crochet accessories"
       ]
@@ -683,7 +911,90 @@
     "recommended_yarn": {
       "brand": "아임울",
       "base": "아임울2",
-      "construction_note": "Hold two strands together, equivalent to 아임울4 thickness; designed for leftover yarn."
+      "fiber_content": {
+        "wool_percent": 100
+      },
+      "skein": {
+        "weight_g": 40,
+        "weight_tolerance_g": 5,
+        "length_m": 153
+      },
+      "strand_thickness_mm": 1.5,
+      "recommended_knitting_needle": "3-4 mm",
+      "recommended_crochet_hook": "Korean size 3/0-5/0",
+      "manufacturer_gauge": {
+        "knitting_stockinette": {
+          "stitches": 29,
+          "rows": 39,
+          "over": "10 x 10 cm",
+          "needle": "3 mm"
+        },
+        "crochet_double_crochet": {
+          "stitches": 24,
+          "rows": 12,
+          "over": "10 x 10 cm",
+          "hook": "Korean size 3/0"
+        }
+      },
+      "equivalent_single_yarn": {
+        "brand": "아임울",
+        "base": "아임울4",
+        "fiber_content": {
+          "merino_wool_percent": 100
+        },
+        "skein": {
+          "weight_g": 80,
+          "weight_tolerance_g": 5,
+          "length_m": 145,
+          "length_tolerance_m": 10
+        },
+        "recommended_knitting_needle": "4.5-5.5 mm",
+        "recommended_crochet_hook": "Korean size 7/0-8/0",
+        "manufacturer_gauge": {
+          "knitting_stockinette": {
+            "stitches": 18.5,
+            "rows": 28,
+            "over": "10 x 10 cm",
+            "needle": "4.5 mm"
+          },
+          "crochet_double_crochet": {
+            "stitches": 18,
+            "rows": 9,
+            "over": "10 x 10 cm",
+            "hook": "Korean size 7/0"
+          }
+        },
+        "characteristics": [
+          "Natural wool character with a soft hand",
+          "Lightweight with enough structure to hold its shape",
+          "Suitable as a single yarn for winter garments such as cardigans and sweaters"
+        ]
+      },
+      "allowed_constructions": [
+        {
+          "id": "light-double-same",
+          "mode": "held_together",
+          "components": [
+            { "role": "main", "strands": 2, "same_yarn_group": "main", "accepted_weights": ["fingering", "sport"] }
+          ],
+          "note": "Original leftover-yarn construction"
+        },
+        {
+          "id": "worsted-single",
+          "mode": "single",
+          "components": [
+            { "role": "main", "strands": 1, "accepted_weights": ["worsted", "aran"] }
+          ],
+          "note": "Equivalent finished thickness"
+        }
+      ],
+      "construction_note": "Hold two strands together, equivalent to 아임울4 thickness; designed for leftover yarn.",
+      "quantity": {
+        "estimated_total_weight_g": 80,
+        "estimated_yardage_m_per_strand": 145,
+        "estimate_note": "Working estimate aligned with New Granny's Hat. For the original two-strand construction, allow approximately 145 m per strand, 290 m total."
+      },
+      "quantity_note": "Estimated at 80 g total; approximately 145 m per strand when held double."
     },
     "gauge": {
       "stitches": 20,
@@ -721,6 +1032,8 @@
       "upcycled"
     ],
     "stash_match": {
+      "fiber_categories": ["wool"],
+      "weight_categories": ["worsted"],
       "best_for": [
         "many short leftover lengths",
         "mixing colors of a similar thickness",
@@ -749,10 +1062,47 @@
       "alt": "Pink and beige Fringe Checked Scarves by YYCC"
     },
     "recommended_yarn": {
-      "brand": "바늘이야기",
+      "brand": null,
       "base": "새틴 알파카 모헤어",
+      "retailer": "바늘이야기",
+      "product_url": "https://www.banul.co.kr/shop/shopdetail.html?branduid=3469103",
+      "origin": "Italy",
+      "fiber_content": {
+        "superkid_mohair_percent": 35,
+        "baby_alpaca_percent": 35,
+        "polyamide_percent": 30
+      },
+      "skein": {
+        "weight_g": 20,
+        "length_m": 195
+      },
+      "strand_thickness_mm": 0.1,
+      "recommended_knitting_needle": "2-2.5 mm",
+      "recommended_crochet_hook": "Korean size 3",
+      "manufacturer_gauge": {
+        "single_strand": {
+          "stitches": 28,
+          "rows": 36,
+          "over": "10 x 10 cm",
+          "needle": "3 mm"
+        },
+        "two_strands_held_together": {
+          "stitches": 19,
+          "rows": 26,
+          "over": "10 x 10 cm",
+          "needle": "4 mm"
+        }
+      },
+      "characteristics": [
+        "Soft, full halo from superkid mohair and baby alpaca",
+        "Lightweight and voluminous for use alone or held together",
+        "Contains no wool or lanolin"
+      ],
       "quantity": {
         "total_balls": 5,
+        "total_weight_g": 100,
+        "total_yardage_m": 975,
+        "estimated_yardage_m_per_strand": 487.5,
         "color_a_balls": 2,
         "color_b_balls": 2,
         "color_c_balls": 1
@@ -767,13 +1117,23 @@
           "name": "Beige",
           "colors": ["A 07 Dark Gray", "B 03 Caramel", "C 010 Ivory"]
         }
+      ],
+      "allowed_constructions": [
+        { "id": "lace-double-same", "mode": "held_together", "color_roles": 3, "components": [
+          { "role": "main", "strands": 2, "same_yarn_group": "main", "accepted_weights": ["lace"], "texture": "halo" }
+        ] }
       ]
     },
-    "gauge": {
-      "status": "not specified in the PDF"
-    },
+  "gauge": {
+    "stitches": 19,
+    "rows": 26,
+    "over": "10 x 10 cm",
+    "needle": "4 mm / 모사용 7호 crochet hook",
+    "yarn_held": "two strands held together",
+    "reference_note": "Original-yarn manufacturer reference gauge; the pattern PDF does not state a separate project gauge."
+  },
     "tools": [
-      "모사용 7호 crochet hook",
+    "4 mm / 모사용 7호 crochet hook",
       "tapestry needle",
       "stitch markers",
       "scissors",
@@ -810,6 +1170,8 @@
       "graphic"
     ],
     "stash_match": {
+      "fiber_categories": ["mohair", "alpaca blend"],
+      "weight_categories": ["lace", "mohair"],
       "best_for": [
         "coordinated three-color palettes",
         "brushed alpaca or mohair blends",
@@ -818,5 +1180,85 @@
       ]
     },
     "notes": "The PDF recommends washing the finished scarf and lightly shaking out the brushed fibers after drying. Catalog entry only; refer to the local PDF and companion video for complete instructions."
+  },
+  {
+    "id": "sarahs-moon-new-grannys-hat",
+    "title": "New Granny's Hat",
+    "original_title": "뉴 그래니스 햇",
+    "brand": "Sarah's Moon",
+    "designer": "Make with Sarah",
+    "craft": "crochet",
+    "category": "hat",
+    "pattern_access": {
+      "type": "local_pdf",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\니팅패턴\\Knitting or Crochetting\\grannysHat\\newGrannysHat.pdf",
+      "purchase_url": "https://smartstore.naver.com/sarahsmoon/products/10241252197",
+      "published": "2024",
+      "access_note": "Purchased pattern with companion process videos."
+    },
+    "image": {
+      "asset_path": "./assets/images/pattern/new-grannys-hat.png",
+      "source_file": "C:\\Users\\HH\\Desktop\\imaging_lab\\my pattern stash\\newGrannysHat.png",
+      "alt": "Colorful floral New Granny's Hat by Make with Sarah"
+    },
+    "recommended_yarn": {
+      "weight": "Yarn suitable for a 5 mm crochet hook",
+      "palette": "8-9 different colors",
+      "winter_options": ["Wool and the Gang Take Care Mohair", "Hip Knit Fluff", "Loopy Mango Dream", "Wool and the Gang Feeling Good", "Daruma Geek"],
+      "spring_options": ["Pickles Cozy", "Camarose Snefnug", "Daruma Pompom"],
+      "summer_options": ["Wool and the Gang Ra-Ra Raffia", "Sevy Luffy", "Itoito Skogafoss"],
+      "quantity": {
+        "estimated_total_weight_g": 80,
+        "estimated_yardage_m": 145,
+        "estimate_note": "Working estimate shared with Leftover Beanie for compatibility scoring; distribute the total across the 8-9 color palette."
+      },
+      "substitution_note": "Mix 2-3 yarn textures for depth while keeping the strands suitable for a 5 mm hook.",
+      "allowed_constructions": [
+        { "id": "single-per-color-mixed-textures", "mode": "single", "color_roles": "8-9", "swatch_required": true, "components": [
+          { "role": "palette", "strands": 1, "accepted_weights": ["worsted", "aran"] }
+        ] }
+      ]
+    },
+    "gauge": {
+      "status": "One motif: 13.5 x 13.5 cm; diagonal approximately 17 cm"
+    },
+    "tools": [
+      "5 mm / Korean size 8 crochet hook",
+      "tapestry needle",
+      "scissors",
+      "tape measure"
+    ],
+    "sizes": [
+      {
+        "name": "Adult woman",
+        "to_fit_head_circumference_cm": "53-55",
+        "finished_height_cm": "22-23",
+        "finished_lower_width_cm": "32-33",
+        "finished_upper_width_cm": 26
+      }
+    ],
+    "construction": {
+      "motifs": 5,
+      "orientation": "Five granny-square motifs joined as they are crocheted, followed by three brim rounds and an optional edge round",
+      "customization_note": "Adjust size with hook and yarn thickness rather than altering the motif stitch counts."
+    },
+    "techniques": [
+      "magic ring",
+      "single crochet",
+      "half double crochet",
+      "double crochet",
+      "treble crochet",
+      "bobble stitch",
+      "join-as-you-go granny squares",
+      "color changes",
+      "scalloped brim"
+    ],
+    "difficulty": "intermediate",
+    "mood_tags": ["retro pop", "floral", "colorful", "textural", "granny square", "scrap friendly"],
+    "stash_match": {
+      "weight_categories": ["worsted", "aran"],
+      "best_for": ["8-9 color palettes", "mixed yarn textures", "bright flower-and-leaf contrast", "colorful leftovers suitable for a 5 mm hook"]
+    },
+    "notes": "Catalog entry only. Refer to the purchased PDF and companion videos for charts, joining details, and complete instructions."
   }
 ]
